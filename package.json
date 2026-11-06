@@ -1,0 +1,7 @@
+{
+  "name": "radar-shelanu",
+  "private": true,
+  "type": "module",
+  "scripts": { "update": "node scraper/scrape.mjs" },
+  "dependencies": { "playwright": "^1.48.0" }
+}

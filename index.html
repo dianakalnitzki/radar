@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f0e8">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+<title>הרדאר שלנו</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f0e8;--card:#fffdf9;--ink:#1d1916;--muted:#7b7068;--line:#e6dccf;--soft:#efe7dc;
+  --accent:#e2513b;--kid:#2b7a6a;--free:#1d8a4b;--dg:#5b3fd1;--hot:#ff6a3d;
+  --main:var(--accent);
+}
+body.kids{--main:var(--kid)}
+[hidden]{display:none!important}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Rubik,system-ui,sans-serif}
+button{font-family:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 90px}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+h1{font-size:26px;font-weight:800;margin:0;letter-spacing:-.5px}
+h1 span{color:var(--main)}
+.updated{font-size:11px;color:var(--muted);text-align:left;line-height:1.4}
+.mode{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--soft);border-radius:14px;padding:4px;margin:12px 0 4px}
+.mode button{border:0;border-radius:11px;padding:11px 6px;font-weight:600;font-size:15px;background:transparent;color:var(--muted);cursor:pointer}
+.mode button.on{background:var(--card);color:var(--main);box-shadow:0 1px 4px rgba(0,0,0,.08)}
+
+/* sticky bar */
+.bar{position:sticky;top:0;z-index:20;background:var(--bg);padding:10px 0 8px;margin:0 -14px;padding-left:14px;padding-right:14px;border-bottom:1px solid transparent;transition:border-color .2s}
+.bar.stuck{border-color:var(--line)}
+.row{display:flex;gap:8px}
+.search{flex:1;display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 12px}
+.search input{border:0;outline:0;background:transparent;font:400 15px Rubik;padding:11px 0;width:100%;color:var(--ink)}
+.fbtn{position:relative;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:0 14px;font-weight:600;font-size:14px;cursor:pointer;color:var(--ink);display:flex;align-items:center;gap:6px}
+.fbtn .n{background:var(--main);color:#fff;border-radius:999px;font-size:11px;min-width:18px;height:18px;display:inline-grid;place-items:center;padding:0 5px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-top:8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 12px;font-weight:500;font-size:13.5px;color:var(--ink);cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+body.kids .chip.on{background:var(--kid);border-color:var(--kid)}
+.chip.dg.on{background:var(--dg);border-color:var(--dg)}
+.chip small{opacity:.6;margin-right:3px;font-size:11px}
+.chip.cal{border-color:var(--main);color:var(--main);font-weight:600}
+.chip.cal.on{background:var(--main);color:#fff}
+.strip{display:flex;gap:5px;align-items:stretch;overflow-x:auto;scrollbar-width:none;padding-top:8px;scroll-snap-type:x proximity}
+.strip::-webkit-scrollbar{display:none}
+.dd{flex:0 0 40px;scroll-snap-align:start;border:1px solid var(--line);background:var(--card);border-radius:11px;padding:4px 0 6px;text-align:center;cursor:pointer;color:var(--ink);font-family:inherit;position:relative}
+.dd .w{font-size:10.5px;color:var(--muted);font-weight:500;line-height:1.3}
+.dd .n{font-size:15px;font-weight:800;line-height:1.15}
+.dd .ic{font-size:14px;line-height:1.15;height:17px}
+.dd.tool{flex-basis:auto;min-width:44px;padding-left:6px;padding-right:6px;border-color:var(--main)}
+.dd.tool .w{color:var(--main);font-weight:600}
+.dd.has::after{content:"";position:absolute;bottom:3px;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:var(--main);opacity:.55}
+.dd.we{background:#fff6ee}
+.dd.noev{opacity:.35}
+.dd.today .w{color:var(--main);font-weight:700}
+.dd.in{background:var(--soft);border-color:var(--main)}
+.dd.on{background:var(--main);border-color:var(--main);color:#fff}
+.dd.on .w{color:#fff}
+.dd.on::after{background:#fff}
+.mlabel{flex:0 0 auto;align-self:center;font-size:11px;font-weight:700;color:var(--main);padding:0 4px;white-space:nowrap}
+.mon-nav{display:flex;align-items:center;justify-content:space-between;margin:8px 0}
+.mon-nav b{font-size:17px}
+.mon-nav button{border:1px solid var(--line);background:var(--card);border-radius:10px;width:38px;height:38px;font-size:18px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.grid .h{font-size:12px;color:var(--muted);padding:4px 0}
+.cell{aspect-ratio:1;border:0;border-radius:10px;background:transparent;font-family:inherit;font-size:15px;font-weight:600;color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.cell small{font-size:9.5px;color:var(--muted);font-weight:500;height:11px}
+.cell.ev1{background:var(--soft)}
+.cell.past,.cell.none{color:#c9bfb3;cursor:default;background:transparent}
+.cell.today{outline:2px solid var(--main);outline-offset:-2px}
+.cell.in{background:#f9d9d2;border-radius:0}
+body.kids .cell.in{background:#cfe8e1}
+.cell.on{background:var(--main);color:#fff}
+.cell.on small{color:#fff}
+.hint{font-size:13px;color:var(--muted);margin:4px 0 0;min-height:18px}
+
+/* summary */
+.summary{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);margin:14px 2px 2px}
+.summary button{border:0;background:none;color:var(--main);font-weight:600;font-size:13px;cursor:pointer;padding:0}
+
+/* hot deals */
+.sec-title{font-weight:700;font-size:15px;margin:18px 2px 8px;display:flex;align-items:center;gap:6px}
+.deals{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px;margin:0 -14px;padding-left:14px;padding-right:14px}
+.deals::-webkit-scrollbar{display:none}
+.deal{flex:0 0 210px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;cursor:pointer;text-align:right;color:var(--ink)}
+.deal .save{display:inline-block;background:var(--hot);color:#fff;font-weight:800;font-size:13px;border-radius:8px;padding:2px 8px}
+.deal .dt{font-size:12px;color:var(--muted);margin-top:8px}
+.deal .tt{font-weight:600;font-size:14.5px;line-height:1.3;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.deal .pp{margin-top:6px;font-weight:700;font-size:14px}
+.deal .pp s{color:var(--muted);font-weight:400;font-size:12px;margin-right:4px}
+
+.pk-sub{font-size:12.5px;color:var(--muted);margin:-4px 2px 8px}
+.deal.pick .why{display:inline-block;background:var(--soft);color:var(--main);font-weight:700;font-size:11.5px;border-radius:8px;padding:3px 8px;line-height:1.35}
+.deal.pick .vv{font-size:12px;color:var(--muted);margin-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* list */
+.day{position:sticky;top:var(--barh,108px);z-index:5;background:var(--bg);padding:14px 2px 6px;display:flex;align-items:baseline;gap:8px}
+.day b{font-size:18px;font-weight:800}
+.day span{color:var(--muted);font-size:13px}
+.day i{font-style:normal;margin-right:auto;font-size:12px;color:var(--muted)}
+.ev{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:8px 0;overflow:hidden;transition:box-shadow .2s}
+.ev.open{box-shadow:0 6px 20px rgba(60,40,20,.10)}
+.ev-h{display:grid;grid-template-columns:52px 1fr auto;gap:10px;padding:12px;cursor:pointer;align-items:start}
+.time{font-weight:800;font-size:16px;line-height:1.1}
+.time small{display:block;font-weight:500;font-size:11px;color:var(--muted);margin-top:3px}
+.title{font-weight:600;font-size:15.5px;line-height:1.35}
+.sub{color:var(--muted);font-size:13px;margin-top:3px}
+.ds{font-size:13px;color:#4a413a;margin-top:5px;line-height:1.45}
+.ds.auto{color:var(--muted)}
+.about{margin-bottom:14px}
+.about-h{font-weight:700;font-size:15px;margin-bottom:6px}
+.about-p{margin:0 0 8px;font-size:14px;line-height:1.6}
+.about-p.muted{color:#6d6259;font-size:13.5px}
+.act.big{display:flex;flex-direction:column;gap:2px;padding:12px;font-size:15px;margin-top:4px}
+.act.big small{font-weight:400;font-size:12px;opacity:.85}
+.badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.b{font-size:11.5px;padding:3px 8px;border-radius:999px;background:var(--soft);color:#5c524a;font-weight:500}
+.b.free{background:#ddf3e6;color:var(--free);font-weight:700}
+.b.dg{background:#ebe5fd;color:var(--dg);font-weight:600}
+.b.hot{background:#ffe6dd;color:#c43d17;font-weight:700}
+.b.age{background:#dcefea;color:var(--kid);font-weight:600}
+.pr{font-weight:800;font-size:15px;white-space:nowrap;text-align:left}
+.pr.free{color:var(--free)}
+.pr s{display:block;color:var(--muted);font-weight:400;font-size:11.5px}
+.pr .q{color:var(--muted);font-weight:500;font-size:12px}
+.fav-mini{font-size:14px;margin-top:6px;text-align:left}
+
+.ev-d{display:none;border-top:1px dashed var(--line);padding:12px 14px 14px;background:#fffaf3}
+.ev.open .ev-d{display:block}
+.info{display:grid;grid-template-columns:auto 1fr;gap:7px 10px;font-size:14px;margin-bottom:12px}
+.info dt{color:var(--muted)}
+.info dd{margin:0;font-weight:500}
+.info a{color:var(--main)}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.act{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px;font-weight:600;font-size:13.5px;color:var(--ink);text-decoration:none;cursor:pointer}
+.act.primary{background:var(--main);color:#fff;border-color:var(--main);grid-column:1/-1}
+.act.on{color:#c2185b;border-color:#f3c1d4;background:#fff3f7}
+.note{font-size:11.5px;color:var(--muted);margin-top:10px}
+
+.empty{text-align:center;color:var(--muted);padding:40px 10px;line-height:1.7}
+.empty button{margin-top:10px}
+
+/* sheet */
+.ov{position:fixed;inset:0;background:rgba(20,15,10,.35);z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.ov.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;background:var(--card);border-radius:22px 22px 0 0;max-height:85vh;overflow:auto;transform:translateY(105%);transition:transform .25s ease;max-width:720px;margin:0 auto;padding:8px 18px calc(18px + env(safe-area-inset-bottom))}
+.sheet.on{transform:none}
+.grab{width:40px;height:4px;border-radius:4px;background:var(--line);margin:4px auto 10px}
+.sheet h3{margin:0 0 4px;font-size:18px}
+.fs{margin:16px 0}
+.fs .lbl{font-size:13px;color:var(--muted);margin-bottom:8px;font-weight:500}
+.fs .chips{flex-wrap:wrap;overflow:visible;padding-top:0}
+.sheet-foot{position:sticky;bottom:0;background:var(--card);display:flex;gap:10px;padding-top:12px;margin-top:8px;border-top:1px solid var(--line)}
+.sheet-foot button{flex:1;border-radius:12px;padding:13px;font-weight:700;font-size:15px;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.sheet-foot .go{background:var(--main);color:#fff;border-color:var(--main);flex:2}
+
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;z-index:60;transition:transform .25s}
+.toast.on{transform:translateX(-50%) translateY(0)}
+footer{margin-top:30px;font-size:12px;color:var(--muted);line-height:1.6}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>הרדאר <span id="h-who">שלנו</span></h1>
+    <div class="updated" id="upd">עודכן 5.11<br>מקור: radartlv</div>
+  </div>
+  <div class="mode">
+    <button id="m-couple">💑 שנינו</button>
+    <button id="m-kids">🧒 נינה</button>
+  </div>
+
+  <div class="bar" id="bar">
+    <div class="row">
+      <label class="search"><span>🔍</span><input id="q" type="search" placeholder="חיפוש אמן, הצגה, מקום…"></label>
+      <button class="fbtn" id="open-f">⚙︎ סינון <span class="n" id="fcount" hidden></span></button>
+    </div>
+    <div class="strip" id="strip"></div>
+  </div>
+
+  <div id="deals-wrap"></div>
+  <div class="summary"><span id="count"></span><button id="reset" hidden>ניקוי סינון</button></div>
+  <div id="list"></div>
+
+  <footer>
+    האירועים נאספים אוטומטית כל בוקר מ־<a href="https://radartlv.co.il/" target="_blank" rel="noopener">radartlv.co.il</a>, בית רדיקל וקולנוע יפו.
+    מחירי דיגיתל מוצגים במחיר ההטבה. לפני שיוצאים כדאי לוודא שעה, מחיר וזמינות אצל המארגן.
+  </footer>
+</div>
+
+<div class="ov" id="ov"></div>
+<div class="sheet" id="sheet" role="dialog" aria-label="סינון">
+  <div class="grab"></div>
+  <h3>סינון</h3>
+  <div class="fs"><div class="lbl">שעה ביום</div><div class="chips" id="f-time"></div></div>
+  <div class="fs"><div class="lbl">מחיר</div><div class="chips" id="f-price"></div></div>
+  <div class="fs" id="fs-cat"><div class="lbl">סוג אירוע</div><div class="chips" id="f-cat"></div></div>
+  <div class="fs"><div class="lbl">אזור</div><div class="chips" id="f-area"></div></div>
+  <div class="fs"><div class="lbl">מקור</div><div class="chips" id="f-src"></div></div>
+  <div class="fs"><div class="lbl">עוד</div><div class="chips" id="f-more"></div></div>
+  <div class="sheet-foot"><button id="f-clear">ניקוי</button><button class="go" id="f-go">הצגת תוצאות</button></div>
+</div>
+<div class="sheet" id="cal" role="dialog" aria-label="בחירת תאריכים">
+  <div class="grab"></div>
+  <h3>בחירת תאריכים</h3>
+  <p class="hint" id="cal-hint">לחצו על תאריך אחד, או על תאריך התחלה ואז תאריך סיום</p>
+  <div class="mon-nav"><button id="c-prev" aria-label="חודש קודם">›</button><b id="c-title"></b><button id="c-next" aria-label="חודש הבא">‹</button></div>
+  <div class="grid" id="c-grid"></div>
+  <div class="sheet-foot"><button id="c-clear">כל התאריכים</button><button class="go" id="c-go">הצגה</button></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const E = [];
+const DESC_SEED = [];
+
+const TLV="https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807c-43c5-8d5f-6fd455eb2776&ListID=";
+const LISTS={tb:"9dd2da03-5c43-462a-b5b2-d087c179b16c",tr:"969f7de3-0ac9-4a30-88f0-2e1a7281f3d0",tf:"d7edbd99-5ed2-48be-b4cd-990641ad5f1e"};
+function url(u){const [p,...r]=u.split(":");const v=r.join(":");
+  if(LISTS[p])return TLV+LISTS[p]+"&ItemID="+v;
+  if(p==="st")return "https://secrettelaviv.app/event/"+v;
+  if(p==="rd")return "https://radartlv.co.il/event/"+v+"/";
+  return u;}
+function src(u){try{const h=new URL(u).hostname.replace(/^www\./,"");
+  return {"tel-aviv.gov.il":"עיריית ת״א / דיגיתל","secrettelaviv.app":"Secret Tel Aviv","radartlv.co.il":"הרדאר","tickets.mevalim.co.il":"מבלים","tickets.comedybar.net":"קומדי בר","muzi.co.il":"מוזי","cinema.co.il":"סינמטק"}[h]||h}catch(e){return ""}}
+
+// אזורים לפי מקום
+const AREAS=[
+ ["נמל ת״א",["נמל תל אביב","מון צ'יילד","האנגר 17","ספוט הוסטל"]],
+ ["יפו",["קולנוע יפו","יפו","צ'רלס קלור","אלמינא","דוואי","אורי גלר"]],
+ ["דרום / פלורנטין",["פלורנטין","תמונע","קריית המלאכה","המרץ 2","גגרין","כיכר גבעון","בית רדיקל","רדיקל"]],
+ ["צפון",["אוניברסיטת תל אביב","מוזיאון ארץ ישראל","בית החייל","קאנטרי ארלוזורוב","מרכז ענב"]],
+ ["מרכז",["הבימה","קאמרי","צוותא","מוזיאון תל אביב","בית ציוני אמריקה","היכל התרבות","האופרה","בית ליסין","סינמטק","בית ביאליק","כיכר ביאליק","בית ליבלינג","דיזנגוף","גוטמן","בר גיורא","אוזן בר","סטנדאפ פקטורי","קומדי בר","שלוותה","המרכז הגאה","גשר","סוזן דלל","מנדל","מצפור","לבונטין","גינת דובנוב","שבלול","הוואנה","רפי","פאי","חוף גורדון","ניקו ניתאי","בר קאלאס","קאלאס","גינת סמדר","אריק איינשטיין","שניצר","מרכז המוסיקה","טברסקי","המכון הצרפתי"]],
+];
+const ORGS=[["קאמרי","התיאטרון הקאמרי"],["הבימה","תיאטרון הבימה"],["בית ליסין","תיאטרון בית ליסין"],["גשר","תיאטרון גשר"],["תמונע","תיאטרון תמונע"],["צוותא","צוותא"],["סוזן דלל","מרכז סוזן דלל"],["אריסון","מרכז סוזן דלל"],["דוהל","מרכז סוזן דלל"],["רקנאטי","מוזיאון תל אביב לאמנות"],["קאופמן","מוזיאון תל אביב לאמנות"],["מוזיאון תל אביב","מוזיאון תל אביב לאמנות"],["מוזיאון תל-אביב","מוזיאון תל אביב לאמנות"],["מוזיאון ארץ ישראל","מוזיאון ארץ ישראל (מוז״א)"],["סינמטק","סינמטק תל אביב"],["אופרה","האופרה הישראלית"],["הבארבי","מועדון הבארבי"],["שבלול","מועדון שבלול"],["אוזן בר","אוזן בר"],["סטנדאפ פקטורי","סטנדאפ פקטורי"],["קומדי בר","קומדי בר"],["קאמל","קאמל קומדי קלאב"],["היכל התרבות","היכל התרבות"],["בית ציוני אמריקה","בית ציוני אמריקה"],["בית החייל","בית החייל"],["גוטמן","מוזיאון נחום גוטמן"],["אלמינא","תיאטרון אלמינא"],["דוואי","תיאטרון דוואי"],["מרכז ענב","מרכז ענב לתרבות"],["בית ביאליק","בית ביאליק (עיריית ת״א)"],["בית ליבלינג","בית ליבלינג (עיריית ת״א)"],["מנדל","מרכז תרבות מנדל"],["היכל מנורה","היכל מנורה מבטחים"],["לבונטין","לבונטין 7"],["המרץ 2","המרץ 2"],["גריי","גריי תל אביב"],["שלוותה","שלוותה"],["מון צ'יילד","מון צ'יילד"],["האומן 17","האומן 17"],["בית רדיקל","בית רדיקל"],["רדיקל","בית רדיקל"],["קולנוע יפו","קולנוע יפו"]];
+const MUNI=/מרכז קהילתי|מרכז הקהילה|גינת|קאנטרי|נמל יפו|כיכר|טיילת|ספריית|מרכז גונדה|לאורך|בניין העירייה|תיפת חלב|מרכז בועז|מועדון|מרכז רייך|פלורנטין 24/;
+function orgOf(ti,ve,u){
+  const gov=/tel-aviv\.gov\.il/.test(u);
+  if(/אורנה פורת/.test(ti))return {o:"תיאטרון אורנה פורת",muni:gov};
+  for(const [k,o] of ORGS) if(ve.includes(k))return {o,muni:gov};
+  if(gov||MUNI.test(ve))return {o:"עיריית תל אביב־יפו",muni:true,city:true};
+  return {o:ve,muni:false};
+}
+let DESC={};DESC_SEED.forEach(i=>DESC[i.u]=i);
+function area(v){for(const [a,ks] of AREAS) if(ks.some(k=>v.includes(k)))return a;return ""}
+
+const FILM=/הקרנ|סרט|קולנוע|סינמה|סינמטק|טרום בכורה|cinema|film|screening|דוקאביב/i;
+function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem){const U=url(u);if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
+let ev=E.map(r=>mk(...r));
+
+const DAYS=["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const CATS={f:"🎬 קולנוע",m:"🎵 מוזיקה",t:"🎭 תיאטרון",s:"🎤 סטנדאפ",c:"🖼️ תרבות וסיורים",p:"🪩 מסיבות"};
+const TIMES={morning:["☀️ בוקר",0,12],noon:["🌤️ צהריים",12,17],eve:["🌆 ערב",17,21],night:["🌙 לילה",21,30]};
+const PRICES={all:"הכל",free:"חינם בלבד",p50:"עד 50 ₪",p100:"עד 100 ₪"};
+
+const DEF={day:"all",from:"",to:"",srcf:[],time:[],price:"p100",cat:[],area:[],dg:false,fav:false};
+let S={mode:"couple",q:"",...JSON.parse(JSON.stringify(DEF))};
+let FAV=new Set(), OPEN=null;
+try{const s=JSON.parse(localStorage.getItem("radar-ours")||"{}");if(s.mode)S.mode=s.mode;if(s.price)S.price=s.price;if(s.fav)FAV=new Set(s.fav)}catch(e){}
+function save(){try{localStorage.setItem("radar-ours",JSON.stringify({mode:S.mode,price:S.price,fav:[...FAV]}))}catch(e){}}
+
+const $=id=>document.getElementById(id);
+const now=new Date();
+const today=now.toLocaleDateString("sv-SE",{timeZone:"Asia/Jerusalem"});
+const nowT=now.toLocaleTimeString("en-GB",{timeZone:"Asia/Jerusalem",hour:"2-digit",minute:"2-digit",hour12:false});
+const dO=d=>{const [y,m,dd]=d.split("-").map(Number);return new Date(y,m-1,dd)};
+const plus=(d,n)=>{const o=dO(d);o.setDate(o.getDate()+n);return o.toLocaleDateString("sv-SE")};
+const fmt=d=>{const o=dO(d);return o.getDate()+"."+(o.getMonth()+1)};
+const hr=t=>{let h=+t.split(":")[0];if(h<5)h+=24;return h};
+const mins=t=>hr(t)*60+ +t.slice(3);
+const dayName=d=>d===today?"היום":d===plus(today,1)?"מחר":DAYS[dO(d).getDay()];
+const isWE=d=>{const w=dO(d).getDay();return w===5||w===6};
+const tod=t=>{const h=hr(t);return h<12?"בוקר":h<17?"צהריים":h<21?"ערב":"לילה"};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function base(){return ev.filter(e=>(S.mode==="kids")===(e.c==="k")).filter(e=>e.d>today||(e.d===today&&mins(e.t)>=mins(nowT)-30))}
+function match(e,skipDay){
+  if(S.q){const q=S.q.trim();if(q&&!(e.ti+" "+e.ve).includes(q))return false}
+  if(S.fav&&!FAV.has(e.id))return false;
+  if(!skipDay){
+    if(S.day==="weekend"&&!isWE(e.d))return false;
+    if(S.day==="today"&&e.d!==today)return false;
+    if(S.day==="tonight"&&!(e.d===today&&hr(e.t)>=17))return false;
+    if(S.day==="tomorrow"&&e.d!==plus(today,1))return false;
+    if(S.day==="range"&&(e.d<S.from||e.d>S.to))return false;
+  }
+  if(S.time.length){const h=hr(e.t);if(!S.time.some(k=>h>=TIMES[k][1]&&h<TIMES[k][2]))return false}
+  if(S.price==="free"&&e.pr!==0&&e.mem!=="free")return false;
+  if(S.price==="p50"&&!e.rad&&!(e.pr!==null&&e.pr<=50))return false;
+  if(S.price==="p100"&&!e.rad&&!(e.pr===null||e.pr<=100))return false;
+  if(S.dg&&!e.dg)return false;
+  if(S.mode==="couple"&&S.cat.length&&!S.cat.includes(e.c))return false;
+  if(S.area.length&&!S.area.includes(e.area))return false;
+  if(S.srcf.length&&!S.srcf.some(k=>k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
+  return true;
+}
+const sortK=e=>e.d+String(mins(e.t)).padStart(4,"0");
+function activeCount(){return S.srcf.length+S.time.length+S.cat.length+S.area.length+(S.price!==DEF.price?1:0)+(S.dg?1:0)+(S.fav?1:0)}
+
+function chip(el,label,on,fn,cls,count){const b=document.createElement("button");b.className="chip"+(on?" on":"")+(cls?" "+cls:"");b.innerHTML=esc(label)+(count!=null?`<small>${count}</small>`:"");b.onclick=fn;el.appendChild(b)}
+
+const DS=["א׳","ב׳","ג׳","ד׳","ה׳","ו׳","ש׳"];
+const MONTHS=["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"];
+function rangeLabel(){return S.from===S.to?dayName(S.from)+" "+fmt(S.from):fmt(S.from)+"–"+fmt(S.to)}
+function setRange(a,b){S.day="range";S.from=a<b?a:b;S.to=a<b?b:a}
+function renderDays(){
+  const B=base().filter(e=>match(e,true));
+  const counts={};B.forEach(e=>counts[e.d]=(counts[e.d]||0)+1);
+  const st=$("strip");const keep=st.scrollLeft;st.innerHTML="";
+  const add=(cls,html,fn)=>{const b=document.createElement("button");b.className=cls;b.innerHTML=html;b.onclick=fn;st.appendChild(b);return b};
+  add("dd tool"+(S.day==="range"&&S.from!==S.to?" on":""),`<div class="ic">📅</div><div class="w">${S.day==="range"&&S.from!==S.to?fmt(S.from)+"–"+fmt(S.to):"לוח"}</div>`,()=>openCal(true));
+  add("dd tool"+(S.day==="all"?" on":""),`<div class="ic">✦</div><div class="w">הכל</div>`,()=>{S.day="all";render(true)});
+  const last=Object.keys(counts).sort().pop()||today;
+  let prevM=null;
+  for(let d=today;d<=last;d=plus(d,1)){
+    const o=dO(d),w=o.getDay(),c=counts[d]||0;
+    if(prevM!==null&&o.getMonth()!==prevM){const m=document.createElement("div");m.className="mlabel";m.textContent=MONTHS[o.getMonth()];st.appendChild(m)}
+    prevM=o.getMonth();
+    const on=S.day==="range"&&(d===S.from||d===S.to), inR=S.day==="range"&&d>S.from&&d<S.to;
+    const b=add("dd"+(w>=5?" we":"")+(c?" has":" noev")+(d===today?" today":"")+(on?" on":"")+(inR?" in":""),
+      `<div class="w">${d===today?"היום":DS[w]}</div><div class="n">${o.getDate()}</div>`,
+      ()=>{if(S.day==="range"&&S.from===d&&S.to===d){S.day="all"}else setRange(d,d);render(true)});
+    b.title=c+" אירועים";
+  }
+  st.scrollLeft=keep;
+  const sel=st.querySelector(".dd.on:not(.tool)");if(sel){const r=sel.getBoundingClientRect(),R=st.getBoundingClientRect();if(r.left<R.left||r.right>R.right)sel.scrollIntoView({inline:"center",block:"nearest"})}
+}
+let CM=null, PICK=null, TMP=null;
+function openCal(on){
+  $("cal").classList.toggle("on",on);$("ov").classList.toggle("on",on);
+  if(on){TMP=S.day==="range"?{from:S.from,to:S.to}:null;PICK=null;const o=dO(TMP?TMP.from:today);CM=new Date(o.getFullYear(),o.getMonth(),1);renderCal()}
+}
+function renderCal(){
+  const counts={};base().filter(e=>match(e,true)).forEach(e=>counts[e.d]=(counts[e.d]||0)+1);
+  $("c-title").textContent=MONTHS[CM.getMonth()]+" "+CM.getFullYear();
+  const g=$("c-grid");g.innerHTML=DS.map(x=>`<div class="h">${x}</div>`).join("");
+  for(let i=0;i<CM.getDay();i++)g.insertAdjacentHTML("beforeend","<div></div>");
+  const dim=new Date(CM.getFullYear(),CM.getMonth()+1,0).getDate();
+  for(let i=1;i<=dim;i++){
+    const d=new Date(CM.getFullYear(),CM.getMonth(),i).toLocaleDateString("sv-SE");
+    const c=counts[d]||0, past=d<today;
+    const on=TMP&&(d===TMP.from||d===TMP.to), inR=TMP&&d>TMP.from&&d<TMP.to;
+    const b=document.createElement("button");
+    b.className="cell"+(past?" past":c?" ev1":" none")+(d===today?" today":"")+(inR?" in":"")+(on?" on":"");
+    b.innerHTML=`${i}<small>${c&&!past?c:""}</small>`;
+    if(!past)b.onclick=()=>{if(!PICK){PICK=d;TMP={from:d,to:d}}else{TMP={from:PICK<d?PICK:d,to:PICK<d?d:PICK};PICK=null}renderCal()};
+    g.appendChild(b);
+  }
+  const tot=TMP?Object.entries(counts).filter(([d])=>d>=TMP.from&&d<=TMP.to).reduce((a,[,v])=>a+v,0):0;
+  $("cal-hint").textContent=!TMP?"לחצו על תאריך אחד, או על תאריך התחלה ואז תאריך סיום":PICK?`מ־${fmt(TMP.from)} · עכשיו בחרו תאריך סיום (או הציגו יום אחד)`:`${TMP.from===TMP.to?fmt(TMP.from):fmt(TMP.from)+"–"+fmt(TMP.to)} · ${tot} אירועים`;
+  $("c-go").textContent=TMP?`הצגת ${tot} אירועים`:"הצגה";
+  const mm=today.slice(0,7), cur=CM.toLocaleDateString("sv-SE").slice(0,7);
+  $("c-prev").disabled=cur<=mm;$("c-prev").style.opacity=cur<=mm?.3:1;
+}
+function renderSheet(){
+  const ft=$("f-time");ft.innerHTML="";Object.entries(TIMES).forEach(([k,[l]])=>chip(ft,l,S.time.includes(k),()=>{tog(S.time,k);renderSheet()}));
+  const fp=$("f-price");fp.innerHTML="";Object.entries(PRICES).forEach(([k,l])=>chip(fp,l,S.price===k,()=>{S.price=k;renderSheet()}));
+  $("fs-cat").style.display=S.mode==="kids"?"none":"";
+  const fc=$("f-cat");fc.innerHTML="";Object.entries(CATS).forEach(([k,l])=>chip(fc,l,S.cat.includes(k),()=>{tog(S.cat,k);renderSheet()}));
+  const fa=$("f-area");fa.innerHTML="";AREAS.map(a=>a[0]).forEach(a=>chip(fa,a,S.area.includes(a),()=>{tog(S.area,a);renderSheet()}));
+  const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["st","🔑 Secret Tel Aviv"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
+  const fm=$("f-more");fm.innerHTML="";
+  chip(fm,"💜 רק הטבות דיגיתל",S.dg,()=>{S.dg=!S.dg;renderSheet()},"dg");
+  chip(fm,"💡 בית רדיקל",S.srcf.includes("rad"),()=>{tog(S.srcf,"rad");renderSheet()});
+  chip(fm,"❤️ רק שמורים",S.fav,()=>{S.fav=!S.fav;renderSheet()});
+  const n=base().filter(e=>match(e)).length;$("f-go").textContent=n?`הצגת ${n} אירועים`:"אין תוצאות";
+}
+function tog(a,k){const i=a.indexOf(k);i>=0?a.splice(i,1):a.push(k)}
+
+/* ===== השבוע שלנו – בחירות אישיות ===== */
+// סופ"ש 6–7.11 נינה אצל דן; לסירוגין כל שבועיים. חגים: להוסיף תאריכים לכאן.
+const DAN_WKND_REF="2026-11-07", HOLIDAYS=[];
+function danWeekend(d){const x=dO(d),r=dO(DAN_WKND_REF);const sat=new Date(x);sat.setDate(x.getDate()+(6-x.getDay()));return Math.round((sat-r)/864e5/7)%2===0}
+function isWknd(d){const g=dO(d).getDay();return g===5||g===6}
+function ageOk5(a){if(!a)return true;if(/טף|פעוט|תינוק/.test(a))return false;const m=a.match(/מגיל\s*(\d+)/);if(m)return +m[1]<=5;const r=a.match(/(\d+)\s*[–\-]\s*(\d+)/);if(r)return +r[1]<=5&&5<=+r[2];return true}
+const SPECIAL=/הקרנ|סרט|קולנוע|פסטיבל|רחוב|פארק|גינ|חוף|נמל|כיכר|שוק|יריד|קהיל|הרקד|ג'אם|jam|במה פתוחה|אקוסטי|אינטימי|סלון|open air|rooftop|גג|רייב|מסיבת רחוב|לילה לבן|מיצג|פרפורמנס/i;
+function pickWhy(e,slot){const w=[slot];if(e.mem==="free")w.push("חינם במנוי רדיקל");else if(e.pr===0)w.push("חינם");if(e.city)w.push("של העירייה");else if(SPECIAL.test(e.ti+" "+e.ve))w.push("משהו מיוחד");return w.join(" · ")}
+function couplePicks(){
+  const lim=dO(today);lim.setDate(lim.getDate()+8);const L=lim.toLocaleDateString("sv-SE");
+  const out=[];
+  ev.forEach(e=>{
+    if(e.c==="k"||e.d>L)return;
+    if(e.d<today||(e.d===today&&mins(e.t)<mins(nowT)))return;
+    if(!(e.pr===0||e.mem==="free"))return;
+    const g=dO(e.d).getDay(),h=hr(e.t);let slot="";
+    if(HOLIDAYS.includes(e.d))slot="חג";
+    else if(isWknd(e.d)&&!danWeekend(e.d))slot="סופ״ש בלי נינה";
+    else if((g===1||g===4)&&h>=18)slot=(g===1?"שני":"חמישי")+" בערב";
+    if(!slot)return;
+    if(e.c==="p"&&(g===4||g===5||g===6)&&!e.city&&!SPECIAL.test(e.ti+" "+e.ve))return; // בלי ליינים בסופ"ש
+    let sc=0;if(e.city)sc+=3;if(e.mem==="free")sc+=3;if(SPECIAL.test(e.ti+" "+e.ve))sc+=2;if("fmtcs".includes(e.c))sc+=1;if(e.c==="f")sc+=1;if(e.c==="p")sc+=1;
+    out.push({e,sc,why:pickWhy(e,slot)});
+  });
+  return spread(out,6);
+}
+function ninaPicks(){
+  const lim=dO(today);lim.setDate(lim.getDate()+8);const L=lim.toLocaleDateString("sv-SE");
+  const out=[];
+  ev.forEach(e=>{
+    if(e.c!=="k"||e.d>L)return;
+    if(e.d<today||(e.d===today&&mins(e.t)<mins(nowT)))return;
+    if(!ageOk5(e.age))return;
+    const g=dO(e.d).getDay(),h=hr(e.t);let slot="";
+    if(isWknd(e.d)){if(danWeekend(e.d)&&h<18)slot=(g===5?"שישי":"שבת")+(h<13?" בבוקר":" אחה״צ");else if(h<13)slot="בוקר סופ״ש";}
+    else if(g===3&&h>=15&&h<20)slot="רביעי";
+    else if(h>=15&&h<19)slot="אחה״צ באמצע השבוע";
+    if(!slot)return;
+    let sc=0;if(e.pr===0)sc+=3;else if(e.pr!==null&&e.pr<=30)sc+=1;if(e.city)sc+=1;if(e.age&&/5/.test(e.age))sc+=1;if(isWknd(e.d)&&danWeekend(e.d))sc+=1;
+    const w=[slot];if(e.pr===0)w.push("חינם");else if(e.pr!==null)w.push(e.pr+" ₪");if(e.age)w.push(/^מגיל|^עד/.test(e.age)?e.age:"גיל "+e.age);if(e.city)w.push("של העירייה");
+    out.push({e,sc,why:w.join(" · ")});
+  });
+  return spread(out,6);
+}
+function spread(arr,n){ // הכי טובים, לא יותר מ־2 ביום, לפי סדר תאריכים
+  arr.sort((a,b)=>b.sc-a.sc||sortK(a.e).localeCompare(sortK(b.e)));
+  const per={},res=[];for(const p of arr){if((per[p.e.d]||0)>=2)continue;per[p.e.d]=(per[p.e.d]||0)+1;res.push(p);if(res.length>=n)break}
+  return res.sort((a,b)=>sortK(a.e).localeCompare(sortK(b.e)));
+}
+function renderDeals(){
+  const w=$("deals-wrap");
+  if(S.q||S.fav){w.innerHTML="";return}
+  const kids=S.mode==="kids", P=kids?ninaPicks():couplePicks();
+  const title=kids?"⭐ השבוע של דן ונינה":"⭐ השבוע שלנו";
+  const sub=kids?"מותאם לגיל 5 · אחה״צ, רביעי וסופ״ש של דן":"חינם או במנוי רדיקל · שני/חמישי בערב וסופ״ש בלי נינה";
+  if(!P.length){w.innerHTML=`<div class="sec-title">${title}</div><div class="pk-sub">השבוע לא מצאנו משהו שמתאים בדיוק – שווה להציץ ברשימה 👇</div>`;return}
+  w.innerHTML=`<div class="sec-title">${title}</div><div class="pk-sub">${sub}</div><div class="deals">${P.map(({e,why})=>`
+    <button class="deal pick" data-go="${esc(e.id)}"><span class="why">${esc(why)}</span>
+    <div class="dt">${dayName(e.d)} ${fmt(e.d)} · ${e.t}</div><div class="tt">${esc(e.ti)}</div>
+    <div class="vv">${esc(e.ve)}${e.area?" · "+e.area:""}</div></button>`).join("")}</div>`;
+  w.querySelectorAll(".deal").forEach(b=>b.onclick=()=>{OPEN=b.dataset.go;let el=null;
+    const go=()=>{renderList();el=document.querySelector(`[data-id="${CSS.escape(OPEN)}"]`)};go();
+    if(!el){S={mode:S.mode,q:"",...JSON.parse(JSON.stringify(DEF))};S.price="all";render(true);el=document.querySelector(`[data-id="${CSS.escape(OPEN)}"]`)}
+    if(el)el.scrollIntoView({behavior:"smooth",block:"center"})});
+}
+
+function priceHTML(e){
+  if(e.mem==="free")return `<div class="pr free">חינם<s>במנוי${e.pr?" · "+e.pr+" ₪":""}</s></div>`;
+  if(e.pr===0)return '<div class="pr free">חינם</div>';
+  if(e.pr===null)return '<div class="pr"><span class="q">מחיר ?</span></div>';
+  return `<div class="pr">${e.or?`<s>${e.or} ₪</s>`:""}${e.pr} ₪</div>`;
+}
+function renderList(){
+  const L=base().filter(e=>match(e)).sort((a,b)=>sortK(a).localeCompare(sortK(b)));
+  const n=activeCount();
+  $("count").textContent=L.length+" אירועים";
+  $("reset").hidden=!(n||S.q||S.day!=="all");
+  $("fcount").hidden=!n;$("fcount").textContent=n;
+  const box=$("list");
+  if(!L.length){box.innerHTML='<div class="empty">לא מצאנו אירועים שמתאימים לסינון 🙈<br><button class="chip" id="e-reset">ניקוי סינון</button></div>';$("e-reset").onclick=resetAll;return}
+  const byDay={};L.forEach(e=>(byDay[e.d]=byDay[e.d]||[]).push(e));
+  box.innerHTML=Object.entries(byDay).map(([d,arr])=>`
+    <div class="day"><b>${dayName(d)}</b><span>${DAYS[dO(d).getDay()]===dayName(d)?"":DAYS[dO(d).getDay()]+" · "}${fmt(d)}</span><i>${arr.length} אירועים</i></div>
+    ${arr.map(card).join("")}`).join("");
+  box.querySelectorAll(".ev-h").forEach(h=>h.onclick=()=>{const id=h.parentElement.dataset.id;OPEN=OPEN===id?null:id;renderList()});
+  box.querySelectorAll("[data-fav]").forEach(b=>b.onclick=ev=>{ev.stopPropagation();const id=b.dataset.fav;FAV.has(id)?(FAV.delete(id),toast("הוסר מהשמורים")):(FAV.add(id),toast("נשמר ❤️"));save();renderList()});
+  box.querySelectorAll("[data-share]").forEach(b=>b.onclick=()=>share(ev.find(x=>x.id===b.dataset.share)));
+}
+const TYPES=[[/מיני אופרה|אופרה לילדים/,"מיני־אופרה לילדים"],[/שעת סיפור|שעות סיפור/,"שעת סיפור לילדים"],[/מדובב/,"סרט ילדים מדובב"],[/סטודיו לילדים|סופרסטודיו|סדנ/,"סדנה"],[/פעילות משפחתית|לכל המשפחה|פעילות לכל/,"פעילות לכל המשפחה"],[/סיור/,"סיור מודרך"],[/הקרנה|טרום בכורה|סינמה/,"הקרנת סרט"],[/הרצאה|ד"ר|פרופ'|כנס|מפגש ספרותי|השקת הספר|השקת ספר/,"הרצאה / מפגש"],[/פתיחת תערוכה|תערוכה/,"תערוכה"],[/במה פתוחה|open mic/i,"ערב במה פתוחה"],[/מרתון/,"מרתון סטנדאפ"],[/שוק|יריד/,"שוק / יריד"],[/מחווה|tribute/i,"מופע מחווה"],[/מחזמר/,"מחזמר"],[/להקת המחול|מחול|dance/i,"מופע מחול"],[/קונצרט|תזמורת|הסדרה הקאמרית|כיתת אמן/,"קונצרט"],[/מדיטציי|יוגה/,"סדנת גוף ונפש"],[/הרקדה/,"הרקדה פתוחה"]];
+const CTYPE={f:"הקרנת סרט",t:"הצגה",m:"הופעה",s:"מופע סטנדאפ",c:"אירוע תרבות",p:"מסיבה",k:"הצגה לילדים"};
+function typeOf(e){for(const [r,n] of TYPES) if(r.test(e.ti))return n;return CTYPE[e.c]||"אירוע"}
+function bIn(v){return "ב"+(/^ה[^ ]/.test(v)&&!/^הבימה/.test(v)?v.slice(1):v)}
+function inOrg(e){return e.city?"של עיריית תל אביב־יפו":e.org===e.ve?bIn(e.ve):"של "+e.org}
+function autoShort(e){
+  let s=typeOf(e)+(e.city?" של עיריית ת״א":e.org!==e.ve&&!e.ve.includes(e.org.split(" (")[0])?" · "+e.org:"");
+  if(e.pr===0)s+=" · כניסה חופשית";
+  if(e.age)s+=" · גילאי "+e.age;
+  return s;
+}
+function autoLong(e){
+  const D=DESC[e.u]||{};
+  const p=[];
+  p.push(`${typeOf(e)} ${inOrg(e)}${e.org!==e.ve?", "+bIn(e.ve):""}${e.area?" ("+e.area+")":""}.`);
+  p.push(`מתקיים ביום ${DAYS[dO(e.d).getDay()]}, ${fmt(e.d)}, בשעה ${e.t}${D.dur?", ומשכו "+D.dur:""}.`);
+  if(e.pr===0)p.push("הכניסה חופשית"+(/הרשמה/.test(e.ti)?", בהרשמה מראש.":" – אבל כדאי לבדוק אם צריך להירשם מראש."));
+  else if(e.pr!==null&&e.or)p.push(`כרטיס עולה ${e.pr} ₪ במקום ${e.or} ₪ – חיסכון של ${(e.or-e.pr)*2} ₪ לזוג.`);
+  else if(e.pr!==null)p.push(`כרטיס עולה בערך ${e.pr} ₪.`);
+  else p.push("המחיר לא פורסם ברשימה – רואים אותו בעמוד האירוע.");
+  if(e.dg)p.push("המחיר הוא בהטבת דיגיתל לתושבי תל אביב, ומזמינים עם כרטיס התושב.");
+  if(e.age)p.push(`מתאים לגילאי ${e.age}.`);
+  return p.join(" ");
+}
+function card(e){
+  const o=OPEN===e.id, f=FAV.has(e.id);
+  const maps="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(e.ve+" תל אביב");
+  const end=String((hr(e.t)+2)%24).padStart(2,"0")+e.t.slice(2);
+  return `<div class="ev${o?" open":""}" data-id="${esc(e.id)}">
+   <div class="ev-h">
+     <div class="time">${e.t}<small>${tod(e.t)}</small></div>
+     <div><div class="title">${esc(e.ti)}</div>
+       <div class="sub">${esc(e.ve)}${e.area?" · "+e.area:""}</div>
+       <div class="ds${DESC[e.u]&&DESC[e.u].ds?"":" auto"}">${esc(DESC[e.u]&&DESC[e.u].ds?DESC[e.u].ds:autoShort(e))}</div>
+       <div class="badges">${e.c!=="k"?`<span class="b">${CATS[e.c]}</span>`:""}${e.age?`<span class="b age">גיל ${esc(e.age)}</span>`:""}${e.dg?'<span class="b dg">💜 דיגיתל</span>':""}${e.city?'<span class="b">🏛️ עירייה</span>':""}${e.rad?`<span class="b dg">💡 ${e.mem==="free"?"חינם במנוי רדיקל":e.mem==="disc"?"הנחה במנוי רדיקל":"מנוי רדיקל"}</span>`:""}${e.save>=25?`<span class="b hot">‎-${e.save}%</span>`:""}</div>
+     </div>
+     <div>${priceHTML(e)}${f?'<div class="fav-mini">❤️</div>':""}</div>
+   </div>
+   <div class="ev-d">
+     <div class="about">
+       <div class="about-h">על האירוע</div>
+       ${DESC[e.u]&&(DESC[e.u].lg||DESC[e.u].ds)?`<p class="about-p">${esc(DESC[e.u].lg||DESC[e.u].ds)}</p>`:""}
+       <p class="about-p muted">${esc(autoLong(e))}</p>
+       <a class="act primary big" href="${esc(e.u)}" target="_blank" rel="noopener">לעמוד האירוע המלא ↗<small>${e.pr===0?"פרטים והרשמה":"תיאור מלא, ליהוק וכרטיסים"} · ${esc(e.src)}</small></a>
+     </div>
+     <dl class="info">
+       <dt>📅 מתי</dt><dd>יום ${DAYS[dO(e.d).getDay()]}, ${fmt(e.d)} · ${e.t}</dd>
+       <dt>📍 איפה</dt><dd>${esc(e.ve)} · <a href="${maps}" target="_blank" rel="noopener">ניווט</a></dd>
+       <dt>💰 מחיר</dt><dd>${e.pr===0?"כניסה חופשית":e.pr===null?"לא צוין – לבדוק אצל המארגן":e.pr+" ₪"+(e.or?` (במקום ${e.or} ₪, חיסכון ${e.or-e.pr} ₪ לכרטיס – ${(e.or-e.pr)*2} ₪ לזוג)`:"")}</dd>
+       ${e.rad?`<dt>💡 מנוי</dt><dd>${e.mem==="free"?"האירוע הזה בכניסה חופשית לחברי רדיקל – עם המנוי שלך לא משלמים (ופעמיים בחודש אפשר להביא חבר.ה חינם)":e.mem==="disc"?"לחברי רדיקל יש הנחה באירוע הזה, אבל הוא לא כלול במנוי":"בעמוד האירוע רואים אם הוא חינם לחברי רדיקל או רק בהנחה"}</dd>`:""}
+       ${e.dg?'<dt>💜 דיגיתל</dt><dd>המחיר בהטבת תושבים – צריך להזמין עם כרטיס דיגיתל</dd>':""}
+       ${e.age?`<dt>🧒 גיל</dt><dd>${esc(e.age)}</dd>`:""}
+       ${DESC[e.u]&&DESC[e.u].dur?`<dt>⏱️ משך</dt><dd>${esc(DESC[e.u].dur)}</dd>`:""}
+       <dt>🏛️ של מי</dt><dd>${esc(e.org)}${e.muni&&!e.city?" · בהטבת עיריית ת״א":""}</dd>
+       <dt>🎟️ מכירה דרך</dt><dd>${esc(e.src)}</dd>
+     </dl>
+     <div class="acts">
+       <a class="act" href="${esc(gcal(e))}" target="_blank" rel="noopener">📅 ליומן</a>
+       <button class="act" data-share="${esc(e.id)}">📤 שליחה לבן הזוג</button>
+       <button class="act${f?" on":""}" data-fav="${esc(e.id)}" style="grid-column:1/-1">${f?"❤️ שמור – להסרה":"🤍 שמירה לרשימה שלנו"}</button>
+     </div>
+     <div class="note">כדאי לוודא שעה ומחיר באתר המארגן לפני ההזמנה.</div>
+   </div></div>`;
+}
+function gcal(e){
+  const [y,m,d]=e.d.split("-");const [h,mi]=e.t.split(":");
+  const st=new Date(+y,+m-1,+d,+h,+mi);if(+h<5)st.setDate(st.getDate()+0);const en=new Date(st.getTime()+2*3600e3);
+  const f=x=>x.getFullYear()+String(x.getMonth()+1).padStart(2,"0")+String(x.getDate()).padStart(2,"0")+"T"+String(x.getHours()).padStart(2,"0")+String(x.getMinutes()).padStart(2,"0")+"00";
+  return "https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(e.ti)+"&dates="+f(st)+"/"+f(en)+"&ctz=Asia/Jerusalem&location="+encodeURIComponent(e.ve+", תל אביב")+"&details="+encodeURIComponent(e.u);
+}
+async function share(e){
+  const txt=`${e.ti}\n${dayName(e.d)} ${fmt(e.d)} · ${e.t}\n${e.ve}\n${e.pr===0?"חינם":e.pr===null?"":e.pr+" ₪"}\n${e.u}`;
+  try{await navigator.clipboard.writeText(txt);toast("הועתק – אפשר להדביק בוואטסאפ")}catch(err){toast("לא הצלחתי להעתיק")}
+}
+let tt;function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),1800)}
+
+function resetAll(){const m=S.mode;S={mode:m,q:"",...JSON.parse(JSON.stringify(DEF))};$("q").value="";save();render(true)}
+function render(top){
+  document.body.classList.toggle("kids",S.mode==="kids");
+  $("h-who").textContent=S.mode==="kids"?"של נינה":"שלנו";document.title=S.mode==="kids"?"הרדאר של נינה":"הרדאר שלנו";
+  $("m-couple").classList.toggle("on",S.mode==="couple");$("m-kids").classList.toggle("on",S.mode==="kids");
+  renderDays();renderDeals();renderList();
+  document.documentElement.style.setProperty("--barh",$("bar").offsetHeight+"px");
+  if(top&&window.scrollY>$("bar").offsetTop)window.scrollTo({top:$("bar").offsetTop-1});
+}
+function openSheet(on){$("sheet").classList.toggle("on",on);$("ov").classList.toggle("on",on);if(on)renderSheet()}
+
+$("m-couple").onclick=()=>{S.mode="couple";S.cat=[];OPEN=null;save();render(true)};
+$("m-kids").onclick=()=>{S.mode="kids";S.cat=[];OPEN=null;save();render(true)};
+$("q").oninput=e=>{S.q=e.target.value;renderDays();renderDeals();renderList()};
+$("open-f").onclick=()=>openSheet(true);
+$("ov").onclick=()=>{openSheet(false);openCal(false);save();render()};
+$("f-go").onclick=()=>{openSheet(false);save();render(true)};
+$("f-clear").onclick=()=>{Object.assign(S,JSON.parse(JSON.stringify(DEF)),{day:S.day,from:S.from,to:S.to});renderSheet()};
+$("reset").onclick=resetAll;
+$("c-prev").onclick=()=>{CM.setMonth(CM.getMonth()-1);renderCal()};
+$("c-next").onclick=()=>{CM.setMonth(CM.getMonth()+1);renderCal()};
+$("c-clear").onclick=()=>{S.day="all";openCal(false);render(true)};
+$("c-go").onclick=()=>{if(TMP)setRange(TMP.from,TMP.to);openCal(false);render(true)};
+const bar=$("bar");addEventListener("scroll",()=>bar.classList.toggle("stuck",bar.getBoundingClientRect().top<=0),{passive:true});
+addEventListener("resize",()=>document.documentElement.style.setProperty("--barh",bar.offsetHeight+"px"));
+render();
+
+// טעינת אירועים מעודכנים מקובץ הנתונים של האתר (מתעדכן כל בוקר)
+(async()=>{
+  try{
+    const r=await fetch("data/events.json?v="+Date.now(),{cache:"no-store"});
+    if(!r.ok)return;
+    const j=await r.json();
+    if(!j||!j.days)return;
+    const fresh=[],dates=new Set();
+    Object.entries(j.days).forEach(([d,arr])=>{dates.add(d);(arr||[]).forEach(o=>{
+      if(!o||!o.t||!o.ti||o.c==="b"||o.c==="o")return;
+      if(o.ds||o.lg||o.dur)DESC[o.u]=Object.assign({},DESC[o.u]||{},{u:o.u,ds:o.ds||(DESC[o.u]||{}).ds,lg:o.lg||(DESC[o.u]||{}).lg,dur:o.dur||(DESC[o.u]||{}).dur});
+      fresh.push(mk(d,o.t,o.ti,o.ve||"",o.pr??null,o.or??null,o.c||"c",o.dg,o.u||"https://radartlv.co.il/",o.age,o.mem));
+    })});
+    if(fresh.length){ev=ev.filter(e=>!dates.has(e.d)).concat(fresh);render()}
+    if(j.updated)$("upd").innerHTML="עודכן "+esc(j.updated)+"<br>מקור: radartlv ועוד";
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
