@@ -35,16 +35,19 @@ const SOURCES = process.env.SOURCES_JSON ? JSON.parse(process.env.SOURCES_JSON) 
 const PRICE_LOOKUPS = 70; // כמה עמודי אירוע לבדוק בכל ריצה כדי להשלים מחירים חסרים
 
 async function loadAll(page) {
-  // גלילה עד הסוף + לחיצה על כפתורי "עוד" כדי שכל הרשימה תיטען
+  // גלילה עד הסוף + לחיצה על כפתורי "עוד" (רק כפתורים שלא מעבירים לעמוד אחר)
+  const start = page.url();
   let lastH = 0;
   for (let i = 0; i < 25; i++) {
     const clicked = await page.evaluate(() => {
-      const b = [...document.querySelectorAll("button, a")].find((x) => /^(הצג|טען|ראו|עוד)\s*(עוד|אירועים|את כל)?/.test((x.innerText || "").trim()) && (x.innerText || "").trim().length < 25 && x.offsetParent);
+      const b = [...document.querySelectorAll("button, a:not([href]), a[href='#'], a[href^='javascript']")].find((x) => /^(הצג|טען|ראו|עוד)\s*(עוד|אירועים|את כל)?/.test((x.innerText || "").trim()) && (x.innerText || "").trim().length < 25 && x.offsetParent);
       if (b) { b.click(); return true; } return false;
     }).catch(() => false);
-    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-    await page.waitForTimeout(clicked ? 1200 : 700);
-    const h = await page.evaluate(() => document.body.scrollHeight);
+    await page.waitForTimeout(clicked ? 1200 : 400);
+    if (page.url() !== start) { await page.goto(start, { waitUntil: "domcontentloaded" }).catch(() => {}); break; }
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)).catch(() => {});
+    await page.waitForTimeout(700);
+    const h = await page.evaluate(() => document.body.scrollHeight).catch(() => lastH);
     if (h === lastH && !clicked) break;
     lastH = h;
   }

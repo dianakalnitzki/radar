@@ -108,43 +108,53 @@ function extractGeneric(opts) {
   return out;
 }
 
-// בית רדיקל: הרשימות שלהם בנויות כ"כותרת / יום | DD.MM | HH:MM / מחיר: ₪X חינם|הנחה לחברי רדיקל"
-function extractRadical() {
+// בית רדיקל: כל אירוע הוא קישור /product/ עם "כותרת / יום X, DD/MM / HH:MM".
+// מחיר ומנוי לא מופיעים ברשימה, אז נכנסים לעמוד של כל אירוע ("חינם לחברי רדיקל" / "מחיר לחברים").
+async function extractRadical() {
   const pad = (n) => String(n).padStart(2, "0");
   const now = new Date();
-  const out = [];
-  const links = [...document.querySelectorAll('a[href*="/events/"]')];
-  const seen = new Set();
-  for (const a of links) {
-    let el = a;
-    for (let i = 0; i < 6 && el.parentElement; i++) {
-      if (/\d{1,2}\.\d{1,2}/.test(el.innerText) && /מחיר|₪|חינם/.test(el.innerText)) break;
-      el = el.parentElement;
-    }
-    const text = el.innerText || "";
-    const dm = text.match(/(\d{1,2})\.(\d{1,2})(?:\.(\d{2,4}))?/);
-    const tm = text.match(/([01]?\d|2[0-3]):([0-5]\d)/);
+  const seen = new Set(), cards = [];
+  for (const a of document.querySelectorAll('a[href*="/product/"]')) {
+    const txt = (a.innerText || "").trim();
+    const dm = txt.match(/(\d{1,2})\/(\d{1,2})/);
     if (!dm) continue;
-    let y = dm[3] ? +dm[3] : now.getFullYear();
-    if (y < 100) y += 2000;
-    if (!dm[3] && new Date(y, +dm[2] - 1, +dm[1]) < new Date(now.getFullYear(), now.getMonth() - 2, 1)) y++;
+    const tm = txt.match(/([01]?\d|2[0-3]):([0-5]\d)/);
+    let y = now.getFullYear();
+    if (new Date(y, +dm[2] - 1, +dm[1]) < new Date(y, now.getMonth() - 2, 1)) y++;
     const d = `${y}-${pad(+dm[2])}-${pad(+dm[1])}`;
-    const lines = text.split("\n").map((s) => s.trim()).filter(Boolean);
-    const title = (a.innerText || "").trim() || lines.find((l) => !/\d{1,2}\.\d{1,2}|מחיר|₪/.test(l)) || "";
-    if (!title || /חלל עבודה/.test(title)) continue;
-    const key = a.href + d + (tm ? tm[0] : "");
-    if (seen.has(key)) continue; seen.add(key);
-    const prm = text.match(/₪\s?(\d{1,4})|(\d{1,4})\s?₪/);
-    const mem = /חינם לחברי/.test(text) ? "free" : /הנחה לחברי|לחברי רדיקל/.test(text) ? "disc" : null;
-    let c = /movies|קולנוע|סרט|הקרנ/.test(location.href + " " + text) ? "f" : "c";
-    if (/מרתף|הופעה|לייב|להקה/.test(text)) c = "m";
-    if (/מסיבה|רייב/.test(text)) c = "p";
-    if (/סטנד/.test(text)) c = "s";
-    out.push({ d, t: tm ? `${pad(+tm[1])}:${tm[2]}` : "19:00", ti: title.replace(/\s+/g, " "), ve: /מרתף/.test(text) ? "בית רדיקל – המרתף" : "בית רדיקל", pr: prm ? +(prm[1] || prm[2]) : null, or: null, c, dg: false, u: a.href, age: null, mem, ds: null });
+    const title = txt.split("\n").map((s) => s.trim()).find((l) => l && !/\d{1,2}\/\d{1,2}|^\d{1,2}:\d{2}$/.test(l)) || "";
+    if (!title || seen.has(a.href + d)) continue;
+    seen.add(a.href + d);
+    cards.push({ d, t: tm ? `${pad(+tm[1])}:${tm[2]}` : "20:00", ti: title, u: a.href });
+  }
+  const out = [];
+  for (const c of cards.slice(0, 60)) {
+    let mem = null, pr = null, ds = null, t = c.t;
+    try {
+      const html = await fetch(c.u).then((r) => r.text());
+      const doc = new DOMParser().parseFromString(html, "text/html");
+      doc.querySelectorAll("style,script,header,footer").forEach((x) => x.remove());
+      const s = (doc.querySelector("main") || doc.body).textContent.replace(/\s+/g, " ");
+      const k = s.indexOf(c.ti);
+      const zone = k >= 0 ? s.slice(k, k + 1200) : s;
+      if (/חינם לחברי/.test(zone)) mem = "free"; else if (/מחיר לחברים|הנחה לחברי/.test(zone)) mem = "disc";
+      const tk = zone.match(/התחלה:\s*(\d{1,2}:\d{2})\s*₪\s?(\d{1,4})/);
+      if (tk) { t = tk[1].padStart(5, "0"); pr = +tk[2]; }
+      else { const m = zone.match(/₪\s?([1-9]\d{0,3})/); if (m) pr = +m[1]; else if (/חינם|כניסה חופשית/.test(zone)) pr = 0; }
+      const og = doc.querySelector('meta[property="og:description"],meta[name="description"]');
+      ds = og ? og.content.slice(0, 220) : null;
+    } catch (e) {}
+    const blob = c.ti + " " + (ds || "") + " " + location.href;
+    let cat = "c";
+    if (/movies|קולנוע|סרט|הקרנ/.test(blob)) cat = "f";
+    else if (/hamartef|מרתף|הופעה|לייב|להקה|ג'אז|קונצרט/.test(blob)) cat = "m";
+    if (/מסיבה|רייב|קרנבל|DJ/i.test(blob)) cat = "p";
+    if (/סטנד/.test(blob)) cat = "s";
+    if (/בוק קלאב|מועדון קריאה|סאונה/.test(c.ti)) cat = "c";
+    out.push({ d: c.d, t, ti: c.ti, ve: /hamartef/.test(location.href) ? "בית רדיקל – המרתף" : "בית רדיקל", pr, or: null, c: cat, dg: false, u: c.u, age: null, mem, ds });
   }
   return out;
 }
-
 
 // אתר עיריית תל אביב: הדף Events.aspx טוען את כל האירועים (כ־1,100) לתוך אובייקט Angular בשם eab.items.
 // קוראים משם ישירות – כולל מחיר (TlvPaymentCost), האם בתשלום, הטבת דיגיתל וקהל יעד.
