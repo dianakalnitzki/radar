@@ -251,7 +251,7 @@ function extractCoing() {
     if (pr !== null && pr > 200) continue;
     const blob = title + " " + text;
     let c = "c";
-    if (/הצגה|שעת סיפור|לילדים|ילדים|בספרייה|גיל הרך|הורים וילדים|משפחה/.test(blob) && !/18\+|למבוגרים/.test(blob)) c = "k";
+    if (/הצגה|שעת סיפור|לילדים|ילדים|בספרייה|גיל הרך|הורים וילדים|הורה וילד|להורה|משפחה|ג.ימבורי/.test(blob) && !/18\+|למבוגרים/.test(blob)) c = "k";
     else if (/סדנ|workshop/i.test(title)) c = "w";
     else if (/הקרנ|סרט|קולנוע/.test(title)) c = "f";
     else if (/הופעה|קונצרט|ג'אם|מוזיק/.test(title)) c = "m";

@@ -7,7 +7,8 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
-const { extractGeneric, extractRadical, extractTLV, findPrice } = require("./extract.cjs");
+const { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice } = require("./extract.cjs");
+const COING = JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "coing-groups.json"), "utf8"));
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data", "events.json");
 const DAYS_AHEAD = 75;
@@ -24,6 +25,7 @@ const monthPages = [0, 1, 2].map((i) => `https://radartlv.co.il/${MONTHS_EN[(cur
 // לאירועים מהמקומות שאין לנו להם שליפה ישירה (בארבי, צוותא, הקאמרי וכו').
 const SOURCES = process.env.SOURCES_JSON ? JSON.parse(process.env.SOURCES_JSON) : [
   { url: "https://www.tel-aviv.gov.il/Visitors/Events/Pages/Events.aspx", kind: "tlv", direct: true },
+  ...COING.map((url) => ({ url, kind: "coing", direct: true })),   // המרכזים הקהילתיים של העירייה
   { url: "https://radical.org.il/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/hamartef/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/movies/", kind: "radical", direct: true },
@@ -81,8 +83,9 @@ async function main() {
       await page.goto(s.url, { waitUntil: "domcontentloaded", timeout: 45000 });
       await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
       let evs = [];
-      if (s.kind !== "tlv") await loadAll(page);
-      if (s.kind === "tlv") evs = await page.evaluate(`(${extractTLV.toString()})()`);
+      if (s.kind !== "tlv" && s.kind !== "coing") await loadAll(page);
+      if (s.kind === "coing") { await page.waitForTimeout(2500); evs = (await page.evaluate(`(${extractCoing.toString()})()`)).events; }
+      else if (s.kind === "tlv") evs = await page.evaluate(`(${extractTLV.toString()})()`);
       else if (s.kind === "radical") evs = await page.evaluate(`(${extractRadical.toString()})()`);
       else evs = await page.evaluate(`(${extractGeneric.toString()})(${JSON.stringify(s.opts || {})})`);
       report[s.url] = evs.length;

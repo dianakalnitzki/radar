@@ -228,7 +228,7 @@ function url(u){const [p,...r]=u.split(":");const v=r.join(":");
   if(p==="rd")return "https://radartlv.co.il/event/"+v+"/";
   return u;}
 function src(u){try{const h=new URL(u).hostname.replace(/^www\./,"");
-  return {"tel-aviv.gov.il":"עיריית ת״א / דיגיתל","secrettelaviv.app":"Secret Tel Aviv","radartlv.co.il":"הרדאר","tickets.mevalim.co.il":"מבלים","tickets.comedybar.net":"קומדי בר","muzi.co.il":"מוזי","cinema.co.il":"סינמטק"}[h]||h}catch(e){return ""}}
+  return {"tel-aviv.gov.il":"עיריית ת״א / דיגיתל","secrettelaviv.app":"Secret Tel Aviv","radartlv.co.il":"הרדאר","tickets.mevalim.co.il":"מבלים","tickets.comedybar.net":"קומדי בר","muzi.co.il":"מוזי","cinema.co.il":"סינמטק","coing.co":"מרכז קהילתי (Coing)"}[h]||h}catch(e){return ""}}
 
 // אזורים לפי מקום
 const AREAS=[
@@ -242,6 +242,7 @@ const ORGS=[["קאמרי","התיאטרון הקאמרי"],["הבימה","תיא
 const MUNI=/מרכז קהילתי|מרכז הקהילה|גינת|קאנטרי|נמל יפו|כיכר|טיילת|ספריית|מרכז גונדה|לאורך|בניין העירייה|תיפת חלב|מרכז בועז|מועדון|מרכז רייך|פלורנטין 24/;
 function orgOf(ti,ve,u){
   const gov=/tel-aviv\.gov\.il/.test(u);
+  if(/coing\.co\/(TLV|tlv|Kehila|Magid)/.test(u))return {o:(ve.split(" · ")[0]||"מרכז קהילתי")+" (עיריית ת״א)",muni:true,city:true};
   if(/אורנה פורת/.test(ti))return {o:"תיאטרון אורנה פורת",muni:gov};
   for(const [k,o] of ORGS) if(ve.includes(k))return {o,muni:gov};
   if(gov||MUNI.test(ve))return {o:"עיריית תל אביב־יפו",muni:true,city:true};
@@ -251,11 +252,11 @@ let DESC={};DESC_SEED.forEach(i=>DESC[i.u]=i);
 function area(v){for(const [a,ks] of AREAS) if(ks.some(k=>v.includes(k)))return a;return ""}
 
 const FILM=/הקרנ|סרט|קולנוע|סינמה|סינמטק|טרום בכורה|cinema|film|screening|דוקאביב/i;
-function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem){const U=url(u);if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
+function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem){const U=url(u);if((c==="c"||c==="t"||c==="m")&&/סדנ|workshop/i.test(ti))c="w";if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
 let ev=E.map(r=>mk(...r));
 
 const DAYS=["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
-const CATS={f:"🎬 קולנוע",m:"🎵 מוזיקה",t:"🎭 תיאטרון",s:"🎤 סטנדאפ",c:"🖼️ תרבות וסיורים",p:"🪩 מסיבות"};
+const CATS={f:"🎬 קולנוע",w:"🎨 סדנאות",m:"🎵 מוזיקה",t:"🎭 תיאטרון",s:"🎤 סטנדאפ",c:"🖼️ תרבות וסיורים",p:"🪩 מסיבות"};
 const TIMES={morning:["☀️ בוקר",0,12],noon:["🌤️ צהריים",12,17],eve:["🌆 ערב",17,21],night:["🌙 לילה",21,30]};
 const PRICES={all:"הכל",free:"חינם בלבד",p50:"עד 50 ₪",p100:"עד 100 ₪"};
 
@@ -297,7 +298,7 @@ function match(e,skipDay){
   if(S.dg&&!e.dg)return false;
   if(S.mode==="couple"&&S.cat.length&&!S.cat.includes(e.c))return false;
   if(S.area.length&&!S.area.includes(e.area))return false;
-  if(S.srcf.length&&!S.srcf.some(k=>k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
+  if(S.srcf.length&&!S.srcf.some(k=>k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="cc"?/coing\.co/.test(e.u):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
   return true;
 }
 const sortK=e=>e.d+String(mins(e.t)).padStart(4,"0");
@@ -364,7 +365,7 @@ function renderSheet(){
   $("fs-cat").style.display=S.mode==="kids"?"none":"";
   const fc=$("f-cat");fc.innerHTML="";Object.entries(CATS).forEach(([k,l])=>chip(fc,l,S.cat.includes(k),()=>{tog(S.cat,k);renderSheet()}));
   const fa=$("f-area");fa.innerHTML="";AREAS.map(a=>a[0]).forEach(a=>chip(fa,a,S.area.includes(a),()=>{tog(S.area,a);renderSheet()}));
-  const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["st","🔑 Secret Tel Aviv"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
+  const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["cc","🏘️ מרכזים קהילתיים"],["st","🔑 Secret Tel Aviv"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
   const fm=$("f-more");fm.innerHTML="";
   chip(fm,"💜 רק הטבות דיגיתל",S.dg,()=>{S.dg=!S.dg;renderSheet()},"dg");
   chip(fm,"💡 בית רדיקל",S.srcf.includes("rad"),()=>{tog(S.srcf,"rad");renderSheet()});
@@ -394,7 +395,7 @@ function couplePicks(){
     else if((g===1||g===4)&&h>=18)slot=(g===1?"שני":"חמישי")+" בערב";
     if(!slot)return;
     if(e.c==="p"&&(g===4||g===5||g===6)&&!e.city&&!SPECIAL.test(e.ti+" "+e.ve))return; // בלי ליינים בסופ"ש
-    let sc=0;if(e.city)sc+=3;if(e.mem==="free")sc+=3;if(SPECIAL.test(e.ti+" "+e.ve))sc+=2;if("fmtcs".includes(e.c))sc+=1;if(e.c==="f")sc+=1;if(e.c==="p")sc+=1;
+    let sc=0;if(e.city)sc+=3;if(e.mem==="free")sc+=3;if(SPECIAL.test(e.ti+" "+e.ve))sc+=2;if("fmtcsw".includes(e.c))sc+=1;if(e.c==="f")sc+=1;if(e.c==="p")sc+=1;
     out.push({e,sc,why:pickWhy(e,slot)});
   });
   return spread(out,6);
@@ -462,7 +463,7 @@ function renderList(){
   box.querySelectorAll("[data-share]").forEach(b=>b.onclick=()=>share(ev.find(x=>x.id===b.dataset.share)));
 }
 const TYPES=[[/מיני אופרה|אופרה לילדים/,"מיני־אופרה לילדים"],[/שעת סיפור|שעות סיפור/,"שעת סיפור לילדים"],[/מדובב/,"סרט ילדים מדובב"],[/סטודיו לילדים|סופרסטודיו|סדנ/,"סדנה"],[/פעילות משפחתית|לכל המשפחה|פעילות לכל/,"פעילות לכל המשפחה"],[/סיור/,"סיור מודרך"],[/הקרנה|טרום בכורה|סינמה/,"הקרנת סרט"],[/הרצאה|ד"ר|פרופ'|כנס|מפגש ספרותי|השקת הספר|השקת ספר/,"הרצאה / מפגש"],[/פתיחת תערוכה|תערוכה/,"תערוכה"],[/במה פתוחה|open mic/i,"ערב במה פתוחה"],[/מרתון/,"מרתון סטנדאפ"],[/שוק|יריד/,"שוק / יריד"],[/מחווה|tribute/i,"מופע מחווה"],[/מחזמר/,"מחזמר"],[/להקת המחול|מחול|dance/i,"מופע מחול"],[/קונצרט|תזמורת|הסדרה הקאמרית|כיתת אמן/,"קונצרט"],[/מדיטציי|יוגה/,"סדנת גוף ונפש"],[/הרקדה/,"הרקדה פתוחה"]];
-const CTYPE={f:"הקרנת סרט",t:"הצגה",m:"הופעה",s:"מופע סטנדאפ",c:"אירוע תרבות",p:"מסיבה",k:"הצגה לילדים"};
+const CTYPE={f:"הקרנת סרט",w:"סדנה",t:"הצגה",m:"הופעה",s:"מופע סטנדאפ",c:"אירוע תרבות",p:"מסיבה",k:"הצגה לילדים"};
 function typeOf(e){for(const [r,n] of TYPES) if(r.test(e.ti))return n;return CTYPE[e.c]||"אירוע"}
 function bIn(v){return "ב"+(/^ה[^ ]/.test(v)&&!/^הבימה/.test(v)?v.slice(1):v)}
 function inOrg(e){return e.city?"של עיריית תל אביב־יפו":e.org===e.ve?bIn(e.ve):"של "+e.org}
