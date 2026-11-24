@@ -1,7 +1,10 @@
 // בדיקת מבנה של אתר חדש: שומר טקסט, קישורים ותבנית כרטיסים ל-debug/
 import { chromium } from "playwright";
 import fs from "node:fs";
-const urls = (process.env.PROBE_URLS || "https://coing.co/").split(",");
+import { createRequire } from "node:module";
+const { extractCoing } = createRequire(import.meta.url)("./extract.cjs");
+const EXTRACT = (process.env.PROBE_URLS || "").startsWith("coing:");
+const urls = (process.env.PROBE_URLS || "https://coing.co/").replace(/^coing:/, "").split(",");
 const b = await chromium.launch();
 const ctx = await b.newContext({ locale: "he-IL", timezoneId: "Asia/Jerusalem" });
 let out = "";
@@ -14,6 +17,7 @@ for (const u of urls) {
     p.on("response", (r) => { const ct = r.headers()["content-type"] || ""; if (/json/.test(ct)) reqs.push(r.url()); });
     await p.waitForTimeout(8000);
     for (let i = 0; i < 6; i++) { await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await p.waitForTimeout(800); }
+    if (EXTRACT) { const r = await p.evaluate(`(${extractCoing.toString()})()`); out += `\n\n===== ${u}\n${r.events.length} events\n` + r.events.map((e) => JSON.stringify(e)).join("\n"); await p.close(); continue; }
     const info = await p.evaluate(() => {
       const links = [...document.querySelectorAll("a[href]")].map((a) => a.href);
       const pat = {}; links.forEach((h) => { const k = h.replace(/[?#].*/, "").split("/").slice(0, 4).join("/"); pat[k] = (pat[k] || 0) + 1; });

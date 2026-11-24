@@ -187,17 +187,19 @@ async function extractTLV() {
     if (/מפגש מקוון|זום/.test(ad + " " + ti)) continue;
     const A = v(x, "TlvAudienceId").split(";");
     const kids = A.some((k) => ["1", "15", "16", "17"].includes(k));
-    const adult = A.some((k) => ["3", "5"].includes(k));
+    const adult = A.some((k) => ["3", "5", "18"].includes(k));
     if (!kids && !adult) continue;                             // רק טף/ותיקים/נוער
     if (/ספורט ובריאות/.test(ints) && !/מחול|אירועי חוצות|קהילות|תאטרון|מופעים/.test(ints)) continue;
     if (/^(חינוך והורות[^;]*;?)+$/.test(ints) && !kids) continue;
-    if (/קורס|השתלמות|קבוצת |חוג |סדרת מפגשים|\d מפגשים|פילאטיס|יוגה|אימון|שיעור |לרקדנים|בלט קלאסי|פלור בר/.test(ti + " " + sum.slice(0, 80))) continue;
+    const isWork = /סדנ|workshop/i.test(ti);
+    if (/קורס|השתלמות|פילאטיס|יוגה|אימון|לרקדנים|בלט קלאסי|פלור בר|קבוצת ריצה/.test(ti)) continue;
+    if (!isWork && /קבוצת |חוג |סדרת מפגשים|שיעור /.test(ti + " " + sum.slice(0, 80))) continue;
     // מחיר
     const nums = (cost.match(/\d+/g) || []).map(Number).filter((n) => n < 2000);
     let pr = null;
     if (/^לא בתשלום/.test(req) || /ללא (תשלום|עלות)|כניסה חופשית|הכניסה חופשית|^חינם/.test(cost)) pr = 0;
     else if (nums.length) pr = Math.min(...nums);
-    if (pr !== null && pr > 150) continue;
+    if (pr !== null && pr > 200) continue;
     // קטגוריה
     let c = "c";
     if (kids && !adult) c = "k";
@@ -206,6 +208,7 @@ async function extractTLV() {
     else if (/מוזיקה/.test(ints) || /הופעה|קונצרט|מופע/.test(ti)) c = "m";
     else if (/מסיבה|הרקדה/.test(ti)) c = "p";
     else if (/סטנדאפ|סטנד אפ/.test(ti)) c = "s";
+    if (isWork && c !== "k") c = "w";
     if (kids && adult && /שעת סיפור|לילדים|לכל המשפחה|הצגת ילדים/.test(ti + " " + sum)) c = "k";
     const ageM = (sum + " " + ti).match(/(?:לגילי|גילאי|לגיל|גיל)\s*(\d{1,2})\s*[-–]\s*(\d{1,2})/);
     const age = ageM ? (Math.min(+ageM[1], +ageM[2]) + "–" + Math.max(+ageM[1], +ageM[2])) : ((sum.match(/מגיל \d{1,2}/) || [])[0] || null);
@@ -219,6 +222,48 @@ async function extractTLV() {
   return out;
 }
 
+// Coing: עמודי האירועים של המרכזים הקהילתיים של העירייה (www.coing.co/TLV_...).
+// כל אירוע הוא קישור /שם-הקהילה/מספר; בכרטיס: מארגן, כותרת, תגיות, כתובת, DD/MM/YYYY, שעות, מחיר.
+function extractCoing() {
+  const pad = (n) => String(n).padStart(2, "0");
+  const out = [], seen = new Set();
+  const groups = [...new Set([...document.querySelectorAll("a[href]")].map((a) => a.href.replace(/[?#].*/, ""))
+    .filter((h) => /^https:\/\/www\.coing\.co\/[A-Za-z][\w-]+$/.test(h)))];
+  const orgName = (document.title || "").trim();
+  for (const a of document.querySelectorAll('a[href*="coing.co/"]')) {
+    if (!/coing\.co\/[\w-]+\/\d+/.test(a.href)) continue;
+    let el = a;
+    for (let i = 0; i < 5 && el.parentElement && !/\d{2}\/\d{2}\/\d{4}/.test(el.innerText); i++) el = el.parentElement;
+    const text = el.innerText || "";
+    const dm = text.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if (!dm || /אירוע שחלף|בוטל/.test(text)) continue;
+    const d = `${dm[3]}-${dm[2]}-${dm[1]}`;
+    const tm = text.match(/(\d{1,2}):(\d{2})/);
+    const lines = text.split("\n").map((s) => s.trim()).filter(Boolean);
+    const isMeta = (l) => /\d{2}\/\d{2}\/\d{4}|^\d{1,2}:\d{2}|ש"ח|ש״ח|₪|בתשלום|^רחוב |^\d+$/.test(l);
+    const cand = lines.filter((l) => !isMeta(l));
+    const title = (cand.length > 1 ? cand[1] : cand[0]) || "";
+    if (!title || seen.has(a.href)) continue;
+    seen.add(a.href);
+    const addr = lines.find((l) => /^רחוב |^דרך |^שדרות |, \d+$/.test(l)) || "";
+    const prm = text.match(/(\d{1,4})\s*ש["״]ח/);
+    let pr = prm ? +prm[1] : /בתשלום/.test(text) ? null : 0;
+    if (pr !== null && pr > 200) continue;
+    const blob = title + " " + text;
+    let c = "c";
+    if (/הצגה|שעת סיפור|לילדים|ילדים|בספרייה|גיל הרך|הורים וילדים|משפחה/.test(blob) && !/18\+|למבוגרים/.test(blob)) c = "k";
+    else if (/סדנ|workshop/i.test(title)) c = "w";
+    else if (/הקרנ|סרט|קולנוע/.test(title)) c = "f";
+    else if (/הופעה|קונצרט|ג'אם|מוזיק/.test(title)) c = "m";
+    else if (/מסיבה|הרקדה/.test(title)) c = "p";
+    else if (/הצגה|תיאטרון/.test(title)) c = "t";
+    if (/פילאטיס|יוגה|אימון|ספורט לנשים|לימודי שחייה|חל"ד|לידה|תינוק/.test(title)) continue;
+    out.push({ d, t: tm ? `${pad(+tm[1])}:${tm[2]}` : "17:00", ti: title, ve: (cand[0] && cand[0] !== title ? cand[0] : orgName) + (addr ? " · " + addr.replace(/^רחוב /, "") : ""),
+      pr, or: null, c, dg: false, u: a.href, age: null, mem: null, ds: null, org: orgName });
+  }
+  return { events: out, groups };
+}
+
 // השלמת מחיר מעמוד האירוע עצמו (לאירועים שהגיעו בלי מחיר)
 function findPrice() {
   const txt = (document.body.innerText || "").replace(/\s+/g, " ");
@@ -227,4 +272,4 @@ function findPrice() {
   return nums.length ? Math.min(...nums) : null;
 }
 
-module.exports = { extractGeneric, extractRadical, extractTLV, findPrice };
+module.exports = { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };
