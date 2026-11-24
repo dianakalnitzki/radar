@@ -1,47 +1,810 @@
 
 
-===== https://coing.co/
+===== https://www.coing.co/TLV_NeveOfer
 {
- "url": "https://coing.co/",
- "title": "Coing",
- "pat": [],
- "xhr": [],
- "sample": [],
+ "url": "https://www.coing.co/TLV_NeveOfer",
+ "title": "מרכז קהילתי נווה עופר",
+ "pat": [
+  [
+   "https://www.coing.co/TLV_NeveOfer",
+   71
+  ],
+  [
+   "javascript:;",
+   7
+  ],
+  [
+   "javascript:fl.social.doShare('mobile');",
+   1
+  ],
+  [
+   "https://www.coing.co/TLV_NeveOfer_toddlers",
+   1
+  ],
+  [
+   "https://www.coing.co/TLV_NeveOfer_classes",
+   1
+  ],
+  [
+   "https://www.coing.co/TLV_NeveOfer_WhatsApp",
+   1
+  ],
+  [
+   "https://www.coing.co/TLV_NeveOfer_MusicRoom",
+   1
+  ],
+  [
+   "javascript:window.auth('', {openerId: '",
+   1
+  ],
+  [
+   "javascript:openWindow('window-help');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-contact');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-service');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-privacy');",
+   1
+  ],
+  [
+   "https://bewith.io/",
+   1
+  ]
+ ],
+ "xhr": [
+  "https://analytics.google.com/g/collect?v=2&tid=G-MKVV98206X&gtm=45je6bh1h1v898927501za20oxf1&_p=1795512872375&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAIAGA&cid=815788939.1795512874&frm=0&pscdl=noapi&rcb=19&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115938466~115938468~120213116~120385422~120469145~120469153~121246026~121246034&sid=1795512873&sct=1&seg=0&dl=https%3A%2F%2Fwww.coing.co%2FTLV_NeveOfer&dt=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A7%D7%94%D7%99%D7%9C%D7%AA%D7%99%20%D7%A0%D7%95%D7%95%D7%94%20%D7%A2%D7%95%D7%A4%D7%A8&en=page_view&_fv=1&_ss=1&_c=1&tfd=2942",
+  "https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBtpRAAJcwlcjt_wFHL7G8PMMOpwmfN37s&v=weekly&callback=google.maps.__ib__",
+  "https://api.userway.org/api/v1/tunings/UxUyJ1K9u2",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/util.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/places_impl.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/places.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/controls.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/common.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/main.js",
+  "https://cdn.userway.org/widgetapp/2026-11-13-10-20-20/locales/he.json",
+  "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+  "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.coing.co%2FTLV_NeveOfer/DESKTOP/WIDGET_OFF/status"
+ ],
+ "sample": [
+  "javascript:fl.social.doShare('mobile');\n    | ",
+  "javascript:;\n    | ",
+  "javascript:;\n    | ",
+  "https://www.coing.co/TLV_NeveOfer/271344\n   ספרייה אירוע שחלף | פעילות בספרייה - סדנת סטופמושן",
+  "https://www.coing.co/TLV_NeveOfer/266376\n   חוגי סטודיו | שיעור נסיון בחוגי הסטודיו",
+  "https://www.coing.co/TLV_NeveOfer/263021\n   Mama Move | Mama Move ספורט לנשים אחרי לידה",
+  "https://www.coing.co/TLV_NeveOfer/252273\n   מחירון מוצרים | מוצרים ממותגים של מרכז הספורט למכירה",
+  "https://www.coing.co/TLV_NeveOfer/201940\n   פילאטיס מכשירים | 174 | פילאטיס מכשירים בנווה עופר",
+  "https://www.coing.co/TLV_NeveOfer/51566\n   מי אנחנו - מרכז הזדמנות ת\"א יפו",
+  "javascript:;\n    | ",
+  "javascript:;\n    | ",
+  "https://www.coing.co/TLV_NeveOfer/293619\n   מרכז קהילתי נווה עופר | רביעי בספרייה: סדנת חנוכיות עץ | רביעי בספרייה"
+ ],
  "json": []
 }
 --- TEXT
+מרכז קהילתי נווה עופר
 
+ברוכים הבאים למרכז קהילתי נווה עופר!
+
+בעמוד זה מרוכז כל המידע הרלוונטי על אירועים ופעילויות במרכז הקהילתי ובמרחב הציבורי.
+
+אנחנו נותנים מענה החל מגיל לידה ועד גיל הפרישה.
+
+
+דרכי תקשורת:
+
+שז"ר 12, תל אביב- יפו
+
+טלפון: 073-3844360 | וואטסאפ: 053-2504421
+
+פייסבוק: https://www.facebook.com/neve.ofer
+
+אינסטגרם: https://www.instagram.com/neveofer_center/
+
+קראו עוד
+חיפוש חופשי
+גיל הרך (0-6)
+הורים+ילדים
+ילדים (6-12)
+מבוגרים/ות
+נוער
+תושבים/ות וותיקים/ות
+איפוס מסננים
+הגיל הרך
+חוגי ילדים
+קבוצות וואטסאפ
+חדר חזרות
+מה קורה במרכז
+ספרייה אירוע שחלף
+פעילות בספרייה - סדנת סטופמושן
+חוגי סטודיו
+שיעור נסיון בחוגי הסטודיו
+Mama Move
+Mama Move ספורט לנשים אחרי לידה
+מחירון מוצרים
+מוצרים ממותגים של מרכז הספורט למכירה
+פילאטיס מכשירים
+ 174
+פילאטיס מכשירים בנווה עופר
+יש לך רעיון ליוזמה?
+מי אנחנו - מרכז הזדמנות ת"א יפו
+כל האירועים
+מרכז קהילתי נווה עופר
+רביעי בספרייה: סדנת חנוכיות עץ
+רביעי בספרייה
+רחוב שז"ר זלמן, 12
+02/12/2026
+16:30 - 17:30
+אירוע בתשלום
+מרכז קהילתי נווה עופר
+מצעד אור שכונתי ומופע אורות
+רחוב שז"ר זלמן, 12
+08/12/2026
+16:30 - 18:30
+מרכז קהילתי נווה עופר
+פעילות בספרייה: הצגה "מוכר הכובעים"
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+07/05/2026
+16:30 - 17:30
+הבית לגיל הרך בנווה עופר
+אימון כוח לאימהות בחל"ד - מאי
+אירוע שחלף
+רחוב שז"ר זלמן, 37
+14/05/2026
+10:00 - 11:00
+100 ש"ח
+מרכז קהילתי נווה עופר
+פעילות בספרייה: סדנת פלסטלינה
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+14/05/2026
+16:30 - 17:30
+אירוע בתשלום
+מרכז קהילתי נווה עופר
+מנ"ש מזמין את שכבת ו'
+אירוע שחלף
+רחוב שז"ר זלמן, 12
+14/05/2026
+17:00 - 18:00
+מרכז קהילתי נווה עופר
+רכישת גביע גלידה
+שובר לגלידה אירוע שחלף
+רחוב גרוסמן מאיר, 32
+17/05/2026
+16:30 - 20:00
+10 ש"ח
+מרכז קהילתי נווה עופר
+חוגגים שבועות בשדרת גרוסמן
+הפנינג שבועות אירוע שחלף
+ 225
+רחוב גרוסמן מאיר, 32
+17/05/2026
+16:30 - 18:30
+מרכז קהילתי נווה עופר
+פעילות בספרייה: סדנת מיניאטורות
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+18/05/2026
+16:30 - 17:30
+מרכז קהילתי נווה עופר
+פעילות בספרייה: סדנת בובנאות- הוקדם!
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+25/05/2026
+16:30 - 17:30
+אירוע בתשלום
+לורנה רובינוב
+איך עושים שיווק נכון לעסק שלך?
+אירוע שחלף
+רחוב שז"ר זלמן, 12
+31/05/2026
+18:00 - 20:00
+לורנה רובינוב אפרתי
+לימודי שחייה ביוני- רשימת התעניינות
+חודש יוני אירוע שחלף
+רחוב שז"ר זלמן, 35
+02/06/2026
+16:30 - 19:30
+מרכז קהילתי נווה עופר
+מעגל נשים חד הוריות -סדנת פימו מקצועית
+מעגל נשים חד הוריות אירוע שחלף
+רחוב שז"ר זלמן, 12
+03/06/2026
+20:00 - 22:00
+מרכז קהילתי נווה עופר
+מסיבת בריכה לכיתות ו' - מנ"ש נוה עופר
+מנ"ש נווה עופר אירוע שחלף
+רחוב שז"ר זלמן, 35
+08/06/2026
+17:30 - 18:30
+10 ש"ח בלבד
+מרכז קהילתי נווה עופר
+הסתגלות למים לילדים עם צרכים מיוחדים
+אירוע שחלף
+רחוב שז"ר זלמן, 35
+09/06/2026
+16:30 - 18:30
+350 ש"ח
+מרכז קהילתי נווה עופר
+הצגה באודיטוריום: הבאגיס בארץ עץ
+הצגה באודיטוריום אירוע שחלף
+רחוב שז"ר זלמן, 12
+11/06/2026
+17:00 - 18:00
+50 ש"ח
+מרכז קהילתי נווה עופר
+מנ"ש נווה עופר יוצא לסיור אוכל בכרמל
+מנ"ש נווה עופר אירוע שחלף
+רחוב שז"ר זלמן, 12
+15/06/2026
+15:30 - 18:00
+אירוע בתשלום
+מרכז קהילתי נווה עופר
+ליווי התפתחותי - 10-6 - יוני
+אירוע שחלף
+רחוב שז"ר זלמן, 12
+16/06/2026
+11:00 - 12:00
+100 ש"ח
+מרכז קהילתי נווה עופר
+פעילות בספרייה: מפגש עם נדב נוה
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+16/06/2026
+16:30 - 17:30
+מרכז קהילתי נווה עופר
+פעילות בספרייה: מדברא-קדברא תאריך חדש
+אירוע שחלף
+ 60
+רחוב שז"ר זלמן, 12
+18/06/2026
+16:30 - 17:30
+אירוע בתשלום
+מרכז קהילתי נווה עופר
+סדנת רישום מודל ערום- למבוגרים- בוטל!
+18+ אירוע שחלף
+רחוב שז"ר זלמן, 12
+18/06/2026
+19:00 - 22:00
+120 ש"ח
+מרכז קהילתי נווה עופר
+פעילות בספרייה: פעילות יצירה- ציפורים
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+22/06/2026
+16:30 - 17:30
+מרכז קהילתי נווה עופר
+הצגה באודיטוריום: חיפזון וזהירון
+הצגה באודיטוריום אירוע שחלף
+רחוב שז"ר זלמן, 12
+25/06/2026
+17:00 - 18:00
+50 ש"ח
+מרכז קהילתי נווה עופר
+הקרמת שמינית גמר המונדיאל
+הקרנת שמינית גמר המונדיאל אירוע שחלף
+רחוב שז"ר זלמן, 12
+01/07/2026
+19:00 - 21:00
+מרכז קהילתי נווה עופר
+מופע ד"ר מולקולה לכל המשפחה
+מופע של ד"ר מולקולה אירוע שחלף
+ 131
+רחוב שז"ר זלמן, 12
+05/07/2026
+17:00 - 18:30
+מרכז קהילתי נווה עופר
+בוקר להורים בחל"ד בקפה פרדס
+בוקר להורים אירוע שחלף
+ 67
+דרך בן צבי, 76
+06/07/2026
+10:00 - 12:30
+מרכז קהילתי נווה עופר
+שעת סיפור - הסוד הנעלם של האגם
+אירוע שחלף
+רחוב שז"ר זלמן, 12
+06/07/2026
+16:30 - 17:30
+מרכז קהילתי נווה עופר
+פעילות בספרייה: סדנת סטופ - מוושן
+פעילות בספרייה אירוע שחלף
+רחוב שז"ר זלמן, 12
+20/07/2026
+16:30 - 17:30
+לורנה רובינוב אפרתי
+לימודי שחייה באוגוסט- רשימת התעניינות
+חודש אוגוסט אירוע שחלף
+רחוב שז"ר זלמן, 35
+04/08/2026
+17:00 - 20:00
+מרכז קהילתי נווה עופר
+מהבית למסגרת בפעם הראשונה
+אירוע שחלף
+רחוב שז"ר זלמן, 37
+06/08/2026
+11:00 - 12:30
+10 ש"ח
+מרכז קהילתי נווה עופר
+סדנת יצירה - תכשיט חיובי
+אירוע שחלף
+רחוב שז"ר זלמן, 12
+17/08/2026
+16:30 - 17:30
+אירוע בתשלום
+לורנה רובינוב
+מסיבת בריכה והופעה של אודי צברי
+אירוע שחלף
+ 106
+רחוב שז"ר זלמן, 37
+20/08/2026
+20:00 - 23:00
+30 ש"ח
+מרכז קהילתי נווה עופר
+שני בספרייה: ערב משחקי פיפ"א
+האירוע בוטל אירוע שחלף
+רחוב שז"ר זלמן, 12
+07/09/2026
+16:30 - 17:30
+10 ש"ח
+מרכז קהילתי נווה עופר
+ליווי התפתחותי - 10-6 חוד'- ספטמבר
+אירוע שחלף
+רחוב שז"ר זלמן, 37
+10/09/2026
+11:00 
 --- HTML
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>Coing</title>
-    <meta name="robots" content="none">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html dir="rtl" lang="he" data-uw-w-loader="" data-colors="ffffff,f2f2f2,026aa2,4a4a4a" style="--coing-font-family: Heebo, Poppins, sans-serif; --coing-currency-sign: &quot;₪&quot;; --coing-color-main: #026aa2; --coing-color-rgb-main: 2,106,162; --coing-color-bg: #ffffff; --coing-color-rgb-bg: 255,255,255; --coing-vh: 7.2px;"><head>
+            <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-MKVV98206X&amp;cx=c&amp;gtm=4e6bh1h1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cdn.userway.org/widget.js?account=UxUyJ1K9u2"></script>
+        <title>מרכז קהילתי נווה עופר</title>
+    <!--    <meta name="keywords" content="" />-->
+    <meta name="theme-color" property="theme-color" content="#0279bb">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-</head>
-<body>
-    <iframe src="https://bewith.io"></iframe>
+    <meta name="robots" content="all">
+    <link rel="canonical" href="https://www.coing.co/TLV_NeveOfer">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="us0IePWHBqbBd8B80y2qTaNNMNd0DhId4zEcJyLFCgw">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="user_org" content="">
+    <meta name="user_id" content="guest">
+    <meta name="user_role" content="visitor">
+    <meta name="user_view" content="standard">
+    <meta name="csrf-param" content="_frontendCSRF">
+<meta name="csrf-token" content="fXQdtsvQI3hoLN-YGQJ43-IH8W9HDNQria0o31X3SCY8RnvMu4BEHDpzmKFyRCuRj1HIOiZLvWnM72_pEqYAQQ==">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154759597-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-154759597-3');
+    </script>
+    <script>
+        //https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-154759597-3', 'auto');
+                ga('send', 'pageview');
+    </script>
+        <script>
+window.showAccessibilityHelper = 1;document.documentElement.style.setProperty('--coing-font-family', 'Heebo, Poppins, sans-serif');document.documentElement.style.setProperty('--coing-currency-sign', '"₪"');document.documentElement.style.setProperty('--coing-color-main', '#026aa2');document.documentElement.style.setProperty('--coing-color-rgb-main', '2,106,162');document.documentElement.style.setProperty('--coing-color-bg', '#ffffff');document.documentElement.style.setProperty('--coing-color-rgb-bg', '255,255,255');document.documentElement.setAttribute('data-colors', 'ffffff,f2f2f2,026aa2,4a4a4a');const textEditorColors = ['ffffff', '000000', 'eeece1', '1f497d', '4f81bd', 'c0504d', '9bbb59', '8064a2', '4bacc6', 'f79646', 'ffff00',
+            'f2f2f2', '7f7f7f', 'ddd9c3', 'c6d9f0', 'dbe5f1', 'f2dcdb', 'ebf1dd', 'e5e0ec', 'dbeef3', 'fdeada', 'fff2ca',
+            'd8d8d8', '595959', 'c4bd97', '8db3e2', 'b8cce4', 'e5b9b7', 'd7e3bc', 'ccc1d9', 'b7dde8', 'fbd5b5', 'ffe694',
+            'bfbfbf', '3f3f3f', '938953', '548dd4', '95b3d7', 'd99694', 'c3d69b', 'b2a2c7', 'b7dde8', 'fac08f', 'f2c314',
+            'a5a5a5', '262626', '494429', '17365d', '366092', '953734', '76923c', '5f497a', '92cddc', 'e36c09', 'c09100',
+            '7f7f7f', '0c0c0c', '1d1b10', '0f243e', '244061', '632423', '4f6128', '3f3151', '31859b', '974806', '7f6000']</script>
+    <script>
+    ////////////////////////////////////////////////////////////////////////////
+    // SERVICE WORKER
+    i
 
-</body></html>
-
-===== https://www.coing.co/he
+===== https://www.coing.co/TLV_TelBaruch_events/291119
 {
- "url": "https://www.coing.co/he",
- "title": "",
- "pat": [],
- "xhr": [],
- "sample": [],
- "json": []
+ "url": "https://www.coing.co/TLV_TelBaruch_events",
+ "title": "מרכז קהילתי חוף תל ברוך",
+ "pat": [
+  [
+   "https://www.coing.co/TLV_TelBaruch_events",
+   76
+  ],
+  [
+   "javascript:;",
+   7
+  ],
+  [
+   "https://www.instagram.com/telbaruchcenter",
+   2
+  ],
+  [
+   "https://www.facebook.com/TelBaruchCommunityCenter",
+   2
+  ],
+  [
+   "https://www.waze.com/en",
+   2
+  ],
+  [
+   "javascript:fl.social.doShare('mobile');",
+   1
+  ],
+  [
+   "https://chat.whatsapp.com/ID8PGa6mIvZBYrx0SN99gu",
+   1
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Residents",
+   1
+  ],
+  [
+   "https://www.coing.co/Kehila-NorthWest",
+   1
+  ],
+  [
+   "javascript:window.auth('', {openerId: '",
+   1
+  ],
+  [
+   "javascript:openWindow('window-help');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-contact');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-service');",
+   1
+  ],
+  [
+   "javascript:openWindow('window-privacy');",
+   1
+  ],
+  [
+   "https://bewith.io/",
+   1
+  ],
+  [
+   "https://chat.whatsapp.com/GncTKYCup8AHtycvGMOhmp",
+   1
+  ]
+ ],
+ "xhr": [
+  "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=2043482617&t=pageview&_s=1&dl=https%3A%2F%2Fwww.coing.co%2FTLV_TelBaruch_events&ul=he-il&dt=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A7%D7%94%D7%99%D7%9C%D7%AA%D7%99%20%D7%97%D7%95%D7%A3%20%D7%AA%D7%9C%20%D7%91%D7%A8%D7%95%D7%9A&sr=1280x720&vp=1280x720&_u=AACAAEABAAAAACAAI~&jid=&gjid=&cid=815788939.1795512874&tid=UA-154759597-3&_gid=134765457.1795512874&_slc=1&z=1345735158",
+  "https://analytics.google.com/g/collect?v=2&tid=G-MKVV98206X&gtm=45je6bh1h1v898927501za20oxf1&_p=1795512896537&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAIAGQ&cid=815788939.1795512874&frm=0&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115938465~115938468~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795512873&sct=1&seg=1&dl=https%3A%2F%2Fwww.coing.co%2FTLV_TelBaruch_events&dt=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A7%D7%94%D7%99%D7%9C%D7%AA%D7%99%20%D7%97%D7%95%D7%A3%20%D7%AA%D7%9C%20%D7%91%D7%A8%D7%95%D7%9A&en=page_view&_c=1&tfd=1170",
+  "https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBtpRAAJcwlcjt_wFHL7G8PMMOpwmfN37s&v=weekly&callback=google.maps.__ib__",
+  "https://api.userway.org/api/v1/tunings/UxUyJ1K9u2",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/util.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/places_impl.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/places.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/controls.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/common.js",
+  "https://maps.googleapis.com/maps-api-v3/api/js/67/1d/intl/iw_ALL/main.js",
+  "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+  "https://analytics.google.com/g/collect?v=2&tid=G-MKVV98206X&gtm=45je6bh1h1v898927501za20gxf1&_p=1795512896537&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAIAGQ&ae=a&cid=815788939.1795512874&frm=0&pscdl=noapi&rcb=6&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=2&tag_exp=115938465~115938468~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795512873&sct=1&seg=1&dl=https%3A%2F%2Fwww.coing.co%2FTLV_TelBaruch_events&dt=%D7%9E%D7%A8%D7%9B%D7%96%20%D7%A7%D7%94%D7%99%D7%9C%D7%AA%D7%99%20%D7%97%D7%95%D7%A3%20%D7%AA%D7%9C%20%D7%91%D7%A8%D7%95%D7%9A&en=scroll&epn.percent_scrolled=90&_et=6&tfd=6178",
+  "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.coing.co%2FTLV_TelBaruch_events/DESKTOP/WIDGET_OFF/status"
+ ],
+ "sample": [
+  "javascript:fl.social.doShare('mobile');\n    | ",
+  "https://chat.whatsapp.com/ID8PGa6mIvZBYrx0SN99gu\n   להצטרפות לקבוצת וואטסאפ לעדכונים",
+  "https://www.tel-aviv.gov.il/Residents/CommunityAndSports/Pages/TelBaruchBeachCommunityCenter.aspx?iccid=219\n   לעמוד שלנו באתר עיריית תל-אביב-יפו",
+  "https://www.waze.com/en/live-map/directions/%D7%9E%D7%A8%D7%9B%D7%96-%D7%A7%D7%94%D7%99%D7%9C%D7%AA%D7%99-%D7%97%D7%95%D7%A3-%D7%AA%D7%9C-%D7%91%D7%A8%D7%95%D7%9A-%D7%99%D7%A6%D7%97%D7%A7-%D7%90%D7%A8%D7%A6%D7%99-%D7%AA%D7%9C-%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95?to=place.w.22806849.227937420.626609\n   לניווט בWAZE למרכז קהילתי חוף תל ברוך",
+  "javascript:;\n    | ",
+  "javascript:;\n    | ",
+  "https://www.coing.co/TLV_TelBaruch_events/283422\n    16 | מנוי חצי שנתי - מועדון ימי",
+  "https://www.coing.co/TLV_TelBaruch_events/260619\n   החוג מתקיים בימי שני, שלישי ושישי | 50 | חוג גלישת גלים וסרף סקייט לילדים ונוער",
+  "https://www.coing.co/TLV_TelBaruch_events/250140\n   השכרת ציוד ימי | 176 | השכרת סאפים וגלשני גלים",
+  "https://www.coing.co/TLV_TelBaruch_events/242246\n   ימי שני, שלישי, רביעי ושישי | פעילות גולשים ללא גבולות",
+  "https://www.coing.co/TLV_TelBaruch_events/222645\n    26 | שיעור פרטי בגלישת גלים או חתירה בסאפ",
+  "https://www.coing.co/TLV_TelBaruch_events/193979\n    158 | רכישת כרטיסייה למועדון ימי"
+ ],
+ "json": [
+  "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.coing.co%2FTLV_TelBaruch_events/DESKTOP/WIDGET_OFF/status"
+ ]
 }
 --- TEXT
-Page not found
+מרכז קהילתי חוף תל ברוך
+
+מרכז קהילתי חוף תל ברוך
+
+ברוכים הבאים וברוכות הבאות למרכז הקהילתי חוף תל ברוך של עיריית תל אביב יפו.
+
+בעמוד זה מרוכז כל המידע הרלוונטי על אירועים ופעילויות במרכז הקהילתי ובמרחב הציבורי של חוף תל ברוך.
+
+
+המרכז הקהילתי נפתח לראשונה בשנת 2022. הוא הוקם על מנת להנגיש את פעילויות החוף והים לכלל הקהילות מצפון מערב ולעיר כולה.
+מיקומו הייחודי של חוף תל ברוך, רוחבו הפיזי ואזור הספורט הימי מזמינים אתכם ואתכן ליהנות ממגוון פעילויות בנושאי ספורט, תרבות, העשרה, מוסיקה ואמנות,המתאימות לכל הגילים- מהגיל הרך ועד גיל הזהב.
+
+המרכז שם למטרה להעשיר את הקהילה בפעילויות איכותיות, בקבוצות קטנות עם הדרכה מקצועית מהשורה הראשונה.
+אחד הדברים המייחדים את המרכז הוא היכולת לשלב את קשת צרכים לכלל הגילים בעיר תל אביב יפו.
+
+זה הזמן לצאת לטבע האורבני של צפון תל אביב וליהנות משלל פעילויות ייחודיות לרצועת החוף של תל ברוך.
+
+
+
+
+נשמח לעמוד איתכן ואיתכם בקשר בכל שאלה ועניין וכמובן לקדם יחד יוזמות קהילתיות.
+
+זמינות במייל gefen_k@mail.tel-aviv.gov.il 
+
+או בטלפון 052-4685983
+
+
+להצטרפות לקבוצת וואטסאפ לעדכונים
+
+
+
+
+לעמוד שלנו באתר עיריית תל-אביב-יפו
+
+לעמוד שלנו באינסטגרם ובפייסבוק
+
+לניווט בWAZE למרכז קהילתי חוף תל ברוך
+
+
+
+
+
+
+קראו עוד
+חיפוש חופשי
+סוג אירוע
+מחנה קיץ
+מועדון ימי
+סטודיו פתוח
+איפוס מסננים
+מרחב צפון מערב
+כרטיסיות ומנויים
+ 16
+מנוי חצי שנתי - מועדון ימי
+החוג מתקיים בימי שני, שלישי ושישי
+ 50
+חוג גלישת גלים וסרף סקייט לילדים ונוער
+השכרת ציוד ימי
+ 176
+השכרת סאפים וגלשני גלים
+ימי שני, שלישי, רביעי ושישי
+פעילות גולשים ללא גבולות
+ 26
+שיעור פרטי בגלישת גלים או חתירה בסאפ
+ 158
+רכישת כרטיסייה למועדון ימי
+ניקוב כרטיסיה
+אימון יחיד
+ 223
+רכישת כרטיסיית סטודיו פתוח
+טבעירוני בחוף
+ 11
+יש לך רעיון ליוזמה?
+כל האירועים
+מרכז קהילתי חוף תל ברוך
+גלישת גלים קבוצתית לבוגרים
+מועדון ימי
+רחוב ארצי יצחק, 12
+יום ד׳ 25/11/2026
+06:30 - 08:00
+100 ש"ח
+מרכז קהילתי חוף תל ברוך
+אימון פונקציונלי לבוגרים בחוף תל ברוך
+רחוב ארצי יצחק, 12
+יום ד׳ 25/11/2026
+06:30 - 07:30
+40-30 ש"ח
+מרכז קהילתי חוף תל ברוך
+יוגה ויניאסה בהשראת איינגר שיקומי
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום ד׳ 25/11/2026
+17:00 - 18:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+גלישת גלים קבוצתית לבוגרים
+מועדון ימי
+רחוב ארצי יצחק, 12
+יום ה׳ 26/11/2026
+06:30 - 08:00
+100 ש"ח
+מרכז קהילתי חוף תל ברוך
+קונג פו בריאותי עם אסא וולפסון
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום ה׳ 26/11/2026
+08:00 - 09:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+גלישת גלים קבוצתית לבוגרים
+מועדון ימי
+רחוב ארצי יצחק, 12
+יום ו׳ 27/11/2026
+06:30 - 08:00
+100 ש"ח
+מרכז קהילתי חוף תל ברוך
+תרגול יוגה בשישי בבוקר בחוף תל ברוך
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום ו׳ 27/11/2026
+08:00 - 09:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+אימון סרף סקייט לבוגרים
+סרף סקייט
+רחוב ארצי יצחק, 34
+יום ו׳ 27/11/2026
+09:00 - 10:00
+כמפורט בידיעה
+מרכז קהילתי חוף תל ברוך
+יום ההוקרה לפצועי מערכות ישראל
+רחוב ארצי יצחק, 2
+יום ו׳ 27/11/2026
+09:30 - 11:30
+מרכז קהילתי חוף תל ברוך
+האטה יוגה במרכז קהילתי חוף תל ברוך
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום א׳ 29/11/2026
+08:00 - 09:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+צ'י קונג - במרכז קהילתי חוף תל ברוך
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום א׳ 29/11/2026
+17:30 - 18:30
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+יוגה ויניאסה בהשראת איינגר שיקומי
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום ב׳ 30/11/2026
+17:00 - 18:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+אימון פונקציונלי לבוגרים בחוף תל ברוך
+רחוב ארצי יצחק, 12
+יום ד׳ 02/12/2026
+06:30 - 07:30
+40-30 ש"ח
+מרכז קהילתי חוף תל ברוך
+תרגול יוגה בשישי בבוקר בחוף תל ברוך
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום ו׳ 04/12/2026
+08:00 - 09:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+אימון סרף סקייט לבוגרים והדלקת נרות
+סרף סקייט
+רחוב ארצי יצחק, 34
+יום ו׳ 04/12/2026
+09:00 - 10:00
+כמפורט בידיעה
+מרכז קהילתי חוף תל ברוך
+האטה יוגה במרכז קהילתי חוף תל ברוך
+סטודיו פתוח
+רחוב ארצי יצחק, 12
+יום א׳ 06/12/2026
+08:00 - 09:00
+40 ש"ח
+מרכז קהילתי חוף תל ברוך
+מחנה ימי חד יומי בחופשת חנוכה
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום א׳ 06/12/2026
+09:00 - 13:30
+250 ש"ח
+מרכז קהילתי חוף תל ברוך
+מחנה ימי חד יומי בחופשת חנוכה
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום ב׳ 07/12/2026
+09:00 - 13:30
+250 ש"ח
+מרכז קהילתי חוף תל ברוך
+סיור עששיות לחנוכה: להאיר את העיר והים
+סיור עששיות בנופי ים ובתל ברוך
+ 3
+רחוב ארצי יצחק, 12
+יום ב׳ 07/12/2026
+16:30 - 18:30
+25 ש"ח
+מרכז קהילתי חוף תל ברוך
+מחנה ימי חד יומי בחופשת חנוכה
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום ג׳ 08/12/2026
+09:00 - 13:30
+250 ש"ח
+מרכז קהילתי חוף תל ברוך
+מופע ציור בחול עם התנסות חווייתית
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום ג׳ 08/12/2026
+17:00 - 18:30
+25 ש"ח
+מרכז קהילתי חוף תל ברוך
+אימון פונקציונלי לבוגרים בחוף תל ברוך
+רחוב ארצי יצחק, 12
+יום ד׳ 09/12/2026
+06:30 - 07:30
+40-30 ש"ח
+מרכז קהילתי חוף תל ברוך
+מחנה ימי חד יומי בחופשת חנוכה
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום ד׳ 09/12/2026
+09:00 - 13:30
+250 ש"ח
+מרכז קהילתי חוף תל ברוך
+מחנה ימי חד יומי בחופשת חנוכה
+חנוכה בחוף
+רחוב ארצי יצחק, 12
+יום ה׳ 10/12/2026
+09:00 - 13:30
+250 ש"ח
+יומן
+כל האירועים
+כרטיסיות ומנויים
+מודלים
+עזרה בהרשמה
+צרו קשר
+תנאי שימוש
+מדיניות פרטיות
+© Powered by 
 --- HTML
-<html><head></head><body><div class="header-image fit-image center mobile-hide" style="background-image: url('/static-icons/with-cover.png');"></div><div class="header-image fit-image mobile-show" style="background-image: url('/static-icons/with-cover.png');"></div><section class="section-page-main">
-    <div class="">
-        <img width="100%" src="/static-icons/cover404.png" alt="Page not found">
-        <h1 style="text-align: center;"> Page not found</h1>
-    </div>
-</section>
-</body></html>
+<html dir="rtl" lang="he" data-uw-w-loader="" data-colors="ffffff,f2f2f2,026aa2,4a4a4a" style="--coing-font-family: Heebo, Poppins, sans-serif; --coing-currency-sign: &quot;₪&quot;; --coing-color-main: #026aa2; --coing-color-rgb-main: 2,106,162; --coing-color-bg: #ffffff; --coing-color-rgb-bg: 255,255,255; --coing-vh: 7.2px;"><head>
+            <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-MKVV98206X&amp;cx=c&amp;gtm=4e6bh1h1"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cdn.userway.org/widget.js?account=UxUyJ1K9u2"></script>
+        <title>מרכז קהילתי חוף תל ברוך</title>
+    <!--    <meta name="keywords" content="" />-->
+    <meta name="theme-color" property="theme-color" content="#0279bb">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all">
+    <link rel="canonical" href="https://www.coing.co/TLV_TelBaruch_events">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="us0IePWHBqbBd8B80y2qTaNNMNd0DhId4zEcJyLFCgw">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="user_org" content="">
+    <meta name="user_id" content="guest">
+    <meta name="user_role" content="visitor">
+    <meta name="user_view" content="standard">
+    <meta name="csrf-param" content="_frontendCSRF">
+<meta name="csrf-token" content="Jw7PIT3lAqiV_UouRAr4S6ulWBCjEACGXCi5zR979j1mPKlbTbVlzMeiDRcvTKsFxvNhRcJXacQZav77WCq-Wg==">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154759597-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154759597-3');
+    </script>
+    <script>
+        //https://developers.google.com/analytics/devguides/collection/analyticsjs/advanced
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-154759597-3', 'auto');
+                ga('send', 'pageview');
+    </script>
+        <script>
+window.showAccessibilityHelper = 1;document.documentElement.style.setProperty('--coing-font-family', 'Heebo, Poppins, sans-serif');document.documentElement.style.setProperty('--coing-currency-sign', '"₪"');document.documentElement.style.setProperty('--coing-color-main', '#026aa2');document.documentElement.style.setProperty('--coing-color-rgb-main', '2,106,162');document.documentElement.style.setProperty('--coing-color-bg', '#ffffff');document.documentElement.style.setProperty('--coing-color-rgb-bg', '255,255,255');document.documentElement.setAttribute('data-colors', 'ffffff,f2f2f2,026aa2,4a4a4a');const textEditorColors = ['ffffff', '000000', 'eeece1', '1f497d', '4f81bd', 'c0504d', '9bbb59', '8064a2', '4bacc6', 'f79646', 'ffff00',
+            'f2f2f2', '7f7f7f', 'ddd9c3', 'c6d9f0', 'dbe5f1', 'f2dcdb', 'ebf1dd', 'e5e0ec', 'dbeef3', 'fdeada', 'fff2ca',
+            'd8d8d8', '595959', 'c4bd97', '8db3e2', 'b8cce4', 'e5b9b7', 'd7e3bc', 'ccc1d9', 'b7dde8', 'fbd5b5', 'ffe694',
+            'bfbfbf', '3f3f3f', '938953', '548dd4', '95b3d7', 'd99694', 'c3d69b', 'b2a2c7', 'b7dde8', 'fac08f', 'f2c314',
+            'a5a5a5', '262626', '494429', '17365d', '366092', '953734', '76923c', '5f497a', '92cddc', 'e36c09', 'c09100',
+            '7f7f7f', '0c0c0c', '1d1b10', '0f243e', '244061', '632423', '4f6128', '3f3151', '31859b', '974806', '7f6000']</script>
+    <script>
+    ////////////////////////////////////////////////////////////////////////////
+    // SERVICE WO
