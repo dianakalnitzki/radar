@@ -1,0 +1,301 @@
+
+
+===== https://coing.co/
+{
+ "url": "https://coing.co/",
+ "title": "Coing",
+ "pat": [],
+ "xhr": [],
+ "sample": []
+}
+--- TEXT
+
+
+===== https://coing.co/events
+{
+ "url": "https://coing.co/events",
+ "title": "",
+ "pat": [],
+ "xhr": [],
+ "sample": []
+}
+--- TEXT
+Page not found
+
+===== https://www.tel-aviv.gov.il/Visitors/Events/Pages/Lectures.aspx
+{
+ "url": "https://www.tel-aviv.gov.il/Visitors/Events/Pages/Lectures.aspx?IntsID=5",
+ "title": "הרצאות והעשרה | עיריית תל אביב-יפו",
+ "pat": [
+  [
+   "https://www.tel-aviv.gov.il/Residents",
+   449
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Visitors",
+   201
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Business",
+   79
+  ],
+  [
+   "https://www.tel-aviv.gov.il/About",
+   71
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Transparency",
+   49
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Contact",
+   27
+  ],
+  [
+   "javascript:void(0);",
+   19
+  ],
+  [
+   "javascript:void(0)",
+   13
+  ],
+  [
+   "https://www.tel-aviv.gov.il/pages",
+   9
+  ],
+  [
+   "https://www.tel-aviv.gov.il/AuctionAndCareers",
+   7
+  ],
+  [
+   "https://www.tel-aviv.gov.il/Pages",
+   6
+  ],
+  [
+   "https://gisn.tel-aviv.gov.il/iview2js4",
+   4
+  ],
+  [
+   "https://www.tel-aviv.gov.il/",
+   3
+  ],
+  [
+   "https://digitelfp.tel-aviv.gov.il/",
+   3
+  ],
+  [
+   "https://www5.tel-aviv.gov.il/TlvForms",
+   3
+  ],
+  [
+   "https://wa.me/972521208239",
+   3
+  ],
+  [
+   "http://tiktok.com/@telaviv.yafo",
+   3
+  ],
+  [
+   "https://t.me/telavivmuni",
+   3
+  ],
+  [
+   "https://twitter.com/telavivyafo",
+   3
+  ],
+  [
+   "https://www.instagram.com/telaviv.yafo",
+   3
+  ],
+  [
+   "https://www.facebook.com/tel.aviv.yafo",
+   3
+  ],
+  [
+   "https://mydigitel.tel-aviv.gov.il/",
+   2
+  ],
+  [
+   "https://opendata.tel-aviv.gov.il/",
+   2
+  ],
+  [
+   "https://www.tel-aviv.gov.il/mevaker",
+   2
+  ],
+  [
+   "https://edutour.tel-aviv.gov.il/",
+   1
+  ],
+  [
+   "https://muni4u.tel-aviv.gov.il/public-petition",
+   1
+  ],
+  [
+   "https://play.google.com/store",
+   1
+  ],
+  [
+   "https://apps.apple.com/il",
+   1
+  ],
+  [
+   "https://www.tel-aviv.gov.il/en",
+   1
+  ],
+  [
+   "https://www.tel-aviv.gov.il/ar",
+   1
+  ]
+ ],
+ "xhr": [
+  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/EventsAndBenefitsLobby.js?rev=8.12.8.2",
+  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/resources.js/evBenTexts.he.js?rev=8.12.8.2",
+  "https://www.google.com/jsapi",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/xGray.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/noResultPic.svg",
+  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/General.css?rev=8.12.8.2",
+  "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=389956123&utmhn=www.tel-aviv.gov.il&utmcs=UTF-8&utmsr=1280x720&utmvp=1280x720&utmsc=24-bit&utmul=he-il&utmje=0&utmfl=-&utmdt=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&utmhid=1160211355&utmr=-&utmp=%2FVisitors%2FEvents%2FPages%2FLectures.aspx&utmht=1795512640020&utmac=UA-19454470-1&utmcc=__utma%3D26404386.1146900003.1795512640.1795512640.1795512640.1%3B%2B__utmz%3D26404386.1795512640.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=638242709&utmredir=1&utmu=qBAAAAAAAAAAAAAAAAAAAAAE~",
+  "https://cdn.weglot.com/projects-settings/bbac3ab73bb92397c81aff8540b2b3229.json",
+  "https://www.tel-aviv.gov.il/Visitors/Events/_api/SP.Web.GetContextWebThemeData?lcid=1033",
+  "https://api.weglot.com/pageviews?api_key=wg_bbac3ab73bb92397c81aff8540b2b3229",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/whom.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/vector.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/calendar.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/where.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/cityCenter.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/heart-rounded.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/CustomFilters.svg",
+  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/search.svg",
+  "https://connect.facebook.net/en_US/fbevents.js",
+  "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CI8POCRC77U2H86MCK9G&lib=ttq",
+  "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=1062361571.1795512641&dt=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&en=page_view&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&scrsrc=www.googletagmanager.com&rnd=276722601.1795512641&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bh1v811112836za200zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~119404697~119793972~120385422~120469145~120469153~121246026~121246034&tft=1795512640659&tfd=2748&fmt=8",
+  "https://tr.outbrain.com/unifiedPixel?au=false&bust=05404897795920236&referrer=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&pRef=&marketerId=0069a7b290a9781207927f8e5402850568&name=PAGE_VIEW&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&g=1&zone=all&pld=3264&obApiVersion=1.1&obtpVersion=3eeb2736dc1c_2026-11-23",
+  "https://www.google.com/measurement/conversion?random=1795512641251&cv=11&tid=G-6F0EMM7WGF&fst=1795512641251&fmt=8&en=page_view&gtm=45je6bh1v889007235za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&gacid=46678432.1795512641&hn=www.googleadservices.com&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=9",
+  "https://analytics.google.com/g/collect?v=2&tid=G-6F0EMM7WGF&gtm=45je6bh1v889007235za20ozb811112836zd811112836xf1&_p=1795512639367&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAAAGAC&_prs=ok&cid=46678432.1795512641&frm=0&ir=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115938466~115938469~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795512641&sct=1&seg=0&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&dt=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&en=page_view&_fv=1&_nsi=1&_ss=1&_c=1&tfd=3375",
+  "https://trc.taboola.com/1238424/trc/3/json?tim=1795512641362&data=%7B%22id%22%3A723%2C%22ii%22%3A%22%2Fvisitors%2Fevents%2Fpages%2Flectures.aspx%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1795512641352%2C%22cv%22%3A%2220261122-5-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%3FIntsID%3D5%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dinteraction-phoenixpets-sc%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1795512641361%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5%22%2C%22tos%22%3A2%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22it%22%3A%22JS_PIXEL%22%2C%22supv%22%3Atrue%7D%7D&pubit=i",
+  "https://apimtlvprd.tel-aviv.gov.il/TelmaWebChat/recaptcha",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007107377/?random=1795512641659&cv=11&fst=1795512641659&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
+  "https://www.google.com/rmkt/collect/1007107377/?random=1795512641659&cv=11&fst=1795512641659&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
+  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007107377/?random=1795512641750&cv=11&fst=1795512641750&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=4",
+  "https://www.google.com/rmkt/collect/1007107377/?random=1795512641750&cv=11&fst=1795512641750&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=68&gcp=5",
+  "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=0&auid=1062361571.1795512641&dt=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&tid=AW-1007107377&en=page_view&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&scrsrc=www.googletagmanager.com&rnd=276722601.1795512641&navt=n&npa=0&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&tft=1795512641758&tfd=3847&tids=AW-1007107377&fmt=8",
+  "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=0&ae=g&auid=1062361571.1795512641&dt=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&tid=AW-1007107377&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&scrsrc=www.googletagmanager.com&rnd=276722601.1795512641&navt=n&npa=0&_tu=CA&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&tft=1795512641760&tfd=3848&tids=AW-1007107377&fmt=8",
+  "https://analytics.tiktok.com/api/v2/pixel",
+  "https://analytics.tiktok.com/api/v2/pixel",
+  "https://www.google.com/pagead/1p-user-list/1007107377/?random=1795512641750&cv=11&fst=1795510800000&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAogo4dT-n0pS-qGwbDHH63XLKnXnBreZGxr0hGI5zi5Zkop-b6wIxI_ulULdJSfslvAAxc_xNJMfSdIVAGmrLQzouKM1ZsWcaOx7qZ_2Ylkw8FD94EVnpVCrVdnzvkrfrYHq4c-t8C5j2efF7DADn3zGTyQRJeXYmgrU6h-ZlpMr46KjyyzAtRE2JK2dl7XwOi6WouirIW6ohrlqC_gGdZ0NcG91qBJ7m3QJ8_8z5RVHpAsbapJ99GHp7CxjaZthyHB2_RLu7nv54WoOYPk_85zx8yw&random=3690226803&rmt_tld=0&ipr=y",
+  "https://www.google.com/pagead/1p-user-list/1007107377/?random=1795512641659&cv=11&fst=1795510800000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&rcb=9&frm=0&tiba=%D7%94%D7%A8%D7%A6%D7%90%D7%95%D7%AA%20%D7%95%D7%94%D7%A2%D7%A9%D7%A8%D7%94%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1062361571.1795512641&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEAogo4dbh4fbqECZaajCuzJ_cW7XQERpbSq7-FIZB0RegDJTW-poU3ZF2OpIITRECnRKBrYGNPuVuMOB7kQ8kk55YUvFhfeioRGPhAMhaoaXGcX8jKSZes6B-WacH8XQr9N2muPxcVlysmJVp7DanJUfzRzj4-CGc_8AOp1ilN2MQY_GC5S0MvRlM3F53uiR-Sb_ZYmk9lWM6PS5KqUImA6UYznKZfvUa1ImoUtn9sPQFzxOyUsU69sD44mvq_NsHaX1PodupUzpKpNQsqCKqraRnSow&random=3757835630&rmt_tld=0&ipr=y",
+  "https://analytics.tiktok.com/api/v2/pixel/act",
+  "https://www.pages03.net%3Frev=8.12.8.2/WTS/event.jpeg?accesskey=3f636987-14ae9af3439-2d617ac8ac4460b9f143347708bf4d50&v=1.31&isNewSession=1&type=pageview&isNewVisitor=1&sessionGUID=5dc41203-e81a-3a06-400e-e071d574b530&webSyncID=727ee023-3a54-6db1-d9c5-6eac1475964a&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FVisitors%2FEvents%2FPages%2FLectures.aspx%3FIntsID%3D5&newSiteVisit=1&hostname=www.tel-aviv.gov.il&pathname=%2FVisitors%2FEvents%2FPages%2FLectures.aspx&newPageVisit=1&eventKey=91c837ec-6b3d-831e-e6ab-96c03e87098d",
+  "https://analytics.tiktok.com/api/v2/pixel/act",
+  "https://analytics.tiktok.com/api/v2/monitor"
+ ],
+ "sample": [
+  "https://www.tel-aviv.gov.il/Visitors/Events/Pages/Lectures.aspx?IntsID=5#\n    | פתיחת תפריט אתר | ",
+  "https://www.tel-aviv.gov.il/About/Pages/EmergenciesAndSafety.aspx\n    | מידע בחירום",
+  "https://mydigitel.tel-aviv.gov.il/?utm_source=Main_Button_Heb&utm_medium=TLV_site&utm_campaign=Official_launch&utm_id=Official_launch\n    | דיגיתל שלי | ",
+  "https://www.tel-aviv.gov.il/Visitors/ArtCulture/Pages/whitecity.aspx\n   בית ליבלינג – מרכז העיר הלבנה",
+  "https://www.tel-aviv.gov.il/Visitors/ArtCulture/Pages/BeitAriela.aspx\n   ספריית שער ציון - בית אריאלה",
+  "https://www.tel-aviv.gov.il/Visitors/ArtCulture/Pages/OpeningHoursBA.aspx\n   מדורי בית אריאלה - שעות פתיחה",
+  "https://www.tel-aviv.gov.il/Visitors/ArtCulture/Pages/ArielaKids.aspx\n   לילדים בבית אריאלה ובספריות",
+  "https://www.tel-aviv.gov.il/Business/Art/Pages/Projects.aspx\n   מענקים לאמניות ואמנים עצמאיים",
+  "https://www.tel-aviv.gov.il/Business/Art/Pages/Funding.aspx\n   מקורות מידע ומימון חיצוניים",
+  "https://www.tel-aviv.gov.il/Business/Art/Pages/Filming.aspx\n   צילום הפקות קולנוע וטלוויזיה בעיר",
+  "https://www.tel-aviv.gov.il/Visitors/KnowTelAviv/Pages/RabinMemorial.aspx\n   חבר אני זוכר - להנצחת יצחק רבין",
+  "https://www.tel-aviv.gov.il/Visitors/Jaffa/Pages/germantour.aspx\n   מסלול המושבה האמריקאית - גרמנית"
+ ]
+}
+--- TEXT
+דלג לתוכן
+תל-מה AI
+חפש
+תפריט ראשי
+שירותים עירוניים
+צרו קשר
+תושבים
+עסקים
+מה קורה בעיר
+לאתר עיריית תל-אביב
+העיר והעירייה 
+מידע בחירום 
+דיגיתל שלי 
+23°
+ 
+פתיחת תפריט שפות
+HE
+ 
+אירועים ומופעים הטבות דיגיתֵל אמנות ותרבות יוצרים ואמנים בעיר להכיר את העיר יפו חופי רחצה
+הרצאות והעשרה
+למי מתי אזור בעיר תחומי עניין [1] 
+ 
+נמצאו 274 תוצאות
+מועדים נוספים
+מועדון הקריאה של אריק
+כמפורט באירוע
+מרכז הקהילה אריק איינשטיין, הוז דב 16
+11:00 16.9.26 - 12:00 16.12.26 
+גם בזוגיות יש תמרורי אזהרה
+חינם
+מספר מיקומים, ברחבי העיר
+19.11.26 - 1.12.26 
+חוד המשקפת - תערוכה והשקת הספר
+חינם
+מרכז עמיעד, עמיעד 12
+23.11.26 - 28.11.26 
+לחיות טוב. בכל גיל - 3#
+כמפורט באירוע
+מכללת רידמן, לבנון חיים 26
+היום 09:30 24.11.26 
+מצילום לדיוקן ציורי
+75 ש"ח
+ת"א תרבות פייטלוביץ: 073-3842637, ויתקין 10
+היום 10:30 24.11.26 
+מכללת מיטשל: הפרדוקס האיראני
+כמפורט בתיאור
+המרכז ע"ש מיטשל לאזרחים ותיקים, מנדלשטם עמנואל ד"ר 12
+היום 11:30 24.11.26 
+משפטים והשראה - סדרת מפגשים
+כמפורט באירוע
+מרכז הקהילה אריק איינשטיין, הוז דב 16
+היום 11:30 24.11.26 
+מיקרוסינמה ברוזין - צבעי הזמן
+20 ש"ח
+קאנטרי קהילתי ג'- רוזין, דרזנר יחיאל 2
+היום 11:30 24.11.26 
+מועדים נוספים
+סדנת פיסול בעיסת נייר עם ריקי ג'אן
+35 ש"ח
+מועדון פורטר, נועם 7
+היום 16:00 24.11.26 
+הצג עוד 
+האם דף זה עזר לך?
+ כן  לא
+נשמח אם תפרט/י:
+ שלח
+
+שימו לב - אין מענה למשוב זה. אם ברצונכם במענה, אנא פנו באמצעות טפסי צור קשר.
+
+חזרה לתחילת העמוד
+יישומון דיגיתל שלי
+הורידו עכשיו >>
+זימון תורים
+העיר והעירייה
+חילופי מחזיקים בארנונה
+בקשה לביטול דוח
+תל-קריירה
+הקוד האתי ואמנת השירות
+תו חניה
+שקיפות ושיתוף ציבור
+תשלומים
+מידע לעסקים
+Open Data
+הסביבה שלי
+תנאי השימוש
+מדיניות הפרטיות
+מפות GIS
+מידע על נגישות
+כל הזכויות שמורות לעיריית תל-אביב-יפו, אבן גבירול 69, טלפון: 3013* מהנייד. האתר מספק מידע כללי בלבד.
+הנוסח המחייב הוא זה הקבוע בהוראות הדין הרלוונטיות כפי שתהיינה בתוקף מעת לעת
+Created by: Layer. Digital studio
+אנו משתמשים בקבצי cookies לשיפור חווית הגלישה, ניתוח תעבורה ועוד. המשך גלישה מהווה הסכמה   לתנאי שימוש ולמדיניות הפרטיות
+הבנתי
