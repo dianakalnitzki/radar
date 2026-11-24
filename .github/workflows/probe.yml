@@ -1,0 +1,29 @@
+name: בדיקת אתר חדש
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "כתובות מופרדות בפסיק"
+        required: true
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: node scraper/probe.mjs
+        env:
+          PROBE_URLS: ${{ inputs.urls }}
+      - run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add debug/probe.txt
+          git commit -m "בדיקת אתר" || true
+          git pull --rebase && git push
