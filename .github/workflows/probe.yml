@@ -18,7 +18,7 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npx playwright install --with-deps chromium
-      - run: node scraper/probe.mjs
+      - run: if [ "${{ inputs.urls }}" = "discover" ]; then node scraper/discover-coing.mjs; else node scraper/probe.mjs; fi
         env:
           PROBE_URLS: ${{ inputs.urls }}
       - run: |
