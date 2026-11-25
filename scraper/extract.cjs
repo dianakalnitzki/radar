@@ -266,10 +266,26 @@ function extractCoing() {
 
 // השלמת מחיר מעמוד האירוע עצמו (לאירועים שהגיעו בלי מחיר)
 function findPrice() {
+  // 1) נתונים מובנים (JSON-LD / itemprop) – הכי אמין
+  const ld = [];
+  for (const sc of document.querySelectorAll('script[type="application/ld+json"]')) {
+    try { const walk = (o) => { if (!o || typeof o !== "object") return; if (o.price !== undefined || o.lowPrice !== undefined) ld.push(+(o.lowPrice ?? o.price)); Object.values(o).forEach(walk); }; walk(JSON.parse(sc.textContent)); } catch (e) {}
+  }
+  document.querySelectorAll('[itemprop="price"],[itemprop="lowPrice"]').forEach((m) => ld.push(+(m.getAttribute("content") || m.textContent.replace(/[^\d.]/g, ""))));
+  const okLd = ld.filter((n) => !isNaN(n) && n >= 0 && n <= 600);
+  if (okLd.length) return { pr: Math.min(...okLd) };
+  // 2) טקסט העמוד
   const txt = (document.body.innerText || "").replace(/\s+/g, " ");
-  if (/כניסה חופשית|הכניסה חופשית|ללא תשלום|free entry|כניסה חינם/i.test(txt) && !/חינם לחברי/.test(txt)) return 0;
-  const nums = [...txt.matchAll(/(?:₪\s?(\d{2,4})|(\d{2,4})\s?(?:₪|ש"ח|ש״ח|שח\b|NIS))/g)].map((m) => +(m[1] || m[2])).filter((n) => n >= 10 && n <= 600);
-  return nums.length ? Math.min(...nums) : null;
+  if (/כניסה חופשית|הכניסה חופשית|ללא תשלום|ללא עלות|free entry|כניסה חינם|האירוע חינמי|אירוע חינמי/i.test(txt) && !/חינם לחברי/.test(txt)) return { pr: 0 };
+  const nums = [...txt.matchAll(/(?:₪\s?(\d{2,4})|(\d{2,4})(?:\.00)?\s?(?:₪|ש"ח|ש״ח|שח\b|NIS|ILS))/g)].map((m) => +(m[1] || m[2])).filter((n) => n >= 10 && n <= 600);
+  if (nums.length) return { pr: Math.min(...nums) };
+  // 3) עמוד של הרדאר / אגרגטור: קישור החוצה לעמוד הכרטיסים
+  let next = null;
+  if (/radartlv\.co\.il|secrettelaviv/.test(location.host)) {
+    const a = [...document.querySelectorAll("a[href^='http']")].find((x) => !x.href.includes(location.host) && /כרטיס|לרכישה|הזמנ|לפרטים|לאתר|tickets|buy/i.test((x.innerText || "") + x.href) && !/facebook|instagram|whatsapp|twitter|google|waze/.test(x.href));
+    if (a) next = a.href;
+  }
+  return { pr: null, next };
 }
 
 module.exports = { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };

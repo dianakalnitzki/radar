@@ -34,7 +34,7 @@ const SOURCES = process.env.SOURCES_JSON ? JSON.parse(process.env.SOURCES_JSON) 
   ...["today","tomorrow","weekend","this-week","kids","free","digitel","concerts","theater","standup","culture","parties","festivals","jaffa"].map((p) => ({ url: `https://radartlv.co.il/${p}/`, kind: "radar" })),
   ...monthPages.map((url) => ({ url, kind: "radar" })),
 ];
-const PRICE_LOOKUPS = 70; // כמה עמודי אירוע לבדוק בכל ריצה כדי להשלים מחירים חסרים
+const PRICE_LOOKUPS = 160; // כמה עמודי אירוע לבדוק בכל ריצה כדי להשלים מחירים חסרים
 
 async function loadAll(page) {
   // גלילה עד הסוף + לחיצה על כפתורי "עוד" (רק כפתורים שלא מעבירים לעמוד אחר)
@@ -118,17 +118,25 @@ async function main() {
 
   // השלמת מחירים: נכנסים לעמוד של אירועים בלי מחיר (הקרובים קודם) ומחפשים ₪ / "כניסה חופשית"
   let looked = 0, filled = 0;
-  const missing = Object.keys(days).sort().flatMap((d) => days[d].filter((e) => (e.pr === null || e.pr === undefined) && e.u && !e._pl));
-  for (const e of missing.slice(0, PRICE_LOOKUPS)) {
+  const todayN = Date.now();
+  const missing = Object.keys(days).sort().flatMap((d) => days[d].filter((e) => (e.pr === null || e.pr === undefined) && e.u && (!e._pl || todayN - e._pl > 4 * 864e5)));
+  const lookup = async (e) => {
     const page = await ctx.newPage();
     try {
-      await page.goto(e.u, { waitUntil: "domcontentloaded", timeout: 25000 });
-      await page.waitForTimeout(1500);
-      const p = await page.evaluate(`(${findPrice.toString()})()`);
+      let url = e.u;
+      for (let hop = 0; hop < 2 && url; hop++) {
+        await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
+        await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
+        await page.waitForTimeout(1500);
+        const r = await page.evaluate(`(${findPrice.toString()})()`);
+        if (r.pr !== null && r.pr !== undefined) { e.pr = r.pr; filled++; break; }
+        url = r.next;
+      }
       looked++;
-      if (p !== null) { e.pr = p; filled++; }
-    } catch (err) { /* דילוג */ } finally { e._pl = 1; await page.close(); }
-  }
+    } catch (err) { /* דילוג */ } finally { e._pl = todayN; await page.close(); }
+  };
+  const queue = missing.slice(0, PRICE_LOOKUPS);
+  await Promise.all([0, 1, 2, 3].map(async () => { while (queue.length) await lookup(queue.shift()); }));
   report.priceLookups = `${filled}/${looked}`;
   await browser.close();
 
