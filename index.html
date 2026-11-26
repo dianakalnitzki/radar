@@ -259,7 +259,8 @@ let DESC={};DESC_SEED.forEach(i=>DESC[i.u]=i);
 function area(v){for(const [a,ks] of AREAS) if(ks.some(k=>v.includes(k)))return a;return ""}
 
 const FILM=/הקרנ|סרט|קולנוע|סינמה|סינמטק|טרום בכורה|cinema|film|screening|דוקאביב/i;
-const KID=/ילדים|לילדים|הצגת ילדים|הצגה לילדים|שעת סיפור|לכל המשפחה|למשפחות|משפחתי|גיל הרך|פעוט|קטנטנים|הורה וילד|הורים וילדים|להורה|ג.ימבורי|משחקי?יה|תיאטרון בובות|בובנאות|מדובב|לגילאי|לגילי|גילאי \d|מגיל [2-9]\b|kids|family|children|חנוכה לילדים|קייטנ|ספריית ילדים|הצגת חנוכה|הפעלה/i;
+const KID=/פסטיגל|פסטיבל חנוכה|קידס|kids market|רביעי של יצירה|חנוכי|עששית|פינה בגינה|סביבון|סופגני|ילדים|לילדים|הצגת ילדים|הצגה לילדים|שעת סיפור|לכל המשפחה|למשפחות|משפחתי|גיל הרך|פעוט|קטנטנים|הורה וילד|הורים וילדים|להורה|ג.ימבורי|משחקי?יה|תיאטרון בובות|בובנאות|מדובב|לגילאי|לגילי|גילאי \d|מגיל [2-9]\b|kids|family|children|חנוכה לילדים|קייטנ|ספריית ילדים|הצגת חנוכה|הפעלה/i;
+const JUNK=/פילאטיס|יוגה|אימון|פונקציונלי|פלור בר|בלט קלאסי|פלדנקרייז|מתיחות|stretch|גלישת גלים|כניסה יומית|שיעור תנועה|שיעור נסיון|שיעור ניסיון|עם הבייבי|חל"ד|אודישנים|כיתת אמן|השתלמות|ליווי התפתחותי|הרשמה ל/i;
 const NOTKID=/18\+|למבוגרים|מבוגרים בלבד|סטנדאפ|ערב |מסיבת|בר |אלכוהול|הרצאה/;
 function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem,img,ds){const U=url(u);if(c!=="k"&&!NOTKID.test(ti)&&(KID.test(ti+" "+ve+" "+(ds||""))||(c==="t"&&[5,6].includes(new Date(d+"T12:00").getDay())&&t<"13:30")||(age&&/^\d/.test(age)&&parseInt(age)<12)))c="k";if((c==="c"||c==="t"||c==="m")&&/סדנ|workshop/i.test(ti))c="w";if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),img:img||null,src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
 let ev=E.map(r=>mk(...r));
@@ -587,7 +588,7 @@ render();
     if(!j||!j.days)return;
     const fresh=[],dates=new Set();
     Object.entries(j.days).forEach(([d,arr])=>{dates.add(d);(arr||[]).forEach(o=>{
-      if(!o||!o.t||!o.ti||o.c==="b"||o.c==="o")return;
+      if(!o||!o.t||!o.ti||o.c==="b"||o.c==="o"||JUNK.test(o.ti))return;
       if(o.ds||o.lg||o.dur)DESC[o.u]=Object.assign({},DESC[o.u]||{},{u:o.u,ds:o.ds||(DESC[o.u]||{}).ds,lg:o.lg||(DESC[o.u]||{}).lg,dur:o.dur||(DESC[o.u]||{}).dur});
       fresh.push(mk(d,o.t,o.ti,o.ve||"",o.pr??null,o.or??null,o.c||"c",o.dg,o.u||"https://radartlv.co.il/",o.age,o.mem,o.img,o.ds));
     })});
