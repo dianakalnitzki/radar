@@ -103,6 +103,13 @@ body.kids .cell.in{background:#cfe8e1}
 .day b{font-size:18px;font-weight:800}
 .day span{color:var(--muted);font-size:13px}
 .day i{font-style:normal;margin-right:auto;font-size:12px;color:var(--muted)}
+.ban{position:relative;height:132px;background:#eee;overflow:hidden;cursor:pointer}
+.ev.open .ban{height:190px}
+.ban img{width:100%;height:100%;object-fit:cover;display:block}
+.ban-e{position:absolute;bottom:8px;left:10px;font-size:18px;background:rgba(255,255,255,.88);border-radius:10px;padding:2px 7px;line-height:1.3}
+.ban.nob{height:46px;background:linear-gradient(120deg,#ffe3d6,#e6ecff)}
+.ban.nob .ban-e{bottom:auto;top:50%;transform:translateY(-50%);left:auto;right:12px;background:none;font-size:22px}
+.ban.nob.c-f{background:linear-gradient(120deg,#e3e7ff,#f3e6ff)}.ban.nob.c-m{background:linear-gradient(120deg,#ffe9d1,#ffd9e6)}.ban.nob.c-w{background:linear-gradient(120deg,#dff6ea,#fff3cf)}.ban.nob.c-p{background:linear-gradient(120deg,#f3dcff,#ffd6ec)}.ban.nob.c-k{background:linear-gradient(120deg,#fff1c9,#d9f3ff)}
 .ev{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:8px 0;overflow:hidden;transition:box-shadow .2s}
 .ev.open{box-shadow:0 6px 20px rgba(60,40,20,.10)}
 .ev-h{display:grid;grid-template-columns:52px 1fr auto;gap:10px;padding:12px;cursor:pointer;align-items:start}
@@ -252,15 +259,18 @@ let DESC={};DESC_SEED.forEach(i=>DESC[i.u]=i);
 function area(v){for(const [a,ks] of AREAS) if(ks.some(k=>v.includes(k)))return a;return ""}
 
 const FILM=/הקרנ|סרט|קולנוע|סינמה|סינמטק|טרום בכורה|cinema|film|screening|דוקאביב/i;
-function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem){const U=url(u);if((c==="c"||c==="t"||c==="m")&&/סדנ|workshop/i.test(ti))c="w";if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
+const KID=/ילדים|לילדים|הצגת ילדים|הצגה לילדים|שעת סיפור|לכל המשפחה|למשפחות|משפחתי|גיל הרך|פעוט|קטנטנים|הורה וילד|הורים וילדים|להורה|ג.ימבורי|משחקי?יה|תיאטרון בובות|בובנאות|מדובב|לגילאי|לגילי|גילאי \d|מגיל [2-9]\b|kids|family|children|חנוכה לילדים|קייטנ|ספריית ילדים|הצגת חנוכה|הפעלה/i;
+const NOTKID=/18\+|למבוגרים|מבוגרים בלבד|סטנדאפ|ערב |מסיבת|בר |אלכוהול|הרצאה/;
+function mk(d,t,ti,ve,pr,or,c,dg,u,age,mem,img,ds){const U=url(u);if(c!=="k"&&!NOTKID.test(ti)&&(KID.test(ti+" "+ve+" "+(ds||""))||(c==="t"&&[5,6].includes(new Date(d+"T12:00").getDay())&&t<"13:30")||(age&&/^\d/.test(age)&&parseInt(age)<12)))c="k";if((c==="c"||c==="t"||c==="m")&&/סדנ|workshop/i.test(ti))c="w";if((c==="c"||c==="t")&&FILM.test(ti+" "+ve)&&!/תערוכ|הרצאה בלבד/.test(ti))c="f";if(c!=="k"&&/jaffacinema|cinema\.co\.il|radical\.org\.il\/(calendar\/)?movies/.test(String(u)))c="f";pr=(pr===undefined)?null:pr;or=or||null;const og=orgOf(ti,ve,U);const rad=/רדיקל/.test(ve)||/radical/i.test(U);return {rad,mem:rad?(mem||null):null,id:d+t+ti,d,t,ti,ve,pr,or,c,dg:!!dg,u:U,age:age||null,area:area(ve),img:img||null,src:src(U),org:og.o,muni:og.muni,city:!!og.city,save:(or&&pr!==null&&or>pr)?Math.round((1-pr/or)*100):0}}
 let ev=E.map(r=>mk(...r));
 
+const BEM={"f": "🎬", "w": "🎨", "m": "🎵", "t": "🎭", "s": "🎤", "c": "🖼️", "p": "🪩", "k": "🧸"};
 const DAYS=["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
 const CATS={f:"🎬 קולנוע",w:"🎨 סדנאות",m:"🎵 מוזיקה",t:"🎭 תיאטרון",s:"🎤 סטנדאפ",c:"🖼️ תרבות וסיורים",p:"🪩 מסיבות"};
 const TIMES={morning:["☀️ בוקר",0,12],noon:["🌤️ צהריים",12,17],eve:["🌆 ערב",17,21],night:["🌙 לילה",21,30]};
 const PRICES={all:"הכל",free:"חינם בלבד",p50:"עד 50 ₪",p100:"עד 100 ₪"};
 
-const DEF={day:"all",from:"",to:"",srcf:[],time:[],price:"p100",cat:[],area:[],dg:false,fav:false};
+const DEF={day:"all",from:"",to:"",srcf:[],time:[],price:"p100",cat:[],area:[],dg:false,fav:false,pk:true};
 let S={mode:"couple",q:"",...JSON.parse(JSON.stringify(DEF))};
 let FAV=new Set(), OPEN=null;
 try{const s=JSON.parse(localStorage.getItem("radar-ours")||"{}");if(s.mode)S.mode=s.mode;if(s.price)S.price=s.price;if(s.fav)FAV=new Set(s.fav)}catch(e){}
@@ -296,6 +306,7 @@ function match(e,skipDay){
   if(S.price==="p50"&&!e.rad&&!(e.pr!==null&&e.pr<=50))return false;
   if(S.price==="p100"&&!e.rad&&!(e.pr===null||e.pr<=100))return false;
   if(S.dg&&!e.dg)return false;
+  if(S.pk&&e.pr===null&&e.mem!=="free")return false;
   if(S.mode==="couple"&&S.cat.length&&!S.cat.includes(e.c))return false;
   if(S.area.length&&!S.area.includes(e.area))return false;
   if(S.srcf.length&&!S.srcf.some(k=>k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="cc"?/coing\.co/.test(e.u):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
@@ -367,6 +378,7 @@ function renderSheet(){
   const fa=$("f-area");fa.innerHTML="";AREAS.map(a=>a[0]).forEach(a=>chip(fa,a,S.area.includes(a),()=>{tog(S.area,a);renderSheet()}));
   const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["cc","🏘️ מרכזים קהילתיים"],["st","🔑 Secret Tel Aviv"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
   const fm=$("f-more");fm.innerHTML="";
+  chip(fm,"💰 רק עם מחיר ידוע",S.pk,()=>{S.pk=!S.pk;renderSheet()});
   chip(fm,"💜 רק הטבות דיגיתל",S.dg,()=>{S.dg=!S.dg;renderSheet()},"dg");
   chip(fm,"💡 בית רדיקל",S.srcf.includes("rad"),()=>{tog(S.srcf,"rad");renderSheet()});
   chip(fm,"❤️ רק שמורים",S.fav,()=>{S.fav=!S.fav;renderSheet()});
@@ -458,7 +470,7 @@ function renderList(){
   box.innerHTML=Object.entries(byDay).map(([d,arr])=>`
     <div class="day"><b>${dayName(d)}</b><span>${DAYS[dO(d).getDay()]===dayName(d)?"":DAYS[dO(d).getDay()]+" · "}${fmt(d)}</span><i>${arr.length} אירועים</i></div>
     ${arr.map(card).join("")}`).join("");
-  box.querySelectorAll(".ev-h").forEach(h=>h.onclick=()=>{const id=h.parentElement.dataset.id;OPEN=OPEN===id?null:id;renderList()});
+  box.querySelectorAll(".ev-h,.ban").forEach(h=>h.onclick=()=>{const id=h.parentElement.dataset.id;OPEN=OPEN===id?null:id;renderList()});
   box.querySelectorAll("[data-fav]").forEach(b=>b.onclick=ev=>{ev.stopPropagation();const id=b.dataset.fav;FAV.has(id)?(FAV.delete(id),toast("הוסר מהשמורים")):(FAV.add(id),toast("נשמר ❤️"));save();renderList()});
   box.querySelectorAll("[data-share]").forEach(b=>b.onclick=()=>share(ev.find(x=>x.id===b.dataset.share)));
 }
@@ -491,6 +503,7 @@ function card(e){
   const maps="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(e.ve+" תל אביב");
   const end=String((hr(e.t)+2)%24).padStart(2,"0")+e.t.slice(2);
   return `<div class="ev${o?" open":""}" data-id="${esc(e.id)}">
+   ${e.img?`<div class="ban"><img loading="lazy" decoding="async" src="${esc(e.img)}" alt="" onerror="this.parentNode.classList.add('nob');this.remove()"><span class="ban-e">${BEM[e.c]||"✨"}</span></div>`:`<div class="ban nob c-${e.c}"><span class="ban-e">${BEM[e.c]||"✨"}</span></div>`}
    <div class="ev-h">
      <div class="time">${e.t}<small>${tod(e.t)}</small></div>
      <div><div class="title">${esc(e.ti)}</div>
@@ -576,9 +589,9 @@ render();
     Object.entries(j.days).forEach(([d,arr])=>{dates.add(d);(arr||[]).forEach(o=>{
       if(!o||!o.t||!o.ti||o.c==="b"||o.c==="o")return;
       if(o.ds||o.lg||o.dur)DESC[o.u]=Object.assign({},DESC[o.u]||{},{u:o.u,ds:o.ds||(DESC[o.u]||{}).ds,lg:o.lg||(DESC[o.u]||{}).lg,dur:o.dur||(DESC[o.u]||{}).dur});
-      fresh.push(mk(d,o.t,o.ti,o.ve||"",o.pr??null,o.or??null,o.c||"c",o.dg,o.u||"https://radartlv.co.il/",o.age,o.mem));
+      fresh.push(mk(d,o.t,o.ti,o.ve||"",o.pr??null,o.or??null,o.c||"c",o.dg,o.u||"https://radartlv.co.il/",o.age,o.mem,o.img,o.ds));
     })});
-    if(fresh.length){ev=ev.filter(e=>!dates.has(e.d)).concat(fresh);render()}
+    if(fresh.length){ev=fresh;render()}
     if(j.updated)$("upd").innerHTML="עודכן "+esc(j.updated)+"<br>מקור: radartlv ועוד";
   }catch(e){}
 })();

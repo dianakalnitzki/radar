@@ -3,6 +3,7 @@
 
 /* eslint-disable no-undef */
 function extractGeneric(opts) {
+  const imgOf = (el) => { if (!el) return null; const im = el.querySelector("img"); let s = im && (im.currentSrc || im.getAttribute("data-src") || im.getAttribute("data-lazy-src") || im.src); if (!s) { const bg = [el, ...el.querySelectorAll("*")].map((x) => getComputedStyle(x).backgroundImage).find((b) => b && b.startsWith("url(")); if (bg) s = bg.slice(4, -1).replace(/["']/g, ""); } if (!s || /^data:|logo|icon|avatar|placeholder|\.svg/i.test(s)) return null; try { return new URL(s, location.href).href; } catch (e) { return null; } };
   const HEB_MONTHS = ["ינואר","פברואר","מרץ","אפריל","מאי","יוני","יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר"];
   const now = new Date();
   const curY = now.getFullYear();
@@ -103,7 +104,7 @@ function extractGeneric(opts) {
     const veLine = after.find((l) => !isMeta(l) && l.length < 80) || opts.defaultVenue || "";
     const ve = clean(veLine.split("·")[0]);
     const ds = after.filter((l) => !isMeta(l) && l !== veLine && l !== ve && !/·/.test(l) && l.length >= 30 && l.length <= 260)[0] || null;
-    out.push({ d, t, ti: title, ve: opts.forceVenue || ve, pr, or: or && pr !== null && or > pr ? or : null, c, dg, u: a.href, age, mem, ds });
+    out.push({ d, t, ti: title, ve: opts.forceVenue || ve, pr, or: or && pr !== null && or > pr ? or : null, c, dg, u: a.href, age, mem, ds, img: imgOf(card) });
   }
   return out;
 }
@@ -141,6 +142,7 @@ async function extractRadical() {
       const tk = zone.match(/התחלה:\s*(\d{1,2}:\d{2})\s*₪\s?(\d{1,4})/);
       if (tk) { t = tk[1].padStart(5, "0"); pr = +tk[2]; }
       else { const m = zone.match(/₪\s?([1-9]\d{0,3})/); if (m) pr = +m[1]; else if (/חינם|כניסה חופשית/.test(zone)) pr = 0; }
+      const ogi = doc.querySelector('meta[property="og:image"]'); c.img = ogi ? ogi.content : null;
       const og = doc.querySelector('meta[property="og:description"],meta[name="description"]');
       ds = og ? og.content.slice(0, 220) : null;
     } catch (e) {}
@@ -151,7 +153,7 @@ async function extractRadical() {
     if (/מסיבה|רייב|קרנבל|DJ/i.test(blob)) cat = "p";
     if (/סטנד/.test(blob)) cat = "s";
     if (/בוק קלאב|מועדון קריאה|סאונה/.test(c.ti)) cat = "c";
-    out.push({ d: c.d, t, ti: c.ti, ve: /hamartef/.test(location.href) ? "בית רדיקל – המרתף" : "בית רדיקל", pr, or: null, c: cat, dg: false, u: c.u, age: null, mem, ds });
+    out.push({ d: c.d, t, ti: c.ti, ve: /hamartef/.test(location.href) ? "בית רדיקל – המרתף" : "בית רדיקל", pr, or: null, c: cat, dg: false, u: c.u, age: null, mem, ds, img: c.img || null });
   }
   return out;
 }
@@ -216,7 +218,7 @@ async function extractTLV() {
     out.push({
       d, t: a[1] === "00:00" ? "10:00" : a[1], ti, ve: ad.replace(/ 1$/, "") || "תל אביב־יפו", pr, or: null, c,
       dg: v(x, "TlvIsBenefit") === "True", u: BASE + v(x, "WebID") + "&ListID=" + v(x, "ListID") + "&ItemID=" + v(x, "ListItemID"),
-      age, mem: null, ds: sum.slice(0, 220) || null, org: "עיריית תל אביב־יפו", end: b && b[0] !== a[0] ? b[0] : null,
+      age, mem: null, ds: sum.slice(0, 220) || null, org: "עיריית תל אביב־יפו", img: (() => { const raw = String((x.TlvMainPicture && x.TlvMainPicture.Value) || ""); const m = raw.match(/src=["']([^"']+)/i) || raw.match(/(https?:\/\/[^\s,"']+\.(?:jpe?g|png|webp)[^\s,"']*)/i) || raw.match(/^(\/[^,\s]+\.(?:jpe?g|png|webp))/i); return m ? new URL(m[1].replace(/&amp;/g, "&"), "https://www.tel-aviv.gov.il").href : null; })(), end: b && b[0] !== a[0] ? b[0] : null,
     });
   }
   return out;
@@ -225,6 +227,7 @@ async function extractTLV() {
 // Coing: עמודי האירועים של המרכזים הקהילתיים של העירייה (www.coing.co/TLV_...).
 // כל אירוע הוא קישור /שם-הקהילה/מספר; בכרטיס: מארגן, כותרת, תגיות, כתובת, DD/MM/YYYY, שעות, מחיר.
 function extractCoing() {
+  const imgOf = (el) => { if (!el) return null; const im = el.querySelector("img"); let s = im && (im.currentSrc || im.getAttribute("data-src") || im.getAttribute("data-lazy-src") || im.src); if (!s) { const bg = [el, ...el.querySelectorAll("*")].map((x) => getComputedStyle(x).backgroundImage).find((b) => b && b.startsWith("url(")); if (bg) s = bg.slice(4, -1).replace(/["']/g, ""); } if (!s || /^data:|logo|icon|avatar|placeholder|\.svg/i.test(s)) return null; try { return new URL(s, location.href).href; } catch (e) { return null; } };
   const pad = (n) => String(n).padStart(2, "0");
   const out = [], seen = new Set();
   const groups = [...new Set([...document.querySelectorAll("a[href]")].map((a) => a.href.replace(/[?#].*/, ""))
@@ -259,13 +262,14 @@ function extractCoing() {
     else if (/הצגה|תיאטרון/.test(title)) c = "t";
     if (/פילאטיס|יוגה|אימון|ספורט לנשים|לימודי שחייה|חל"ד|לידה|תינוק/.test(title)) continue;
     out.push({ d, t: tm ? `${pad(+tm[1])}:${tm[2]}` : "17:00", ti: title, ve: (cand[0] && cand[0] !== title ? cand[0] : orgName) + (addr ? " · " + addr.replace(/^רחוב /, "") : ""),
-      pr, or: null, c, dg: false, u: a.href, age: null, mem: null, ds: null, org: orgName });
+      pr, or: null, c, dg: false, u: a.href, age: null, mem: null, ds: null, org: orgName, img: imgOf(el) });
   }
   return { events: out, groups };
 }
 
 // השלמת מחיר מעמוד האירוע עצמו (לאירועים שהגיעו בלי מחיר)
 function findPrice() {
+  const ogImg = (() => { const m = document.querySelector('meta[property="og:image"],meta[name="twitter:image"]'); const s = m && m.content; return s && !/logo|icon/i.test(s) ? new URL(s, location.href).href : null; })();
   // 1) נתונים מובנים (JSON-LD / itemprop) – הכי אמין
   const ld = [];
   for (const sc of document.querySelectorAll('script[type="application/ld+json"]')) {
@@ -273,19 +277,19 @@ function findPrice() {
   }
   document.querySelectorAll('[itemprop="price"],[itemprop="lowPrice"]').forEach((m) => ld.push(+(m.getAttribute("content") || m.textContent.replace(/[^\d.]/g, ""))));
   const okLd = ld.filter((n) => !isNaN(n) && n >= 0 && n <= 600);
-  if (okLd.length) return { pr: Math.min(...okLd) };
+  if (okLd.length) return { pr: Math.min(...okLd), img: ogImg };
   // 2) טקסט העמוד
   const txt = (document.body.innerText || "").replace(/\s+/g, " ");
-  if (/כניסה חופשית|הכניסה חופשית|ללא תשלום|ללא עלות|free entry|כניסה חינם|האירוע חינמי|אירוע חינמי/i.test(txt) && !/חינם לחברי/.test(txt)) return { pr: 0 };
+  if (/כניסה חופשית|הכניסה חופשית|ללא תשלום|ללא עלות|free entry|כניסה חינם|האירוע חינמי|אירוע חינמי/i.test(txt) && !/חינם לחברי/.test(txt)) return { pr: 0, img: ogImg };
   const nums = [...txt.matchAll(/(?:₪\s?(\d{2,4})|(\d{2,4})(?:\.00)?\s?(?:₪|ש"ח|ש״ח|שח\b|NIS|ILS))/g)].map((m) => +(m[1] || m[2])).filter((n) => n >= 10 && n <= 600);
-  if (nums.length) return { pr: Math.min(...nums) };
+  if (nums.length) return { pr: Math.min(...nums), img: ogImg };
   // 3) עמוד של הרדאר / אגרגטור: קישור החוצה לעמוד הכרטיסים
   let next = null;
   if (/radartlv\.co\.il|secrettelaviv/.test(location.host)) {
     const a = [...document.querySelectorAll("a[href^='http']")].find((x) => !x.href.includes(location.host) && /כרטיס|לרכישה|הזמנ|לפרטים|לאתר|tickets|buy/i.test((x.innerText || "") + x.href) && !/facebook|instagram|whatsapp|twitter|google|waze/.test(x.href));
     if (a) next = a.href;
   }
-  return { pr: null, next };
+  return { pr: null, next, img: ogImg };
 }
 
 module.exports = { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };

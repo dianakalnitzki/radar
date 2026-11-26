@@ -112,7 +112,7 @@ async function main() {
     if (i < 0) { arr.push(o); continue; }
     const keep = better(o, arr[i]);
     const other = keep === o ? arr[i] : o;
-    arr[i] = { ...keep, ve: keep.src === "direct" && /\d$/.test(keep.ve || "") && other.ve && !/\d$/.test(other.ve) ? other.ve : keep.ve, pr: keep.pr ?? other.pr ?? null, dg: keep.dg || other.dg, ds: keep.ds || other.ds || null, lg: keep.lg || other.lg, dur: keep.dur || other.dur, mem: keep.mem || other.mem || null, age: keep.age || other.age || null };
+    arr[i] = { ...keep, ve: keep.src === "direct" && /\d$/.test(keep.ve || "") && other.ve && !/\d$/.test(other.ve) ? other.ve : keep.ve, pr: keep.pr ?? other.pr ?? null, dg: keep.dg || other.dg, ds: keep.ds || other.ds || null, lg: keep.lg || other.lg, dur: keep.dur || other.dur, mem: keep.mem || other.mem || null, age: keep.age || other.age || null, img: keep.img || other.img || null };
   }
   for (const d of Object.keys(days)) days[d].sort((a, b) => a.t.localeCompare(b.t));
 
@@ -129,6 +129,7 @@ async function main() {
         await page.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
         await page.waitForTimeout(1500);
         const r = await page.evaluate(`(${findPrice.toString()})()`);
+        if (!e.img && r.img && hop === 0) e.img = r.img;
         if (r.pr !== null && r.pr !== undefined) { e.pr = r.pr; filled++; break; }
         url = r.next;
       }
@@ -137,6 +138,20 @@ async function main() {
   };
   const queue = missing.slice(0, PRICE_LOOKUPS);
   await Promise.all([0, 1, 2, 3].map(async () => { while (queue.length) await lookup(queue.shift()); }));
+  // תמונות: לאירועים בלי תמונה – og:image מעמוד האירוע (עד 250 בכל ריצה, 6 במקביל)
+  let imgDone = 0;
+  const noImg = Object.keys(days).sort().flatMap((d) => days[d].filter((e) => !e.img && e.u && !e._im)).slice(0, 250);
+  const imgLook = async (e) => {
+    const page = await ctx.newPage();
+    try {
+      await page.route(/\.(png|jpe?g|webp|gif|css|woff2?|mp4)(\?|$)/i, (r) => r.abort());
+      await page.goto(e.u, { waitUntil: "domcontentloaded", timeout: 20000 });
+      const s = await page.evaluate(() => { const m = document.querySelector('meta[property="og:image"],meta[name="twitter:image"]'); const v = m && m.content; return v && !/logo|icon|default/i.test(v) ? new URL(v, location.href).href : null; });
+      if (s) { e.img = s; imgDone++; }
+    } catch (err) {} finally { e._im = 1; await page.close(); }
+  };
+  await Promise.all([0, 1, 2, 3, 4, 5].map(async () => { while (noImg.length) await imgLook(noImg.shift()); }));
+  report.images = imgDone;
   report.priceLookups = `${filled}/${looked}`;
   await browser.close();
 
