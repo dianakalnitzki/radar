@@ -1,0 +1,10 @@
+[
+ {"name":"הטבות דיגיתל","url":"https://www.tel-aviv.gov.il/Residents/Digitel/Pages/Benefits.aspx","kind":"digitel"},
+ {"name":"בארבי","url":"https://barby.co.il/","kind":"barby","cat":"m"},
+ {"name":"לבונטין 7","url":"https://levontin7.com/","kind":"crawl","cat":"m","opts":{"link":"levontin7\\.com/events/[^/]+/?$","max":35}},
+ {"name":"צוותא","url":"https://www.tzavta.co.il/shows","kind":"crawl","cat":"t","opts":{"link":"tzavta\\.co\\.il/event/\\d+","max":40}},
+ {"name":"הבימה","url":"https://www.habima.co.il/","kind":"crawl","cat":"t","opts":{"link":"habima\\.co\\.il/shows/[^/]+/?$","max":30}},
+ {"name":"הקאמרי","url":"https://www.cameri.co.il/","kind":"crawl","cat":"t","opts":{"link":"cameri\\.co\\.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA","max":30}},
+ {"name":"תיאטרון הסימטה","url":"https://hasimta.com/","kind":"crawl","cat":"t","opts":{"link":"hasimta\\.com/shows/[^/]+/?$","max":30}},
+ {"name":"סוזן דלל","url":"https://suzannedellal.org.il/shows","kind":"crawl","cat":"t","opts":{"link":"suzannedellal\\.org\\.il/shows/.+","max":30}}
+]

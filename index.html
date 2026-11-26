@@ -310,7 +310,7 @@ function match(e,skipDay){
   if(S.pk&&e.pr===null&&e.mem!=="free")return false;
   if(S.mode==="couple"&&S.cat.length&&!S.cat.includes(e.c))return false;
   if(S.area.length&&!S.area.includes(e.area))return false;
-  if(S.srcf.length&&!S.srcf.some(k=>k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="cc"?/coing\.co/.test(e.u):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
+  if(S.srcf.length&&!S.srcf.some(k=>k==="dgl"?e.dg:k==="venue"?/barby|levontin|tzavta|habima|cameri|hasimta|suzannedellal|radical/.test(e.u):k==="gov"?(/tel-aviv\.gov\.il/.test(e.u)||e.city):k==="cc"?/coing\.co/.test(e.u):k==="st"?/secrettelaviv/.test(e.u):k==="rad"?/רדיקל/.test(e.ve)||/radical/i.test(e.u):/קולנוע יפו/.test(e.ve)||/jaffacinema/.test(e.u)))return false;
   return true;
 }
 const sortK=e=>e.d+String(mins(e.t)).padStart(4,"0");
@@ -377,7 +377,7 @@ function renderSheet(){
   $("fs-cat").style.display=S.mode==="kids"?"none":"";
   const fc=$("f-cat");fc.innerHTML="";Object.entries(CATS).forEach(([k,l])=>chip(fc,l,S.cat.includes(k),()=>{tog(S.cat,k);renderSheet()}));
   const fa=$("f-area");fa.innerHTML="";AREAS.map(a=>a[0]).forEach(a=>chip(fa,a,S.area.includes(a),()=>{tog(S.area,a);renderSheet()}));
-  const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["cc","🏘️ מרכזים קהילתיים"],["st","🔑 Secret Tel Aviv"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
+  const fs=$("f-src");fs.innerHTML="";[["gov","🏛️ עיריית תל אביב"],["dgl","💜 דיגיתל"],["venue","🎭 מקומות בעיר"],["cc","🏘️ מרכזים קהילתיים"],["rad","💡 בית רדיקל"],["jc","🎬 קולנוע יפו"]].forEach(([k,l])=>chip(fs,l,S.srcf.includes(k),()=>{tog(S.srcf,k);renderSheet()}));
   const fm=$("f-more");fm.innerHTML="";
   chip(fm,"💰 רק עם מחיר ידוע",S.pk,()=>{S.pk=!S.pk;renderSheet()});
   chip(fm,"💜 רק הטבות דיגיתל",S.dg,()=>{S.dg=!S.dg;renderSheet()},"dg");
@@ -593,7 +593,7 @@ render();
       fresh.push(mk(d,o.t,o.ti,o.ve||"",o.pr??null,o.or??null,o.c||"c",o.dg,o.u||"https://radartlv.co.il/",o.age,o.mem,o.img,o.ds));
     })});
     if(fresh.length){ev=fresh;render()}
-    if(j.updated)$("upd").innerHTML="עודכן "+esc(j.updated)+"<br>מקור: radartlv ועוד";
+    if(j.updated)$("upd").innerHTML="עודכן "+esc(j.updated)+"<br>ישירות מהעירייה, דיגיתל, מרכזים קהילתיים ומקומות בעיר";
   }catch(e){}
 })();
 </script>

@@ -310,7 +310,9 @@ function extractDetail(opts) {
   opts = opts || {};
   const pad = (n) => String(n).padStart(2, "0");
   const meta = (p) => { const m = document.querySelector(`meta[property="${p}"],meta[name="${p}"]`); return m ? m.content : ""; };
-  let ti = (opts.titleSel && document.querySelector(opts.titleSel) && document.querySelector(opts.titleSel).innerText) || (document.querySelector("h1") && document.querySelector("h1").innerText) || meta("og:title") || document.title;
+  const h1 = document.querySelector("h1") && document.querySelector("h1").innerText.trim();
+  if (h1 && /^(מופעים|לוח|אירועים|הצגות|כרטיסים)/.test(h1)) opts = { ...opts, titleSel: opts.titleSel || "meta-og" };
+  let ti = (opts.titleSel === "meta-og" && meta("og:title")) || (opts.titleSel && document.querySelector(opts.titleSel) && document.querySelector(opts.titleSel).innerText) || (document.querySelector("h1") && document.querySelector("h1").innerText) || meta("og:title") || document.title;
   ti = String(ti).replace(/\s+/g, " ").replace(/\s*[|\-–—]\s*(תיאטרון|סינמטק|צוותא|לבונטין|levontin|הבימה|בית ליסין|תמונע|סוזן|הסימטה|בארבי|מוזיאון|קומדי|comedy|הקאמרי).*$/i, "").replace(/\s*צוותא – הבית לתרבות ישראלית$/, "").trim().slice(0, 120);
   const cands = [...document.querySelectorAll(opts.mainSel || "main, article, #content, .content")].filter((x) => (x.innerText || "").length > 200);
   const main = cands.sort((a, b) => b.innerText.length - a.innerText.length)[0] || document.body;
@@ -370,7 +372,12 @@ async function extractDigitel() {
       const ptxt = [val(x, "TlvSearchContentForLobbyBenefitStickerDescription"), val(x, "TlvBenefitStickerDescription"), val(x, "TlvPaymentCost"), val(x, "TlvBenefitDescription")].find((s) => /\d|חינם/.test(s)) || "";
       const { pr, or } = parsePrice(ptxt);
       const raw = val(x, "TlvMainPicture"); const im = raw.match(/src=["']([^"']+)/i) || raw.match(/(\/[^,\s"']+\.(?:jpe?g|png|webp))/i);
-      out.push({ d, t: st[4] === "00:00" ? "10:00" : st[4], ti: val(x, "Title"), ve: val(x, "TlvAddress1") || val(x, "TlvInstitution"), pr, or, c: "c", dg: true,
+      const ti = val(x, "Title"), sm = val(x, "TlvSummary");
+      let c = "c";
+      if (/סינמטק|הקרנ|סרט|קולנוע/.test(ti)) c = "f"; else if (/תיאטרון|הצגה|בהבימה|בקאמרי|בית ליסין|מחזמר|קומדיה/.test(ti)) c = "t";
+      else if (/סטנדאפ|סטנד אפ/.test(ti)) c = "s"; else if (/בהופעה|הופעה|קונצרט|מופע|ג'אז|תזמורת|אופרה/.test(ti)) c = "m"; else if (/סדנ/.test(ti)) c = "w";
+      if (/ילדים|לילדים|לכל המשפחה|הצגת ילדים|חנוכה לילדים|שעת סיפור/.test(ti + " " + sm.slice(0, 80))) c = "k";
+      out.push({ d, t: st[4] === "00:00" ? "10:00" : st[4], ti, ve: val(x, "TlvAddress1") || val(x, "TlvInstitution"), pr, or, c, dg: true,
         u: BASE + val(x, "WebID") + "&ListID=" + val(x, "ListID") + "&ItemID=" + val(x, "ListItemID"), age: null, mem: null, ds: val(x, "TlvSummary").slice(0, 220) || null,
         img: im ? new URL(im[1], "https://www.tel-aviv.gov.il").href : null, end: e !== d ? e : null, org: "עיריית תל אביב־יפו (הטבת דיגיתל)" });
     }
@@ -402,7 +409,8 @@ function extractBarby() {
     const a = el.tagName === "A" ? el : el.querySelector("a[href]") || el.closest("a");
     const im = el.querySelector("img");
     let c = "m"; if (/מסיבה|מסיבת/.test(ti)) c = "p";
-    out.push({ d, t: tm[1].padStart(5, "0"), ti, ve: "בארבי", pr: null, or: null, c, dg: false, u: a ? a.href : location.href, age: null, mem: null, ds: /אזלו/.test(tx) ? "כרטיסים אזלו" : null, img: im ? im.currentSrc || im.src : null });
+    const href = a && a.href && a.href.replace(/[#?].*$/, "") !== location.href.replace(/[#?].*$/, "") ? a.href : location.origin + "/?show=" + d + "-" + encodeURIComponent(ti.slice(0, 30));
+    out.push({ d, t: tm[1].padStart(5, "0"), ti, ve: "בארבי", pr: null, or: null, c, dg: false, u: href, age: null, mem: null, ds: /אזלו/.test(tx) ? "כרטיסים אזלו" : null, img: im ? im.currentSrc || im.src : null });
   }
   return out;
 }
