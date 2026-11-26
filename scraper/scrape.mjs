@@ -31,7 +31,6 @@ const SOURCES = TEST || (process.env.SOURCES_JSON ? JSON.parse(process.env.SOURC
   { url: "https://radical.org.il/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/hamartef/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/movies/", kind: "radical", direct: true },
-  { url: "https://www.jaffacinema.com/", kind: "generic", direct: true, opts: { forceVenue: "קולנוע יפו", defaultCat: "f" } },
   ...VENUES.map((v) => ({ url: v.url, kind: v.kind || "auto", direct: true, opts: { forceVenue: v.name, defaultCat: v.cat, ...(v.opts || {}) }, name: v.name })),
 ]);
 const PRICE_LOOKUPS = 160; // כמה עמודי אירוע לבדוק בכל ריצה כדי להשלים מחירים חסרים
@@ -156,7 +155,7 @@ async function main() {
   // השלמת מחירים: נכנסים לעמוד של אירועים בלי מחיר (הקרובים קודם) ומחפשים ₪ / "כניסה חופשית"
   let looked = 0, filled = 0;
   const todayN = Date.now();
-  const missing = Object.keys(days).sort().flatMap((d) => days[d].filter((e) => (e.pr === null || e.pr === undefined) && e.u && (!e._pl || todayN - e._pl > 4 * 864e5)));
+  const missing = Object.keys(days).sort().flatMap((d) => days[d].filter((e) => (e.pr === null || e.pr === undefined) && e.u && !/\?show=/.test(e.u) && (!e._pl || todayN - e._pl > 4 * 864e5)));
   const lookup = async (e) => {
     const page = await ctx.newPage();
     try {
