@@ -1,2349 +1,333 @@
-
-
-===== https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/
 {
- "url": "https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/",
- "title": "אחותי - סינמטק תל אביב",
- "pat": [
-  [
-   "https://www.cinema.co.il/event",
-   61
-  ],
-  [
-   "https://cintlv.pres.global/order",
-   27
-  ],
-  [
-   "https://www.cinema.co.il/series",
-   16
-  ],
-  [
-   "https://www.cinema.co.il/shown",
-   8
-  ],
-  [
-   "https://www.cinema.co.il/%D7%97%D7%95%D7%A4%D7%A9%D7%99-%D7%9C%D7%9E%D7%A0%D7%95%D7%99%D7%99%D7%9D",
-   6
-  ],
-  [
-   "https://www.cinema.co.il/lobby-kids",
-   6
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a7%d7%95%d7%9c%d7%a0%d7%95%d7%a2-%d7%99%d7%a9%d7%a8%d7%90%d7%9c%d7%99",
-   6
-  ],
-  [
-   "https://www.cinema.co.il/%d7%94%d7%9e%d7%a2%d7%a8%d7%91-%d7%94%d7%a4%d7%a8%d7%95%d7%a2-%d7%91%d7%90%d7%9e%d7%aa",
-   6
-  ],
-  [
-   "https://www.cinema.co.il/%d7%94%d7%97%d7%9c%d7%9c-%d7%94%d7%90%d7%97%d7%a8%d7%95%d7%9f",
-   6
-  ],
-  [
-   "https://cintlv.pres.global/customer",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/%d7%98%d7%a8%d7%95%d7%9d-%d7%91%d7%9b%d7%95%d7%a8%d7%94",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/%d7%97%d7%93%d7%a9%d7%99%d7%9d",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/cinema",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/%d7%aa%d7%9b%d7%a0%d7%99%d7%95%d7%aa-%d7%9e%d7%99%d7%95%d7%97%d7%93%d7%95%d7%aa",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/%d7%90%d7%95%d7%93%d7%95%d7%aa",
-   4
-  ],
-  [
-   "https://www.cinema.co.il/gift-card",
-   3
-  ],
-  [
-   "https://www.cinema.co.il/blog",
-   3
-  ],
-  [
-   "https://www.cinema.co.il/%d7%aa%d7%a0%d7%90%d7%99-%d7%a9%d7%99%d7%9e%d7%95%d7%a9-%d7%91%d7%90%d7%aa%d7%a8-%d7%9c%d7%a8%d7%9b%d7%99%d7%a9%d7%aa-%d7%9b%d7%a8%d7%98%d7%99%d7%a1%d7%99%d7%9d",
-   3
-  ],
-  [
-   "https://www.cinema.co.il/en",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a7%d7%95%d7%9c%d7%a0%d7%95%d7%a2-%d7%95%d7%90%d7%a0%d7%a8%d7%9b%d7%99%d7%94",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%9c%d7%a4%d7%a8%d7%a7-%d7%95%d7%9c%d7%94%d7%a8%d7%9b%d7%99%d7%91",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a9%d7%a4%d7%94-%d7%96%d7%a8%d7%94-%d7%9c%d7%94%d7%99%d7%95%d7%aa-%d7%90%d7%93%d7%9d",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/solidarity2026",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%9e%d7%9b%d7%95%d7%9f-%d7%aa%d7%9c-%d7%90%d7%91%d7%99%d7%91-%d7%9c%d7%a7%d7%95%d7%9c%d7%a0%d7%95%d7%a2",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a4%d7%a1%d7%98%d7%99%d7%91%d7%9c%d7%99%d7%9d",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a1%d7%93%d7%a8%d7%95%d7%aa-%d7%a2%d7%95%d7%a0%d7%aa-26-27",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a7%d7%95%d7%a8%d7%a1%d7%99%d7%9d",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/vod",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/subscription",
-   2
-  ],
-  [
-   "https://www.cinema.co.il/%d7%a6%d7%95%d7%a8-%d7%a7%d7%a9%d7%a8",
-   2
-  ]
- ],
- "xhr": [
-  "https://www.google.com/recaptcha/api.js?render=6Lc93c8mAAAAACqLwJVX7P-bPsuJMkPEOYkZNJsG&ver=3.0",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700",
-  "https://widget-config.tabnav.com/cinema.co.il.json",
-  "https://www.cinema.co.il/wp-json/contact-form-7/v1/contact-forms/80589/feedback/schema",
-  "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6Lc93c8mAAAAACqLwJVX7P-bPsuJMkPEOYkZNJsG&co=aHR0cHM6Ly93d3cuY2luZW1hLmNvLmlsOjQ0Mw..&hl=iw&v=DqDoLJqJmjhqr0vRwNZ2MCHA&size=invisible&anchor-ms=20000&execute-ms=30000&ovv=CADq00gF&cb=gj9qwram56p6",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/407787168/?random=1795703206002&cv=11&fst=1795703206002&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=11&label=3v1RCL-27_kBEKCtucIB&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/407787168/?random=1795703206002&cv=11&fst=1795703206002&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=11&label=3v1RCL-27_kBEKCtucIB&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=68&gcp=5",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/586330230/?random=1795703206069&cv=11&fst=1795703206069&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385422~120469145~120469153~121246026~121246034~123785232&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=2&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/586330230/?random=1795703206069&cv=11&fst=1795703206069&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385422~120469145~120469153~121246026~121246034~123785232&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=2&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=68&gcp=5",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/760148736/?random=1795703206141&cv=11&fst=1795703206141&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385422~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=14&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/760148736/?random=1795703206141&cv=11&fst=1795703206141&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385422~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=14&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=68&gcp=5",
-  "https://analytics.google.com/g/collect?v=2&tid=G-X6ZWRF6QW8&gtm=45je6bh1v868412164za208zb811186713zd811186713xf1&_p=1795703205165&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAAAGAC&cid=2067051732.1795703206&frm=0&ir=1&pscdl=noapi&rcb=3&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115616985~115938466~115938468~120213116~120385422~120469145~120469153~121246026~121246034&sid=1795703206&sct=1&seg=0&dl=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%D7%90%D7%97%D7%95%D7%AA%D7%99%2F&dt=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&en=page_view&_fv=1&_ss=1&_ee=1&gap.plf=5&tfd=2151",
-  "https://www.google.com/pagead/1p-user-list/407787168/?random=1795703206002&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=11&label=3v1RCL-27_kBEKCtucIB&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS0wEAogo4deUyTxRc-lRXi-BdJZ24N5VOSmCS99yx6nqE_hrOM-MH4feapyczZPj_BajwUhRJYtfgHd8lQH1Ef1BWotup87M8uI239uCRZE3yn3CGztPkq0tKLgP7oW2zKEvwsSfbKelm6JMAkjIA7kCxgH-lm_S6w_Ml8vGfHtLjnzgdsbrDECaySS32NsPyyxYPE1o5WVzj--U9cPUYmC1bKjWcAh4CX3oB5Fc2-e1hSLEZOgGe9i4grFQGkiZyOPZB9-GovzqJoZbgKtxVI93plJj9&random=4197756544&rmt_tld=0&ipr=y",
-  "https://www.google.com/pagead/1p-user-list/586330230/?random=1795703206069&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385422~120469145~120469153~121246026~121246034~123785232&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=2&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4dZBsVgryXi2TYB6MuAm7YH3TpQzVoai6UN5P8R8WazaLTeoHoPf3Plsf27Ja24vHAWIVH2TbTFzquwdSB9S9iV8-ODB6Qzn6bt4TO97MGhbh6w6PI-wQ62u_FwGaxgdWZVSTwW5VY2PZmhTJmhrpNwOdbp_1WVq5kvEkbmaioK-5nIRpmhn04YvAn6rVBtcHB-n9hLvBG_JTgQ-lWfqi0sdrLyrcrg43_M1IwORaRRB6pjHhs4G4VTdbtQ7LyTTNhaWl3IgcsBgoXe2WVmGCUedq2YNk01DenxzZt1o&random=2589401438&rmt_tld=0&ipr=y",
-  "https://www.google.com/pagead/1p-user-list/760148736/?random=1795703206141&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&gtm=45be6bh1z8811186713za20gzb811186713zd811186713xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~117776796~120385422~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.cinema.co.il%2Fevent%2F%25d7%2590%25d7%2597%25d7%2595%25d7%25aa%25d7%2599%2F&rcb=14&frm=0&tiba=%D7%90%D7%97%D7%95%D7%AA%D7%99%20-%20%D7%A1%D7%99%D7%A0%D7%9E%D7%98%D7%A7%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=489281930.1795703205&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&gap.plf=5&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4dWglj0_l52k4Lx4Gv0Ypkvmy4HJabo6XGkSBos_CbcFnvnGtqqgk3UCbQ9MyeGDbx5EoURDKuZlCZmNtPhiYZRNdplplElFTgtxP8ekEDFTeoxtEh7ERszGhTDcpi4MbgEzLEggOBt1zekXrDZPiV2abFwVXmGQc_yK_poQ-2_ia1fBeYInPgCYBdB_MOgF8t1V8eCtczD4Z3G0JMa6vvh1qEA8laEjYN_YmOwW_h6r8luV1DH-rN7pJ6_-L_i57oxUZLCFf0Lo817GiNQCKsXk35y2BhpbxOazOr5U&random=3065175055&rmt_tld=0&ipr=y",
-  "https://www.cinema.co.il/wp-json/contact-form-7/v1/contact-forms/80589/refill",
-  "https://www.google.com/recaptcha/api2/clr?k=6Lc93c8mAAAAACqLwJVX7P-bPsuJMkPEOYkZNJsG"
- ],
- "sample": [
-  "https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/#\n   לחץ על לחצן ESC לפתיחת סרגל הנגישות",
-  "https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/\n    | ",
-  "https://www.cinema.co.il/event/heartworn-highways-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%94%d7%94%d7%97%d7%9c%d7%a7%d7%94-%d7%9c%d7%a0%d7%99%d7%a6%d7%97%d7%95%d7%9f-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%90%d7%95%d7%9e%d7%a8%d7%95-%d7%92%d7%90%d7%9f-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%9c%d7%a8%d7%90%d7%95%d7%aa-%d7%90%d7%aa-%d7%94%d7%9b%d7%9c/\n    | ",
-  "https://www.cinema.co.il/event/%d7%91%d7%aa-%d7%a9%d7%9c-%d7%9e%d7%99-%d7%90%d7%aa/\n    | ",
-  "https://www.cinema.co.il/event/%d7%90%d7%a0%d7%99-%d7%90%d7%a1%d7%99-%d7%93%d7%99%d7%99%d7%9f-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%a4%d7%90%d7%a0%d7%a7-%d7%91%d7%9c%d7%95%d7%a0%d7%93%d7%95%d7%9f-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%a4%d7%99%d7%a0%d7%a7-%d7%a4%d7%9c%d7%9e%d7%99%d7%a0%d7%92%d7%95%d7%a1/\n    | ",
-  "https://www.cinema.co.il/event/nofx-%d7%90%d7%a8%d7%91%d7%a2%d7%99%d7%9d-%d7%a9%d7%a0%d7%94-%d7%a9%d7%9c-%d7%a4%d7%90%d7%a7-%d7%90%d7%a4%d7%99%d7%9d-%d7%a1%d7%90%d7%95%d7%a0%d7%93%d7%98%d7%a8%d7%90%d7%a7-2026/\n    | ",
-  "https://www.cinema.co.il/event/%d7%90%d7%93%d7%95%d7%9e%d7%99%d7%9d-%d7%9e%d7%95%d7%9c-%d7%9b%d7%97%d7%95%d7%9c%d7%99%d7%9d-i-%d7%a9%d7%a2%d7%aa-%d7%a1%d7%99%d7%a4%d7%95%d7%a8-i-%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f-%d7%90/\n    | "
- ],
- "json": []
+ "https://www.tel-aviv.gov.il/Residents/Digitel/Pages/Benefits.aspx": 346,
+ "https://barby.co.il/": 76,
+ "https://hasimta.com/": 23,
+ "https://suzannedellal.org.il/shows": 4,
+ "https://www.cameri.co.il/": 173,
+ "https://www.comedybar.co.il/": 15,
+ "https://levontin7.com/": 6
 }
---- TEXT
-דלג לתוכן הראשי
-דלג לתפריט
-דלג לתחתית העמוד
-הפעל תאימות לקורא מסך
-לחץ על לחצן ESC לפתיחת סרגל הנגישות
-עבור לתפריט הראשי
-דלג לתוכן
-דלג למפת האתר
-Gift Card
-ENG
-אזור אישי
-הסרטים שלנו
-חופשי למנויים
-טרום בכורה
-חדשים
-סרט פלוס
-לילדים ולכל המשפחה
-מועדון אנגלית לקטנטנים
-אפטר בסינמטק
-Teen Screen
-קולנוע ישראלי
-לפי ימים
-הכי חמים החודש
-המערב הפרוע באמת
-לפרטים
-החלל האחרון
-לפרטים
 
-60 שנה ל"מסע בין כוכבים"
-
-26.11.26 היום
-16:45
-אדומים מול כחולים | שעת סיפור+הקרנה | מועדון אנגלית לקטנטנים עם רות גלנץ
-17:00
-ללחוש ולצרוח | 50 שנה לפאנק | סאונדטראק 2026
-17:00
-קרוואן | לזכרה של אשה בוסלה, מגדולות הזמרות של הקולנוע ההודי, שהלכה השנה לעולמה | סאונדטראק 2026
-ללוח ההקרנות המלא
-תכניות מיוחדות
-מכון תל אביב לקולנוע
-פסטיבלים
-סדרות העשרה
-סדנאות לילדים ונוער
-ההזמנות שלי
-VOD
-×
-חיפוש
-לוח הקרנות
-לרכישת מנוי
-דף הבית
->
-עכשווי
->
-אחותי
-אחותי
-
-דנמרק / 2022 / אורך: 106
-
-חופשי למנויים
-בימוי: נילס ארדן אופלב
-בהשתתפות: סופי גראבול, לנה מריה כריסטנסן, אנדרס ו. ברת'לסן
-שפה: דנית, צרפתית, תרגום לעברית ואנגלית
-
-אחותי | Rose
-
-"אחותי" היא דרמה מקסימה ונוגעת ללב על הקשר המיוחד בין אחיות, על התמודדות, על אהבה ועל חמלה. האחיות אלן ואינגר יוצאות לטיול מאורגן מדנמרק לפריז, יחד עם בעלה של אלן. כשאינגר מודיעה לנוסעי האוטובוס שהיא מתמודדת עם מחלת נפש, התגובות של שאר המטיילים נעות בין הבנה, חשש ודחייה. אבל במהלך שבוע הטיול אינגר תוכיח להם, לאחותה וגם לעצמה שהיא מסוגלת להרבה יותר ממה שמצפים ממנה, כשההגעה לפריז תחשוף מניעים נסתרים ודמויות מהעבר, ותחזק את הקשר בין האחיות יותר מתמיד...
-
-הזמנת כרטיסים
-
-בחרו תאריך ושעה
-
-26-11-2026 חמישי
-בחר שעה
-18:00
-לרכישה
-נשארים מעודכנים
-
-הרשמו לניוזלטר ותקבלו מאיתנו עדכונים והמלצות על כל הסרטים והאירועים החדשים והכי מעניינים
-
-
-
-
-
-
-אני מעוניין לקבל מידע שיווקי באמצעות מייל או מסרונים
-
-הכי משתלם מועדון המנויים!
-
-נהנים באופן קבוע מחוויות קולנועיות איכותית וייחודיות
-
-לפרטים
-6876*
-972523403778
-service@cinema.co.il
-רחוב הארבעה 5, תל אביב
-עקבו אחרינו בפייסבוק
-עקבו אחרינו באינסטגרם
-עקבו אחרינו בטיקטוק
-סינמטק תל אביב
-אודות הסינמטק
- 
-מחלקות ובעלי תפקידים
- 
-מידע למבקר
- 
-תנאי שימוש
- 
-השכרת אולמות
- 
-הודעות לציבור | קול קורא | מכרזים | דרושים
- 
-הספריה לקולנוע
-מה בתפריט
-תכניות החודש
- 
-חופשי למנויים
- 
-קולנוע ישראלי
- 
-לכל המשפחה
- 
-סדנאות ליוצרים
-כתב עת
-כתב העת סינמטק
-תנאי שימוש באתר
-/
-הצהרת נגישות
-אפיון ועיצוב חווית משתמש -
-- תכנות: Outright
---- HTML
-<html dir="rtl" lang="he-IL" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#" class=""><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link type="text/css" rel="stylesheet" href="https://www.cinema.co.il/wp-content/themes/cinematheque_new_theme/css/jquery.fancybox.css">
-
-
-
-
-
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://fonts.typotheque.com/WF-032495-010611.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://www.cinema.co.il/wp-content/themes/cinematheque_new_theme/style.css?ver=5.24">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-	<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
-	<title>אחותי - סינמטק תל אביב</title>
-	<link rel="canonical" href="https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/">
-	<meta property="og:locale" content="he_IL">
-	<meta property="og:type" content="article">
-	<meta property="og:title" content="אחותי - סינמטק תל אביב">
-	<meta property="og:description" content="אחותי | Rose &quot;אחותי&quot; היא דרמה מקסימה ונוגעת ללב על הקשר המיוחד בין אחיות, על התמודדות, על אהבה ועל חמלה. האחיות אלן ואינגר יוצאות לטיול מאורגן מדנמרק לפריז, יחד עם בעלה של אלן. כשאינגר מודיעה לנוסעי האוטובוס שהיא מתמודדת עם מחלת נפש, התגובות של שאר המטיילים נעות בין הבנה, חשש ודחייה. אבל במהלך שבוע הטיול […]">
-	<meta property="og:url" content="https://www.cinema.co.il/event/%d7%90%d7%97%d7%95%d7%aa%d7%99/">
-	<meta property="og:site_name" content="סינמטק תל אביב">
-	<meta property="article:publisher" content="https://www.facebook.com/telaviv.cinematheque/">
-	<meta property="article:modified_time" content="2023-08-14T06:14:25+00:00">
-	<meta property="og:image" content="https://www.cinema.co.il/wp-content/uploads/2023/04/אחותי.jpg">
-	<meta property="og:image:width" content="1400">
-	<meta property="og:image:height" content="500">
-	<meta property="og:image:type" content="image/jpeg">
-	<meta name="twitter:card" content="summary_large_image">
-	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-X6ZWRF6QW8&amp;cx=c&amp;gtm=4e6bh1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-407787168&amp;cx=c&amp;gtm=4e6bh1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-586330230&amp;cx=c&amp;gtm=4e6bh1"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-760148736&amp;cx=c&amp;gtm=4e6bh1"></script><script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/DqDoLJqJmjhqr0vRwNZ2MCHA/recaptcha__iw.js" crossorigin="anonymous" integrity="sha384-0FO/T35l3Zazi3pZ30nN6Ja5ral56bZLGjBazPoUBQ11XEjIPN9aAuBPUEGgRHUp"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WDPM5H7"></script><script src="https://connect.facebook.net/signals/config/858592945431550?v=2.9.441&amp;r=stable&amp;domain=www.cinema.co.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C28
-
-===== https://lessin.pres.global/eWeb/event/45196
-{
- "url": "https://lessin.presglobal.store/eWeb/event/45196",
- "title": "Attention Required! | Cloudflare",
- "pat": [
-  [
-   "https://www.cloudflare.com/5xx-error-landing",
-   1
-  ]
- ],
- "xhr": [],
- "sample": [],
- "json": []
-}
---- TEXT
-Sorry, you have been blocked
-You are unable to access presglobal.store
-Why have I been blocked?
-
-This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.
-
-What can I do to resolve this?
-
-You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.
-
-Cloudflare Ray ID: a6099254cccc9a8e • Your IP: Click to reveal • Performance & security by Cloudflare
---- HTML
-<html class="no-js" lang="en-US"><!--<![endif]--><head>
-<title>Attention Required! | Cloudflare</title>
-<meta charset="UTF-8">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css">
-<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
-
-
-
-<!--[if gte IE 10]><!-->
-<script>
-  if (!navigator.cookieEnabled) {
-    window.addEventListener('DOMContentLoaded', function () {
-      var cookieEl = document.getElementById('cookie-alert');
-      cookieEl.style.display = 'block';
-    })
-  }
-</script>
-<!--<![endif]-->
-
-</head>
-<body>
-  <div id="cf-wrapper">
-    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
-    <div id="cf-error-details" class="cf-error-details-wrapper">
-      <div class="cf-wrapper cf-header cf-error-overview">
-        <h1 data-translate="block_headline">Sorry, you have been blocked</h1>
-        <h2 class="cf-subheadline"><span data-translate="unable_to_access">You are unable to access</span> presglobal.store</h2>
-      </div><!-- /.header -->
-
-      <div class="cf-section cf-highlight">
-        <div class="cf-wrapper">
-          <div class="cf-screenshot-container cf-screenshot-full">
-            
-              <span class="cf-no-screenshot error"></span>
-            
-          </div>
-        </div>
-      </div><!-- /.captcha-container -->
-
-      <div class="cf-section cf-wrapper">
-        <div class="cf-columns two">
-          <div class="cf-column">
-            <h2 data-translate="blocked_why_headline">Why have I been blocked?</h2>
-
-            <p data-translate="blocked_why_detail">This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.</p>
-          </div>
-
-          <div class="cf-column">
-            <h2 data-translate="blocked_resolve_headline">What can I do to resolve this?</h2>
-
-            <p data-translate="blocked_resolve_detail">You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.</p>
-          </div>
-        </div>
-      </div><!-- /.section -->
-
-      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
-    <p class="text-13">
-      <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">a6099254cccc9a8e</strong></span>
-      <span class="cf-footer-separator sm:hidden">•</span>
-      <span id="cf-footer-item-ip" class="cf-footer-item sm:block sm:mb-1">
-        Your IP:
-        <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
-        <span class="hidden" id="cf-footer-ip">48.217.73.58</span>
-        <span class="cf-footer-separator sm:hidden">•</span>
-      </span>
-      <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
-      
-    </p>
-    <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DO
-
-===== https://hasimta.com/shows/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94/
-{
- "url": "https://hasimta.com/shows/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94/",
- "title": "תוכנית מגירה - תאטרון הסימטה",
- "pat": [
-  [
-   "https://hasimta.com/shows",
-   17
-  ],
-  [
-   "https://hasimta.com/",
-   9
-  ],
-  [
-   "https://hasimta.com/%d7%9c%d7%95%d7%97-%d7%90%d7%99%d7%a8%d7%95%d7%a2%d7%99%d7%9d",
-   5
-  ],
-  [
-   "https://hasimta.com/%d7%99%d7%a6%d7%99%d7%a8%d7%aa-%d7%a7%d7%a9%d7%a8",
-   5
-  ],
-  [
-   "https://hasimta.com/%d7%a0%d7%92%d7%99%d7%a9%d7%95%d7%aa-2",
-   5
-  ],
-  [
-   "https://www.facebook.com/hasimta",
-   5
-  ],
-  [
-   "https://hasimta.com/%d7%90%d7%95%d7%93%d7%95%d7%aa",
-   4
-  ],
-  [
-   "https://hasimta.com/%d7%91%d7%9b%d7%95%d7%a8%d7%95%d7%aa-%d7%91%d7%93%d7%94-%d7%95%d7%99%d7%a0%d7%a6%d7%b3%d7%99",
-   4
-  ],
-  [
-   "https://hasimta.com/%d7%9e%d7%95%d7%a2%d7%93%d7%95%d7%9f-%d7%94%d7%92%d7%90%d7%96",
-   4
-  ],
-  [
-   "https://hasimta.com/for-crying-out-loud-about",
-   4
-  ],
-  [
-   "https://hasimta.com/%d7%90%d7%a0%d7%a1%d7%9e%d7%91%d7%9c-%d7%94%d7%a1%d7%99%d7%9e%d7%98%d7%94",
-   4
-  ],
-  [
-   "https://chat.whatsapp.com/LTpQmvTkpn966aLv07vso0",
-   4
-  ],
-  [
-   "javascript:void(0);",
-   1
-  ],
-  [
-   "https://eventbuzz.co.il/t3v47",
-   1
-  ],
-  [
-   "https://youtube.com/shorts",
-   1
-  ],
-  [
-   "https://saloona.co.il/blog",
-   1
-  ],
-  [
-   "https://www.instagram.com/hasimta.theater",
-   1
-  ],
-  [
-   "http://beeu.co.il/",
-   1
-  ],
-  [
-   "https://getbutton.io/",
-   1
-  ]
- ],
- "xhr": [
-  "https://fonts.googleapis.com/css?family=Heebo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=auto&subset=hebrew",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://www.google-analytics.com/g/collect?v=2&tid=G-P364BX1QQ7&gtm=45Pe6bh1v9283172574za208zd9283172574xf1&_p=1795703237595&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dZTNiMT&cid=824253429.1795703238&frm=0&ngs=1&pscdl=noapi&rcb=7&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&_s=1&tag_exp=115938465~115938468~120213116~120385422~120469145~120469153~121246026~121246034&sid=1795703237&sct=1&seg=0&dl=https%3A%2F%2Fhasimta.com%2Fshows%2F%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA-%D7%9E%D7%92%D7%99%D7%A8%D7%94%2F&dt=%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA%20%D7%9E%D7%92%D7%99%D7%A8%D7%94%20-%20%D7%AA%D7%90%D7%98%D7%A8%D7%95%D7%9F%20%D7%94%D7%A1%D7%99%D7%9E%D7%98%D7%94&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.googlesitekit_post_type=shows&tfd=1683"
- ],
- "sample": [
-  "https://chat.whatsapp.com/LTpQmvTkpn966aLv07vso0?s=cl&p=a&mlu=0\n    ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן",
-  "https://youtube.com/shorts/x20jWY2FGkE?feature=share\n   לצפייה בטריילר ההצגה – לחץ כאן",
-  "https://saloona.co.il/blog/%D7%A1%D7%95%D7%93%D7%95%D7%AA-%D7%91%D7%95%D7%A2%D7%A8%D7%99%D7%9D-%D7%9C%D7%94%D7%91%D7%95%D7%AA-%D7%A2%D7%91%D7%A8-%D7%AA%D7%99%D7%90%D7%98%D7%A8%D7%95%D7%9F-%D7%94%D7%A1%D7%99%D7%9E%D7%98/\n   לביקורת ההצגה באתר סלונה לחץ כאן",
-  "https://chat.whatsapp.com/LTpQmvTkpn966aLv07vso0?s=cl&p=a&mlu=0\n    ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן",
-  "https://chat.whatsapp.com/LTpQmvTkpn966aLv07vso0?s=cl&p=a&mlu=0\n   להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן",
-  "https://chat.whatsapp.com/LTpQmvTkpn966aLv07vso0?s=cl&p=a&mlu=0\n    ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן",
-  "http://beeu.co.il/\n   תיאטרון הסימטה - כל הזכויות שמורות."
- ],
- "json": []
-}
---- TEXT
-דילוג לתוכן
-פתח סרגל נגישות
-
-כלי נגישות
-
-הגדל טקסט
-הקטן טקסט
-גווני אפור
-ניגודיות גבוהה
-ניגודיות הפוכה
-רקע בהיר
-הדגשת קישורים
-פונט קריא
- איפוס
-דלג לתוכן
-עמוד הבית
-אודות
-לוח אירועים
-בכורות בדה וינצ׳י
-מועדון הג'אז
-פסטיבל לכל הרוחות
-אנסמבל הסימטה
-יצירת קשר
-נגישות
-תוכנית מגירה
-עמוד הבית
-תוכנית מגירה
-תא תרבות דה וינצ'י, רחוב ליאונרדו דה וינצ'י 14, תל אביב-יפו
-
-תוכנית מגירה היא חגיגה אקלקטית של פסיפס היצירות הגנוזות שנבחרו לצאת אל האור מתוך המגירה.
-
-תוכנית מגירה הוא מופע ג'אגלינג אבסורדי המשלב תיאטרון פיזי, מניפולציה של חפצים והומור חזותי. השפה הבימתית נעה בין כוריאוגרפיה מדויקת לאלתור, בין רגעים של שליטה וירטואוזית לתקלות בלתי צפויות, ובין היומיומי למופרך.
-
-זהו מופע על הניסיון לשלוט במציאות, על הדברים שקורים כשהמציאות מסרבת לשתף פעולה, ועל מערכת היחסים המורכבת שלנו עם החפצים, עם אנשים אחרים ועם התוכניות שהכנו מראש.
-
-בסופו של דבר, החיים יותר מדי מרגשים ופרועים בשביל להשאיר את הדברים בתוך המגירה.
-
-יוצרים ושחקנים: עופר רם ודור רגב.
-
-—————————————————————————–
-
- ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן
-
-27/11/26
-20:30
-רכישה
-
-הצגות נוספות
-
-קאנטרי גורן גולדשטיין
-סודות בוערים
-
-אנסמבל אסתרייה & תיאטרון הסימטה מציגים:
-
-דנה חוזרת לארץ אחרי שנים ומציבה לאחיה למחצה אולטימטום שמטלטל את חייו. ההתנגדות שלו חושפת סודות ושקרים ישנים. מה שמתחיל כמחלוקת משפחתית הופך למסע אל העבר – עם סוף בלתי צפוי.
-
-מחזה: ענת מידן | בימוי: אריה אלדר
-תאורה: יולי גרצ'יק | מוסיקה: לריסה ומקס קופמן
-תפיסת מרחב: ליאו דיכטר
-בהקלטה: איציק דריי, אלון לשם
-שחקנים: אלון לשם, ענת מידן
-
-תודות: עמי אופיר – דאבידאב אולפני דיבוב
-
-לצפייה בטריילר ההצגה – לחץ כאן
-צילם וערך: ארז מילר
-
-—————————————————————————–
-
-זוכה פרס שחקן השנה בפסטיבל אביב ישראלי ה-16,  אלון לשם
-
-—————————————————————————–
-"… השחקנים מצליחים להעביר את המתח, הפגיעות והכאב בצורה כנה ומדויקת, והקהל מוצא את עצמו נשאב אל תוך מערבולת רגשית… "סודות בוערים" היא הצגה אמיצה ומטלטלת שחודרת עמוק אל הלב של מערכות יחסים טעונות." נירה פרי, אתר סלונה
-
-לביקורת ההצגה באתר סלונה לחץ כאן
-
-—————————————————————————–
-
- ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן
-
- 
-
-לפרטים ורכישה
-בכורות בדה וינצ׳י
-לא לציטוט: שינוי סטטוס
-
-לא לציטוט
-מועדון תיאטרלי של שלוש חברות הכי טובות
-
-כולם מצפים מאיתנו לדעת מה אנחנו עושות עם החיים שלנו, מתי נתחתן, עם מי נתחתן, ולמה לעזאזל עדיין אין לנו תנור.
-
-שלוש חברות ופסנתרן אחד במועדון תיאטרלי מתחדש שמשלב שיחות בלי פילטרים, הומור, שירים וכל מה שהזוי בלחיות בשנות העשרים. בכל ערב הנושאים משתנים, השיחה לא מתוכננת והכול יכול לקרות.
-
-והפעם: שינוי סטטוס
-הרווקה המושבעת עוברת לגור עם בן הזוג, זאת שתמיד בזוגיות הופכת לרווקה, וזאת שכמעט עברה לגור עם בן הזוג עוברת פרידה קשה.
-
-שינוי הסטטוסים בחבורה מביא איתו תובנות חדשות, וכל אחת מנסה ללמד את האחרות איך מתנהלים בסטטוס החדש. הבעיה היא שאף אחת לא באמת יודעת מה היא עושה.
-
-רק שזה לא לציטוט, כן?
-
-יצירה, כתיבה וביצוע: סתיו נויברגר, שיר בנימין, זואי קוגן
-הלחנה, ניהול מוזיקלי ופסנתר: עילי שמרץ
-כתיבת שירים: סתיו נויברגר, שיר בנימין, זואי קוגן, עילי שמרץ
-קרדיט תמונות: מאיה אשל ומור אלוש
-
-
-—————————————————————————–
-
-להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן
-
-לפרטים ורכישה
-קאנטרי גורן גולדשטיין
-שואת נמלי דותן
-
-נמלת-בית קטנה ששרדה טבח, נפלטת למציאות חדשה בה היא חסרת כל. בזהות בדויה – היא מסתננת לקן שכן, במטרה למצוא את הזכר שיעמיד לה צאצאים – כדי לשקם את ביתה שנחרב. במסע הישרדות כנגד כל הסיכויים, היא מגלה שבעולם הנמלים ההירארכי, בעל חוקי הרבייה הנוקשים, זוהי משימה שעליה היא עלולה לשלם בחייה.
-
-האם תצליח נמלה אחת קטנה לשנות את התפיסות החברתיות של כל עולם החרקים? האם יש מקום לפרט בחברה שבה הכלל הוא מעל הכל? קומדיה מטורפת על נמלה אחת שמנסה לשנות את העולם.
-
-יוצרים:
-כתיבה: נועם חבשוש
-בימוי ודרמטורגיה: הילה בן ארי
-עיצוב תאורה – יולי גרצ'יק
-עיצוב  תפאורה ותלבושות – הילה בן ארי
-תנועה – קורל קרוואני
-תמונה – הילה בן ארי
-
-שחקנים:
-קורל קרוואני – טועמת
-יונתן מינץ – זכר
-הדר לוין – מלכה
-תום ירדן – חייל
-
-עלה בבכורה בפסטיבל יוצר דופנ 2025-תיאטרון הדופנ
-
-—————————————————————————–
-
- ** להצטרפות לקבוצת הוואטסאפ של התיאטרון להטבות ועדכונים לחץ כאן
-
-לפרטים ורכישה
-לפרטים נוספים
-התקשרו 073-3844277 או השאירו הודעה
-שם מלא
-טלפון
-נושא פנייה
-אימייל
-שליחה
-צור קשר
-לוח אירועים
-נגישות
- 
-Instagram
-תיאטרון הסימטה - כל הזכויות שמורות.
-Message us
---- HTML
-<html dir="rtl" lang="he-IL" style="--vh: 7.2px;"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="profile" href="https://gmpg.org/xfn/11"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<script src="https://connect.facebook.net/signals/config/2874484432674011?v=2.9.441&amp;r=stable&amp;domain=hasimta.com&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C335%2C336%2C337%2C334%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C351%2C353%2C374%2C257%2C239%2C70%2C240%2C238%2C377%2C368%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://static.getbutton.io/widget-send-button/js/init.js"></script><script data-optimized="1" src="data:text/javascript;base64,IWZ1bmN0aW9uKGYsYixlLHYsbix0LHMpe2lmKGYuZmJxKXJldHVybjtuPWYuZmJxPWZ1bmN0aW9uKCl7bi5jYWxsTWV0aG9kP24uY2FsbE1ldGhvZC5hcHBseShuLGFyZ3VtZW50cyk6bi5xdWV1ZS5wdXNoKGFyZ3VtZW50cyl9O2lmKCFmLl9mYnEpZi5fZmJxPW47bi5wdXNoPW47bi5sb2FkZWQ9ITA7bi52ZXJzaW9uPScyLjAnO24ucXVldWU9W107dD1iLmNyZWF0ZUVsZW1lbnQoZSk7dC5hc3luYz0hMDt0LnNyYz12O3M9Yi5nZXRFbGVtZW50c0J5VGFnTmFtZShlKVswXTtzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHQscyl9KHdpbmRvdyxkb2N1bWVudCwnc2NyaXB0JywnaHR0cHM6Ly9jb25uZWN0LmZhY2Vib29rLm5ldC9lbl9VUy9mYmV2ZW50cy5qcycpO2ZicSgnaW5pdCcsJzI4NzQ0ODQ0MzI2NzQwMTEnKQ==" defer=""></script>
-<title>תוכנית מגירה - תאטרון הסימטה</title><link rel="canonical" href="https://hasimta.com/shows/תוכנית-מגירה/"><meta property="og:locale" content="he_IL"><meta property="og:type" content="article"><meta property="og:title" content="תוכנית מגירה - תאטרון הסימטה"><meta property="og:url" content="https://hasimta.com/shows/תוכנית-מגירה/"><meta property="og:site_name" content="תאטרון הסימטה"><meta property="article:modified_time" content="2026-11-18T10:46:13+00:00"><meta property="og:image" content="https://hasimta.com/wp-content/uploads/2026/11/112233-scaled.jpg"><meta property="og:image:width" content="2560"><meta property="og:image:height" content="1406"><meta property="og:image:type" content="image/jpeg"><meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/hasimta.com\/shows\/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94\/","url":"https:\/\/hasimta.com\/shows\/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94\/","name":"תוכנית מגירה - תאטרון הסימטה","isPartOf":{"@id":"https:\/\/hasimta.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/hasimta.com\/shows\/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94\/#primaryimage"},"image":{"@id":"https:\/\/hasimta.com\/shows\/%d7%aa%d7%95%d7%9b%d7%a0%d7%99%d7%aa-%d7%9e%d7%92%d7%99%d7%a8%d7%94\/#primaryimage"},"thumbnailUrl":"https:\/
-
-===== https://suzannedellal.org.il/shows
-{
- "url": "https://suzannedellal.org.il/shows",
- "title": "Shows Archive - Suzanne Dellal",
- "pat": [
-  [
-   "https://suzannedellal.org.il/shows",
-   214
-  ],
-  [
-   "https://tarbuta.com/product",
-   8
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%90%d7%95%d7%93%d7%95%d7%aa-%d7%aa%d7%a7%d7%a6%d7%99%d7%a8",
-   6
-  ],
-  [
-   "https://suzannedellal.org.il/project_cat",
-   6
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%90%d7%95%d7%93%d7%95%d7%aa-%d7%9e%d7%99%d7%93%d7%a2-%d7%9b%d7%9c%d7%9c%d7%99",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a6%d7%95%d7%95%d7%aa-%d7%94%d7%9e%d7%a8%d7%9b%d7%96",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%94%d7%94%d7%99%d7%a1%d7%98%d7%95%d7%a8%d7%99%d7%94-%d7%a9%d7%9c-%d7%9e%d7%a8%d7%9b%d7%96-%d7%a1%d7%95%d7%96%d7%9f-%d7%93%d7%9c%d7%9c",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a0%d7%95%d7%94-%d7%a6%d7%93%d7%a7",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a4%d7%a8%d7%a1-%d7%99%d7%a9%d7%a8%d7%90%d7%9c",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a1%d7%a4%d7%a8%d7%99%d7%99%d7%94",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a0%d7%92%d7%99%d7%a9%d7%95%d7%aa",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%93%d7%95%d7%97%d7%95%d7%aa-%d7%95%d7%9e%d7%a1%d7%9e%d7%9b%d7%99%d7%9d",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/rental",
-   3
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a7%d7%95%d7%9c-%d7%a7%d7%95%d7%a8%d7%90",
-   3
-  ],
-  [
-   "https://buyme.co.il/affl",
-   3
-  ],
-  [
-   "https://batsheva.co.il/schedule",
-   2
-  ],
-  [
-   "https://accessibility-helper.co.il/",
-   1
-  ],
-  [
-   "https://suzannedellal.org.il/",
-   1
-  ],
-  [
-   "https://suzannedellal.org.il/en",
-   1
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%9e%d7%a0%d7%95%d7%99%d7%99%d7%9d",
-   1
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%a1%d7%9c-%d7%a7%d7%a0%d7%99%d7%95%d7%aa",
-   1
-  ],
-  [
-   "https://suzannedellal.org.il/%d7%94%d7%aa%d7%97%d7%91%d7%a8%d7%95%d7%aa",
-   1
-  ],
-  [
-   "https://www.choreographers.org.il/performance",
-   1
-  ],
-  [
-   "https://www.goshow.co.il/show",
-   1
-  ],
-  [
-   "https://www.eventer.co.il/lbl4f",
-   1
-  ],
-  [
-   "https://o1p1gzwvtpt.typeform.com/to",
-   1
-  ],
-  [
-   "https://h1.nu/1GICe",
-   1
-  ],
-  [
-   "tel:03-5105656",
-   1
-  ],
-  [
-   "tel:03-5105657",
-   1
-  ],
-  [
-   "mailto:info@sdc.org.il",
-   1
-  ]
- ],
- "xhr": [
-  "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://suzannedellal.org.il/wp-json/contact-form-7/v1/contact-forms/2168/feedback/schema",
-  "https://suzannedellal.org.il/wp-json/contact-form-7/v1/contact-forms/1341/feedback/schema",
-  "https://suzannedellal.org.il/wp-json/cf7-antispam/v1/get-timestamp",
-  "https://suzannedellal.org.il/wp-json/cf7-antispam/v1/get-timestamp",
-  "https://www.google-analytics.com/g/collect?v=2&tid=G-9K7ETFZZJW&gtm=45je6bi0h2v873192304za208zd873192304xf1&_p=1795703254870&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dZTNiMT&cid=144665534.1795703255&frm=0&pscdl=noapi&rcb=1&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&_s=1&tag_exp=115938466~115938469~118012008~120213116~120385422~120469145~120469153~121246026~121246034~123785233&sid=1795703255&sct=1&seg=0&dl=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&dt=Shows%20Archive%20-%20Suzanne%20Dellal&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2453",
-  "https://analytics.google.com/g/collect?v=2&tid=G-SWFS7J36F3&gtm=45Pe6bh1h1v9188339590za208zb873192304zd873192304xf1&_p=1795703254870&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dZTNiMT&_eu=AAAAACAC&cid=144665534.1795703255&frm=0&ibt=1&ngs=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&_s=1&tag_exp=115938466~115938468~120213116~120385422~120469145~120469153~121246026~121246034~124411062&sid=1795703255&sct=1&seg=0&dl=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&dt=Shows%20Archive%20-%20Suzanne%20Dellal&en=page_view&_fv=1&_ss=1&_ee=1&tfd=2634",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11066023560/?random=1795703255524&cv=11&fst=1795703255524&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45Pe6bh1h1v9188339590za208zb873192304zd873192304xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~117776796~120213116~120385422~120469145~120469153~121246026~121246034~124411062&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=5&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/11066023560/?random=1795703255524&cv=11&fst=1795703255524&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45Pe6bh1h1v9188339590za208zb873192304zd873192304xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~117776796~120213116~120385422~120469145~120469153~121246026~121246034~124411062&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=5&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10937386620/?random=1795703255838&cv=11&fst=1795703255838&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1z8f_AW-10937386620za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=15&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/10937386620/?random=1795703255838&cv=11&fst=1795703255838&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1z8f_AW-10937386620za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=15&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
-  "https://www.google.com/pagead/1p-user-list/11066023560/?random=1795703255524&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45Pe6bh1h1v9188339590za208zb873192304zd873192304xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~117776796~120213116~120385422~120469145~120469153~121246026~121246034~124411062&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=5&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4dX54zPed4YEFKzMH-_pKQkHNwv1LMj2mAIUseK3g8CGSYYXTPrrbH0vZ-r58YvE229-8LfkHxm0xxQNIcl-C9V4GYQ9dmC0u41bOQAr44rL26fIadLU1iNTk0GuB5O10DSKj2F-3koZEUfR-hm26veZpVCxxxJ7p-_niGwFlzvsbQefTGJagKNT6B5WTX8xK7gy7StJOsVZ04l9-xNoBzlNCzcsV7AZt2dqxjs9muct_eixUZKtffXOyhJnDsrvpvccqd_Wz0kOUhp279VQ1IZiALNTMqN4kXpT6tzY&random=3668678845&rmt_tld=0&ipr=y",
-  "https://www.google.com/pagead/1p-user-list/10937386620/?random=1795703255838&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1z8f_AW-10937386620za208xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~117776796~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fsuzannedellal.org.il%2Fshows&rcb=15&frm=0&tiba=Shows%20Archive%20-%20Suzanne%20Dellal&did=dZTNiMT&gdid=dZTNiMT&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1690708920.1795703255&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4dQfRpth8fMsO1OH4W41-582p2IrjWKpqbR6ZRx75yxY0RLoD-kw-GDQZgavSIgZ62pDADdPtY_Pmei7eArJ3CZf7pEh8lViTYt8IfxkBJfn1ZIpIrGs6koVx8UaQPHvUI0WripiX0j-u4mYZIorGM05o-KE6J3w46FUr8R3Y0xQ2lhWce1kWcIVgOTHDEG-eBFtcEMlvDNVMrCkGidWyoEEHjO2cMBazCGIOLOAaC-pnqrAyk9CZBZKuei_lQqrQ6SLeVrcV_5cAXit9RgTMXJY3FNi_UcNeB_BrPpM&random=3454419080&rmt_tld=0&ipr=y"
- ],
- "sample": [
-  "https://suzannedellal.org.il/shows/%d7%9c%d7%94%d7%a7%d7%aa-%d7%9e%d7%97%d7%95%d7%9c-%d7%90%d7%95%d7%a8%d7%9c%d7%99-%d7%a4%d7%95%d7%a8%d7%98%d7%9c-%d7%90%d7%9c-%d7%90%d7%98%d7%9c%d7%90%d7%9c-%d8%a7%d9%84%d8%a3%d8%b7%d9%84%d8%a7%d9%84/\n   להקת מחול אורלי פורטל | אל-אטלאל الأطلال Al-Atlal",
-  "https://www.choreographers.org.il/performance/al-atlal/\n   https://www.choreographers.org.il/performance/al-atlal/",
-  "https://suzannedellal.org.il/shows/%d7%91%d7%aa%d6%be%d7%a9%d7%91%d7%a2-%d7%98%d7%90%d7%91%d7%95%d7%9c%d7%94-%d7%a8%d7%90%d7%a1%d7%94-%d7%a2%d7%a8%d7%91-%d7%a9%d7%9c-%d7%a9%d7%9c%d7%95%d7%a9-%d7%99%d7%a6%d7%99%d7%a8%d7%95%d7%aa-%d7%9e/\n   טאבולה ראסה ערב של שלוש יצירות מאת אוהד נהרין בביצוע אנסמבל בת־שבע",
-  "https://batsheva.co.il/schedule/?show_id=11839\n   https://batsheva.co.il/schedule/?show_id=11839",
-  "https://suzannedellal.org.il/shows/%d7%99%d7%a0%d7%a5-%d7%9c%d7%95%d7%99-%d7%94%d7%a8%d7%a4%d7%aa%d7%a7%d7%90%d7%95%d7%aa-%d7%99%d7%a0%d7%a5-%d7%9c%d7%95%d7%99-%d7%9e%d7%95%d7%a4%d7%a2-%d7%91%d7%99%d7%93%d7%95%d7%a8-%d7%9c%d7%99/\n   ינץ לוי | הרפתקאות ינץ לוי – מופע בידור לילדים ולכל המשפחה",
-  "https://www.goshow.co.il/show/20128/57186\n   https://www.goshow.co.il/show/20128/57186",
-  "https://suzannedellal.org.il/shows/%d7%94%d7%a4%d7%a0%d7%99%d7%9d-%d7%94%d7%90%d7%a4%d7%9c%d7%95%d7%aa-%d7%a9%d7%9c-%d7%94%d7%a0%d7%a4%d7%a9-%d7%a4%d7%a1%d7%99%d7%9b%d7%95%d7%a4%d7%aa%d7%99%d7%94-%d7%a1%d7%98%d7%99%d7%95/\n   הפנים האפלות של הנפש – פסיכופתיה, סטיות ומיניות אפרת הראל היימן & ד\"ר טל יעקובוביץ'",
-  "https://tarbuta.com/product/talefrat-2/\n   https://tarbuta.com/product/talefrat-2/",
-  "https://suzannedellal.org.il/shows/%d7%a9%d7%a8%d7%95%d7%9f-%d7%94%d7%9c%d7%9c%d7%99-%d7%90%d7%a1%d7%90-%d7%91%d6%b0%d6%bc%d7%a8%d6%b5%d7%90%d7%a9%d6%b4%d7%81%d7%99%d7%aa-%d7%95%d6%b0%d7%92%d6%b7%d7%a2%d6%b0%d7%92%d6%bc%d7%95%d6%bc/\n   שרון הללי אסא | בְּרֵאשִׁית וְגַעְגּוּעַ",
-  "https://suzannedellal.org.il/shows/%d7%98%d7%90%d7%91%d7%95%d7%9c%d7%94-%d7%a8%d7%90%d7%a1%d7%94-%d7%a2%d7%a8%d7%91-%d7%a9%d7%9c-%d7%a9%d7%9c%d7%95%d7%a9-%d7%99%d7%a6%d7%99%d7%a8%d7%95%d7%aa-%d7%9e%d7%90%d7%aa-%d7%90%d7%95%d7%94%d7%93/\n   טאבולה ראסה ערב של שלוש יצירות מאת אוהד נהרין בביצוע אנסמבל בת־שבע",
-  "https://suzannedellal.org.il/shows/%d7%99%d7%95%d7%a1%d7%99-%d7%91%d7%a8%d7%92-%d7%95%d7%a2%d7%95%d7%93%d7%93-%d7%92%d7%a8%d7%a3-%d7%9e%d7%98%d7%9e%d7%95%d7%a8%d7%a4%d7%95%d7%96%d7%94/\n   יוסי ברג ועודד גרף | מטמורפוזה",
-  "https://suzannedellal.org.il/shows/%d7%a9%d7%97%d7%a8-%d7%97%d7%a0%d7%99%d7%9f-%d7%95%d7%90%d7%99%d7%a1%d7%a7-%d7%a6%d7%95%d7%a7%d7%a8%d7%95%d7%9f-%d7%a9%d7%a7%d7%98-%d7%91%d7%a7%d7%95%d7%a4%d7%a1%d7%90-%d7%a9%d7%97%d7%95%d7%a8/\n   שחר חנין ואיסק צ'וקרון | שקט בקופסא (שחורה)"
- ],
- "json": []
-}
---- TEXT
-סגור
-שינוי גודל גופנים
-A-
-A+
-פונט קריא
-ניגודיות
-בחר צבע
-קו תחתון לקישורים
-סמן קישורים עם צבע רקע?
-לנקות זכרון "עוגיות"
-גווני אפור לתמונות
-הפוך צבעים
-הסר אנימציות
-סגור
-Accessibility by WAH
-אודות
-תקציר
-מידע כללי
-צוות המרכז
-היסטוריה
-נוה צדק
-פרס ישראל
-ספרייה
-נגישות
-דו”חות ומסמכים
-מופעים וכרטיסים
-השכרות
-תוכניות
-תוכניות
-תוכניות בעבר
-קול קורא
-צור קשר
-Gift Card
-לתרומה
-English
-עברית
-מופעים וכרטיסים
-מנויים
-עגלת קניות
-התחברות
-סינון
-להקת מחול אורלי פורטל | אל-אטלאל الأطلال Al-Atlal
-
-אין כניסה למאחרים.
-מופע סטודיו אינטימי + שיחה
-לינק לרכישה: https://www.choreographers.org.il/performance/al-atlal/
-
-סטודיו אורה - לא מסומן
-יום ה, 26 בנובמבר, 20:30
-לפרטים ורכישה
-טאבולה ראסה ערב של שלוש יצירות מאת אוהד נהרין בביצוע אנסמבל בת־שבע
-
-אין כניסה למאחרים.
-המופע מתקיים באולם אריסון רחוב סעדיה גאון 7.
-לרכישת כרטיסים : https://batsheva.co.il/schedule/?show_id=11839
-
-אולם אריסון -סעדיה גאון 7 ת"א
-יום ו, 27 בנובמבר, 14:00
-
-יום א, 29 בנובמבר, 19:00
-
-1 תאריכים נוספים
-
-לפרטים ורכישה
-דפי אלטבב | קפיצת גדילה
-
-אין כניסה למאחרים.
- 
-
-סטודיו אורה - לא מסומן
-יום ש, 28 בנובמבר, 12:00
-לפרטים ורכישה
-ינץ לוי | הרפתקאות ינץ לוי – מופע בידור לילדים ולכל המשפחה
-
-מופע לכל המשפחה גילאי 5 עד 120
-אין כניסה למאחרים.
-אסורה הכניסה לתינוקות וילדים מתחת לגיל 3.
-אסורה הכניסה עם עגלות ילדים.
-אסורה הכניסה עם אופניים, סקייטבורד, קורקינט, רולרבליידס.
-טלפון 6119*
-
-לינק לכרטיסים 17.10.26 : https://www.goshow.co.il/show/20128/57186
-לינק לרכישת כרטיסים 28.11.26 :https://www.goshow.co.il/show/20128/57487
-
-אולם ירון ירושלמי
-יום ש, 28 בנובמבר, 12:00
-לפרטים ורכישה
-הפנים האפלות של הנפש – פסיכופתיה, סטיות ומיניות אפרת הראל היימן & ד"ר טל יעקובוביץ'
-
-אין כניסה למאחרים.
-לינק לרכישת כרטיסים : https://tarbuta.com/product/talefrat-2/
-תחילת הרצאות בשעה 20:30, מחיר 255₪ כולל עמלה לסה״כ המפגשים.
-
-אולם ירון ירושלמי
-יום א, 29 בנובמבר, 20:30
-
-יום א, 27 בדצמבר, 20:30
-
-1 תאריכים נוספים
-
-לפרטים ורכישה
-שרון הללי אסא | בְּרֵאשִׁית וְגַעְגּוּעַ
-
-אין כניסה למאחרים.
-שיחה עם האומן בסיום המופע.
-
-אולם ירון ירושלמי
-יום ג, 01 בדצמבר, 20:30
-לפרטים ורכישה
-טאבולה ראסה ערב של שלוש יצירות מאת אוהד נהרין בביצוע אנסמבל בת־שבע
-
-אין כניסה למאחרים.
-המופע כולל עירום חלקי.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע מתקיים באולם אריסון רחוב סעדיה גאון 7.
-
-אולם אריסון -סעדיה גאון 7 ת"א
-יום ד, 02 בדצמבר, 20:30
-לפרטים ורכישה
-יוסי ברג ועודד גרף | מטמורפוזה
-
-אין כניסה למאחרים.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע כולל טקסט באנגלית.
-
-סטודיו זהבה וז'אק דלל - לא מסומן
-יום ה, 03 בדצמבר, 11:00
-לפרטים ורכישה
-שחר חנין ואיסק צ'וקרון | שקט בקופסא (שחורה)
-
-אין כניסה למאחרים.
-אירוע במסגרת חשיפה בינלאומית 2026.
-המופע כולל אורות מהבהבים.
-
-אולם ירון ירושלמי
-יום ה, 03 בדצמבר, 12:30
-לפרטים ורכישה
-תכנית 3|2|1 – הבמה ליוצרים חדשים | דואטים, מתוך מהדורה #4
-
-אין כניסה למאחרים.
-אירוע סגור במסגרת חשיפה בינלאומית 2026
-
- 
-
-סטודיו אורה - לא מסומן
-יום ה, 03 בדצמבר, 15:00
-לפרטים ורכישה
-עדי בוטרוס | פורטרטים של נפילה
-
- כניסת מאחרים תתאפשר דרך היציע בלבד.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע מתקיים באולם אריסון רחוב סעדיה גאון 7.
-
-אולם אריסון -סעדיה גאון 7 ת"א
-יום ה, 03 בדצמבר, 18:00
-לפרטים ורכישה
-להקת המחול פרסקו – יורם כרמי | ציפור שיר
-
-אין כניסה למאחרים.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע מתקיים בתיאטרון גבעתיים.
-
-תיאטרון גבעתיים, אולם גדול
-יום ה, 03 בדצמבר, 21:00
-לפרטים ורכישה
-להקת המחול הקיבוצית | זכרון דברים
-
-אין כניסה למאחרים.
-המופע מתקיים בהיכל אמנויות הבמה הרצליה.
-המופע כולל טקסט באנגלית.
-אירוע במסגרת חשיפה בינלאומית 2026
-
- 
-
-היכל אומנויות הבמה הרצליה
-יום ו, 04 בדצמבר, 12:00
-לפרטים ורכישה
-הלל קוגן ודניאל אגמי | עשה זאת בעצמך
-
-כניסת מאחרים תתאפשר דרך היציע בלבד.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע כולל טקסט באנגלית.
-המופע מתקיים באולם אריסון רחוב סעדיה גאון 7.
-
-אולם אריסון -סעדיה גאון 7 ת"א
-יום ו, 04 בדצמבר, 14:30
-לפרטים ורכישה
-נעה דר | מוזר ב-26
-
- *המופע כולל טקסטים מדוברים באנגלית ובעברית וקטעי וידאו עם כתוביות באנגלית. 
-אירוע במסגרת חשיפה בינלאומית 2026
-
-סטודיו זהבה וז'אק דלל - לא מסומן
-יום ו, 04 בדצמבר, 17:00
-לפרטים ורכישה
-נעה ורטהיים ורנה ורטהיים-קורן | להקת המחול ורטיגו | נונה
-
-אין כניסה למאחרים.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע מתקיים בתיאטרון גבעתיים.
-
-תיאטרון גבעתיים, אולם גדול
-יום ו, 04 בדצמבר, 21:00
-לפרטים ורכישה
-גיל קרר | פלא
-
-אין כניסה למאחרים.
-המופע כולל שיתוף הקהל.
-4+ לכל המשפחה
-אירוע במסגרת חשיפה בינלאומית 2026
-
-סטודיו זהבה וז'אק דלל - לא מסומן
-יום ש, 05 בדצמבר, 10:00
-לפרטים ורכישה
-יענקל׳ה פילצר | משחק באש
-
-Soho House  כתובת רחוב יפת 27 תל אביב-יפו 
-אירוע סגור במסגרת חשיפה בינלאומית 2026
-
-סוהו האוס -Soho House
-יום ש, 05 בדצמבר, 12:00
-לפרטים ורכישה
-להקת מחול רועי אסף | בדידותה של יצירת אמנות
-
-המופע מתקיים בתיאטרון הבית 
-המופע כולל טקסט באנגלית.
-אירוע במסגרת חשיפה בינלאומית 2026
-לינק לרכישת כרטיסים : https://www.eventer.co.il/lbl4f
-
-תיאטרון הבית
-יום ש, 05 בדצמבר, 16:30
-לפרטים ורכישה
-להקת יסמין גודר | חשוף על חלודה
-
-המופע מתקיים בתיאטרון הבית.
-אירוע סגור במסגרת חשיפה בינלאומית 2026
-
-תיאטרון הבית
-יום ש, 05 בדצמבר, 18:00
-לפרטים ורכישה
-להקת המחול אייל דדון | פַּטְרוֹל
-
- כניסת מאחרים תתאפשר דרך היציע בלבד.
-המופע כולל עירום חלקי.
-אירוע במסגרת חשיפה בינלאומית 2026
-המופע מתקיים באולם אריסון רחוב סעדיה גאון 7.
-
-אול
---- HTML
-<html dir="rtl" lang="he-IL" class="no-js rtl"><head>
-	<meta charset="UTF-8">
-	<!-- dns prefetch -->
-	<link href="//www.google-analytics.com" rel="dns-prefetch">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="alternate" href="https://suzannedellal.org.il/en/shows" hreflang="en">
-<link rel="alternate" href="https://suzannedellal.org.il/shows" hreflang="he">
-
-	<!-- This site is optimized with the Yoast SEO plugin v28.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
-	<title>Shows Archive - Suzanne Dellal</title>
-	<link rel="canonical" href="https://suzannedellal.org.il/shows/">
-	<meta property="og:locale" content="he_IL">
-	<meta property="og:locale:alternate" content="en_US">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Shows Archive - Suzanne Dellal">
-	<meta property="og:url" content="https://suzannedellal.org.il/shows/">
-	<meta property="og:site_name" content="Suzanne Dellal">
-	<meta property="og:image" content="https://suzannedellal.org.il/wp-content/uploads/2020/12/suzanne-dellal-logo3-scaled.jpg">
-	<meta property="og:image:width" content="1920">
-	<meta property="og:image:height" content="1358">
-	<meta property="og:image:type" content="image/jpeg">
-	<meta name="twitter:card" content="summary_large_image">
-	<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=GT-NB385L8S&amp;cx=c&amp;gtm=4e6bi0h2"></script><script src="https://connect.facebook.net/signals/config/1038716923444876?v=2.9.441&amp;r=stable&amp;domain=suzannedellal.org.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C335%2C336%2C337%2C334%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C351%2C353%2C374%2C257%2C239%2C70%2C240%2C238%2C377%2C368%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190%2C277%2C275%2C270%2C272%2C273%2C274%2C271%2C269%2C256%2C276%2C278%2C268%2C219%2C220%2C280%2C279%2C281%2C267%2C266%2C367%2C232%2C227%2C230%2C231%2C209%2C225%2C402%2C314%2C316%2C319%2C323%2C324%2C325%2C320%2C326%2C318%2C312%2C328%2C329%2C317%2C327%2C331%2C321%2C315%2C322%2C330%2C332%2C313%2C242%2C311%2C208%2C228%2C229%2C260%2C226%2C224%2C288%2C244%2C217%2C218%2C214%2C215%2C216%2C213%2C211%2C222%2C223%2C221%2C338%2C395%2C360%2C361%2C363%2C364%2C362%2C359%2C358%2C347%2C346%2C344%2C345%2C349%2C348%2C343%2C233%2C291%2C298%2C299%2C292%2C294%2C297%2C295%2C296%2C293%2C290%2C309%2C303%2C306%2C302%2C310%2C307%2C301%2C305%2C308%2C304%2C300%2C354%2C371" async=""></script><script src="https://connect.facebook.net/signals/config/635650697082893?v=2.9.441&amp;r=stable&amp;domain=suzannedellal.org.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C11
-
-===== https://barby.co.il/
-{
- "url": "https://barby.co.il/",
- "title": "בארבי - בית ליוצרים ישראלים",
- "pat": [
-  [
-   "https://barby.co.il/",
-   16
-  ],
-  [
-   "https://business.safety.google/privacy",
-   3
-  ],
-  [
-   "https://barby.co.il/info",
-   3
-  ],
-  [
-   "https://barby.co.il/contact",
-   3
-  ],
-  [
-   "https://barby.co.il/login",
-   2
-  ],
-  [
-   "https://barby.co.il/mailing-list",
-   2
-  ],
-  [
-   "https://barby.co.il/terms-of-service",
-   2
-  ],
-  [
-   "https://barby.co.il/accessibility",
-   2
-  ],
-  [
-   "https://barby.co.il/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A4%D7%A8%D7%98%D7%99%D7%95%D7%AA-%D7%91%D7%90%D7%A8%D7%91%D7%99.pdf",
-   2
-  ],
-  [
-   "https://barby.co.il/show",
-   2
-  ],
-  [
-   "https://www.google.com/maps",
-   2
-  ],
-  [
-   "tel:+97235188123",
-   2
-  ],
-  [
-   "https://www.instagram.com/barby.tlv",
-   2
-  ],
-  [
-   "https://www.facebook.com/BarbyOfficial",
-   2
-  ],
-  [
-   "https://www.cookiebot.com/en",
-   1
-  ],
-  [
-   "https://www.cookiebot.com/goto",
-   1
-  ],
-  [
-   "https://www.facebook.com/policy.php",
-   1
-  ],
-  [
-   "https://www.cookiebot.com/",
-   1
-  ],
-  [
-   "https://barby.co.il/giftcard-screen",
-   1
-  ],
-  [
-   "https://barby.co.il/ticket-bundle",
-   1
-  ],
-  [
-   "https://translate.google.com/",
-   1
-  ],
-  [
-   "https://www.enable.co.il/",
-   1
-  ],
-  [
-   "https://www.upress.co.il/",
-   1
-  ]
- ],
- "xhr": [
-  "https://consentcdn.cookiebot.com/consentconfig/150e2031-7af6-4e5d-a58c-c50eb66735e9/settings.json",
-  "https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Heebo:wght@300&display=swap",
-  "https://fonts.googleapis.com/css2?family=Alef&family=Assistant:wght@500&family=Heebo:wght@300&display=swap",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://gateway.umami.is/api/send",
-  "https://barby.co.il/api/status/check",
-  "https://barby.co.il/api/shows/find",
-  "https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.iw.IbqXul_9A94.O/am=AkAAYA/d=1/ed=1/rs=AN8SPfqhiRZintb78phAUE_7ShEsurdBLg/m=el_main",
-  "https://barby.co.il/api/options",
-  "https://translate.googleapis.com/element/log?format=json&hasfast=true&authuser=0"
- ],
- "sample": [
-  "https://barby.co.il/#\n   הסכמה לכל שם התחום[#BULK_CONSENT_DOMAINS_COUNT#]"
- ],
- "json": []
-}
---- TEXT
-האתר עושה שימוש בעוגיות
-
-אנחנו משתמשים בעוגיות לשיפור חוויית הגלישה ולמדידת פרסום.
-
-הצגת פרטים
-אישור
-אודות
-|
-צור קשר
-|
-גיפטקארד
-|
-כרטיסיה
-|
-החשבון שלי
-|
-עמוד הבית
-    
-
-
-
-
-
-
-
-
-
-              החשבון שלי
-
-
-
-
-אהוד בנאי
-
-
-
-
-היום, 26/11, ביום חמישי
-פתיחת דלתות: 21:00
-
-מחיר: ₪145
-
-הזמינו
-
-
-
-
-* לידיעתכם-כשרשום באתר: אזלו הכרטיסים, אז גם בקופה אזלו הכרטיסים!* *זיכויים יתבצעו ע"פ חוק ישראל המצוטט בתקנון* *את הכרטיס ניתן למצוא גם בחשבון שלי באתר שלנו* *השעה מציינת את שעת פתיחת הדלתות* *המופעים מתחילים שעה אחרי השעה המצוינת!* *שימו לב רכישת כרטיסים להופעות בבארבי מתבצעת אך ורק באתר הרשמי שלנו ולא באתרים חיצוניים -זו עקיצה*
-
-
-
-
-2 כרטיסים אחרונים !
-
-אהוד בנאי
-דלתות: 21:00 | 26/11 חמישי
-
-
-
-
-
-! כרטיסים אזלו
-
-מרגול בבארבי- מופע צהרים
-דלתות: 13:00 | 27/11 שישי
-
-
-
-
-
-! כרטיסים אזלו
-
-מסיבת העשורים הגדולה - ריקודים, תצוגות, ומלא הפתעות
-דלתות: 21:30 | 27/11 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-מופע המחווה ל-Avenged Sevenfold
-דלתות: 21:00 | 28/11 שבת
-
-
-
-
-
-! כרטיסים אזלו
-
-לירן דנינו - לראשונה מגיע לבארבי
-דלתות: 21:00 | 29/11 ראשון
-
-
-
-
-
-כרטיסים בודדים !
-
-ניר כנען חוזר לבארבי
-דלתות: 21:00 | 30/11 שני
-
-
-
-
-
-! כרטיסים אזלו
-
-דיקלה- לאור הביקוש מופע נוסף, אורחת : מגי אזרזר
-דלתות: 21:00 | 01/12 שלישי
-
-
-
-
-
-כרטיסים בודדים !
-
-נונו- חוגגת 5 שנות קריירה בבארבי
-דלתות: 21:00 | 02/12 רביעי
-
-
-
-
-
-! כרטיסים אזלו
-
-השבק חוזרים לבארבי! מופע צהרים
-דלתות: 13:00 | 04/12 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-מרסדס בנד
-דלתות: 21:00 | 04/12 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-רון עשהאל -אלבום חדש
-דלתות: 21:00 | 07/12 שני
-
-
-
-
-
-לרכישת כרטיסים
-
-ילד.
-דלתות: 21:00 | 08/12 שלישי
-
-
-
-
-
-כרטיסים בודדים !
-
-אריאל זילבר בבארבי- 50 שנה לרוצי שמוליק
-חיים רומנו ושמוליק בודגוב
-דלתות: 21:00 | 09/12 רביעי
-
-
-
-
-
-! כרטיסים אזלו
-
-שלמה ארצי -בבארבי
-דלתות: 20:00 | 10/12 חמישי
-
-
-
-
-
-לרכישת כרטיסים
-
-התקווה 6 - חוזרים לבארבי עם ״ויהי אור״ - מופע צהרים
-דלתות: 13:00 | 11/12 שישי
-
-
-
-
-
-! כרטיסים אזלו
-
-דודו טסה - מופע להקה
-דלתות: 21:00 | 11/12 שישי
-
-
-
-
-
-! כרטיסים אזלו
-
-דודו טסה - מופע להקה
-דלתות: 21:00 | 12/12 שבת
-
-
-
-
-
-לרכישת כרטיסים
-
-Amitai Kurtz Samba Project
-דלתות: 21:00 | 14/12 שני
-
-
-
-
-
-כרטיסים בודדים !
-
-הילה רוח בבארבי - שחור זוהר 360
-דלתות: 21:00 | 15/12 שלישי
-
-
-
-
-
-לרכישת כרטיסים
-
-ליהי טולדנו - מופע מיוחד 360
-דלתות: 21:00 | 16/12 רביעי
-
-
-
-
-
-לרכישת כרטיסים
-
-נטע ברזילי - מופע צהרים חד פעמי בבארבי
-דלתות: 13:00 | 18/12 שישי
-
-
-
-
-
-! כרטיסים אזלו
-
-תל אביב חוזרת לניינטיז - מסיבת פתיחת החורף
-דלתות: 21:30 | 18/12 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-שמחה גדולה הלילה המלך: ספיישל מוצ״ש!
-דלתות: 21:00 | 19/12 שבת
-
-
-
-
-
-לרכישת כרטיסים
-
-Gal De Paz -גל דה פז והלהקה בבארבי
-דלתות: 21:00 | 22/12 שלישי
-
-
-
-
-
-לרכישת כרטיסים
-
-רוקפור - 30 שנה "בחזרה לשבלול"
-דלתות: 21:00 | 23/12 רביעי
-
-
-
-
-
-! כרטיסים אזלו
-
-טונה
-דלתות: 21:00 | 24/12 חמישי
-
-
-
-
-
-! כרטיסים אזלו
-
-טונה
-דלתות: 21:00 | 25/12 שישי
-
-
-
-
-
-! כרטיסים אזלו
-
-שלמה ארצי -בבארבי
-דלתות: 17:00 | 26/12 שבת
-
-
-
-
-
-! כרטיסים אזלו
-
-איתי לוי - בבארבי
-דלתות: 21:00 | 27/12 ראשון
-
-
-
-
-
-לרכישת כרטיסים
-
-רונה קינן - במופע להקה חדש! אורחים :שלומי שבן , ערן צור.
-דלתות: 21:00 | 28/12 שני
-
-
-
-
-
-כרטיסים בודדים !
-
-התבלינים- 20 שנה לאלבום הבכורה
-דלתות: 21:00 | 29/12 שלישי
-
-
-
-
-
-לרכישת כרטיסים
-
-נועם בתן - מופע השקת האלבום החדש
-דלתות: 21:00 | 30/12 רביעי
-
-
-
-
-
-כרטיסים בודדים !
-
-טיפקס- מופע צהרים
-דלתות: 13:00 | 01/01 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-מארינה מקסימיליאן -מופע להקה
-דלתות: 21:00 | 01/01 שישי
-
-
-
-
-
-לרכישת כרטיסים
-
-חגיגות השנה החדשה - ריקודים, הופעות והפתעות- שבת בצהרים
-דלתות: 11:30 | 02/01 שבת
-
-
-
-
-
-כרטיסים בודדים !
-
-ריטה Let`s Dance
-דלתות: 21:00 | 02/01 שבת
-
-
-
-
-
-לרכישת כרטיסים
-
-שמחה גדולה הלילה
-דלתות: 21:00 | 04/01 שני
-
-
-
-
-
-! כרטיסים אזלו
-
-אביתר בנאי והלהקה
-דלתות: 21:00 | 05/01 שלישי
-
-
-
-
-
-! כרטיסים אזלו
-
-אביתר בנאי והלהקה
-דלתות: 21:00 | 06/01 רביעי
-
-
-
-
-
-כרטיסים בודדים !
-
-עמרי סמדר לייב
-דלתות: 22:00 | 07/01 חמישי
-
-
-
-
-
-לרכישת כרטיסים
-
-עמרי סמדר לייב
-דלתות: 22:00 | 08/01 שישי
-
-
-
-
-
-לרכישת כרטיסים
-
-פול טראנק
-דלתות: 21:00 | 09/01 שבת
-
-
-
-
-
-4 כרטיסים אחרונים !
-
-נועם בנאי שר מאיר בנאי מופע לציון 10 שנים ללכתו של מאיר בנאי ז"ל
-אורחים: ברי סחרוף, ארקדי דוכין, דורון טל
-דלתות: 21:00 | 12/01 שלישי
-
-
-
-
-
-לרכישת כרטיסים
-
-Madonna Tribute Show - מיכל אמדורסקי שני שאולי עדי שרון
-דלתות: 21:00 | 13/01 רביעי
-
-
-
-
-
-! כרטיסים אזלו
-
-שלמה ארצי -בבארבי
-דלתות: 20:00 | 14/01 חמישי
-
-
-
-
-
-לרכישת כרטיסים
-
-מרגול בבארבי- מופע צהרים
-דלתות: 13:00 | 15/01 שישי
-
-
-
-
-
-לרכישת כרטיסים
-
-T-Puse & The Band פרויקט הלייב האלקטרוני
-דלתות: 22:00 | 15/01 שישי
-
-
-
-
-
-לרכישת כרטיסים
-
-זהבה בן ושלושת האורחים
-דלתות: 21:00 | 16/01 שבת
-
-
-
-
-
-לרכישת כרטיסים
-
-שירה זלוף – מופע השקת אלבום "רגל אחת באוויר"
-דלתות: 21:00 | 18/01 שני
-
-
-
-
-
-לרכישת כרטיסים
-
-תמר ריילי מגיעה לשבור את הבארבי!
-דלתות: 21:00 | 19/01 שלישי
-
-
-
-
-
-! כרטיסים אזלו
-
-עברי לידר- חגיגות 30 ל׳מלטף ומשקר׳
-דלתות: 21:00 | 20/01 רביעי
-
-
-
-
-
-! כרטיסים אזלו
-
-עברי לידר- חגיגות 30 ל׳מלטף ומשקר׳-עקב הביקוש מופע נוסף
-דלתות: 21:00 | 21/01 חמישי
-
-
-
-
-
-! כרטיסים אזלו
-
-הדג נחש - ספיישל 30 שנה -מופע צהרים
-דלתות: 13:00 | 22/01 שישי
-
-
-
-
-
-כרטיסים בודדים !
-
-הדג נחש - ספיישל 30 שנה
-דלתות: 21:00 | 22/01 שישי
-
-
-
-
-
-לרכישת כרטיסים
-
-אמיר דדון - מופע חשמלי
-דלתות: 21:00 | 23/01 שבת
-
-
-
-
-
-לרכישת כרטיסים
-
-ג׳ימבו ג׳יי - מופע להקה
-דלתות: 21:00 | 25/01 שני
-
-
-
-
-
-ל
---- HTML
-<html lang="en" style="height: 100%;"><head><script src="https://connect.facebook.net/signals/config/588363448222407?v=2.9.441&amp;r=stable&amp;domain=barby.co.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C335%2C336%2C337%2C334%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C351%2C353%2C374%2C257%2C239%2C70%2C240%2C238%2C377%2C368%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190%2C277%2C275%2C270%2C272%2C273%2C274%2C271%2C269%2C256%2C276%2C278%2C268%2C219%2C220%2C280%2C279%2C281%2C267%2C266%2C367%2C201%2C203%2C204%2C205%2C209%2C208%2C210%2C206%2C207%2C202%2C200%2C199%2C232%2C227%2C230%2C231%2C225%2C402%2C228%2C229%2C260%2C226%2C224%2C288%2C244%2C217%2C218%2C214%2C215%2C216%2C213%2C211%2C222%2C223%2C221%2C338%2C395%2C360%2C361%2C363%2C364%2C362%2C359%2C358%2C347%2C346%2C344%2C345%2C349%2C348%2C343%2C233%2C291%2C298%2C299%2C292%2C294%2C297%2C295%2C296%2C293%2C290%2C309%2C303%2C306%2C302%2C310%2C307%2C301%2C305%2C308%2C304%2C300%2C354%2C371" async=""></script><script src="https://connect.facebook.net/signals/config/251771537397607?v=2.9.441&amp;r=stable&amp;domain=barby.co.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C335%2C336%2C337%2C334%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C351%2C353%2C374%2C257%2C239%2C70%2C240%2C238%2C377%2C368%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" charset="UTF-8" async="" src="https://consent.cookiebot.com/150e2031-7af6-4e5d-a58c-c50eb66735e9/cc.js?renew=false&amp;referer=barby.co.il&amp;dnt=false&amp;init=false"></script><script type="text/javascript" charset="UTF-8" src="https://consentcdn.cookiebot.com/consentconfig/150e2031-7af6-4e5d-a58c-c50eb66735e9/barby.co.il/configuration.js"></script><script>!function(){var e=/^\/(pay-success|bundle-success|errorpage)/i,r=/^\/(ticket|private-invite|images\/barcodePdf)\/[^/]+/i,a=["paysuccess","extrapaid","extrafailed"],n=[
-
-===== https://www.tel-aviv.gov.il/Residents/Digitel/Pages/Benefits.aspx
-{
- "url": "https://www.tel-aviv.gov.il/Residents/Digitel/Pages/Benefits.aspx",
- "title": "הטבות דיגיתל | עיריית תל אביב-יפו",
- "pat": [
-  [
-   "https://www.tel-aviv.gov.il/Residents",
-   705
-  ],
-  [
-   "https://www.tel-aviv.gov.il/Visitors",
-   81
-  ],
-  [
-   "https://www.tel-aviv.gov.il/About",
-   73
-  ],
-  [
-   "https://www.tel-aviv.gov.il/Business",
-   70
-  ],
-  [
-   "https://www.tel-aviv.gov.il/Transparency",
-   50
-  ],
-  [
-   "https://www.tel-aviv.gov.il/Contact",
-   26
-  ],
-  [
-   "https://www.tel-aviv.gov.il/Pages",
-   24
-  ],
-  [
-   "javascript:void(0);",
-   19
-  ],
-  [
-   "javascript:void(0)",
-   11
-  ],
-  [
-   "https://www.tel-aviv.gov.il/AuctionAndCareers",
-   7
-  ],
-  [
-   "https://www5.tel-aviv.gov.il/TlvForms",
-   4
-  ],
-  [
-   "https://gisn.tel-aviv.gov.il/iview2js4",
-   4
-  ],
-  [
-   "https://www.tel-aviv.gov.il/",
-   3
-  ],
-  [
-   "https://digitelfp.tel-aviv.gov.il/",
-   3
-  ],
-  [
-   "https://wa.me/972521208239",
-   3
-  ],
-  [
-   "http://tiktok.com/@telaviv.yafo",
-   3
-  ],
-  [
-   "https://t.me/telavivmuni",
-   3
-  ],
-  [
-   "https://twitter.com/telavivyafo",
-   3
-  ],
-  [
-   "https://www.instagram.com/telaviv.yafo",
-   3
-  ],
-  [
-   "https://www.facebook.com/tel.aviv.yafo",
-   3
-  ],
-  [
-   "https://mydigitel.tel-aviv.gov.il/",
-   2
-  ],
-  [
-   "https://opendata.tel-aviv.gov.il/",
-   2
-  ],
-  [
-   "https://www.tel-aviv.gov.il/mevaker",
-   2
-  ],
-  [
-   "https://edutour.tel-aviv.gov.il/",
-   1
-  ],
-  [
-   "https://muni4u.tel-aviv.gov.il/public-petition",
-   1
-  ],
-  [
-   "https://play.google.com/store",
-   1
-  ],
-  [
-   "https://apps.apple.com/il",
-   1
-  ],
-  [
-   "https://www.tel-aviv.gov.il/en",
-   1
-  ],
-  [
-   "https://www.tel-aviv.gov.il/ar",
-   1
-  ],
-  [
-   "https://tlvapp.app.link/resident",
-   1
-  ]
- ],
- "xhr": [
-  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/EventsAndBenefitsLobby.js?rev=8.12.8.2",
-  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/resources.js/evBenTexts.he.js?rev=8.12.8.2",
-  "https://www.google.com/jsapi",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/xGray.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/noResultPic.svg",
-  "https://www.tel-aviv.gov.il/_CONTROLTEMPLATES/15/TlvSP2013PublicSite/EventsAndBenefitsLobbyWP/General.css?rev=8.12.8.2",
-  "https://cdn.weglot.com/projects-settings/bbac3ab73bb92397c81aff8540b2b3229.json",
-  "https://www.tel-aviv.gov.il/Residents/Digitel/_api/SP.Web.GetContextWebThemeData?lcid=1033",
-  "https://api.weglot.com/pageviews?api_key=wg_bbac3ab73bb92397c81aff8540b2b3229",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/whom.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/vector.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/calendar.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/where.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/cityCenter.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/heart-rounded.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/CustomFilters.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/search.svg",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CI8POCRC77U2H86MCK9G&lib=ttq",
-  "https://tr.outbrain.com/unifiedPixel?au=false&bust=010866715427675144&referrer=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&pRef=&marketerId=0069a7b290a9781207927f8e5402850568&name=PAGE_VIEW&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&g=1&zone=all&pld=2781&obApiVersion=1.1&obtpVersion=3eeb2736dc1c_2026-11-23",
-  "https://trc.taboola.com/1238424/trc/3/json?tim=1795703291558&data=%7B%22id%22%3A775%2C%22ii%22%3A%22%2Fresidents%2Fdigitel%2Fpages%2Fbenefits.aspx%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1795703291547%2C%22cv%22%3A%2220261122-5-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dinteraction-phoenixpets-sc%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1795703291557%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx%22%2C%22tos%22%3A3%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22it%22%3A%22JS_PIXEL%22%2C%22supv%22%3Atrue%7D%7D&pubit=i",
-  "https://www.google.com/measurement/conversion?random=1795703291644&cv=11&tid=G-6F0EMM7WGF&fst=1795703291644&fmt=8&en=page_view&gtm=45je6bh1v889007235za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&gacid=2061721782.1795703292&hn=www.googleadservices.com&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=15",
-  "https://analytics.google.com/g/collect?v=2&tid=G-6F0EMM7WGF&gtm=45je6bh1v889007235za20ozb811112836zd811112836xf1&_p=1795703289860&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAAAGAC&_prs=ok&cid=2061721782.1795703292&frm=0&ir=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115938465~115938468~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795703291&sct=1&seg=0&dl=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&dt=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&en=page_view&_fv=1&_nsi=1&_ss=1&_c=1&tfd=2909",
-  "https://apimtlvprd.tel-aviv.gov.il/TelmaWebChat/recaptcha",
-  "https://analytics.tiktok.com/api/v2/pixel",
-  "https://analytics.tiktok.com/api/v2/pixel",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007107377/?random=1795703292087&cv=11&fst=1795703292087&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/1007107377/?random=1795703292087&cv=11&fst=1795703292087&fmt=8&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=68&gcp=5",
-  "https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007107377/?random=1795703292168&cv=11&fst=1795703292168&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=4",
-  "https://www.google.com/rmkt/collect/1007107377/?random=1795703292168&cv=11&fst=1795703292168&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=68&gcp=5",
-  "https://analytics.tiktok.com/api/v2/pixel/act",
-  "https://www.google.com/pagead/1p-user-list/1007107377/?random=1795703292168&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&gtm=45be6bh1v9285297764z8811112836za20gzb811112836zd811112836xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&label=Hlc1CIium5cBELH6nOAD&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4db8DVfoB9V4xkQsMTPAoZStOP9GK7cSe-p_5Dc2MvbC49ocGv-gaw2StiwharSsyi_na0OT06v-hckYkqEewX4oMOhis_yKcoprVetbxEu44dthKa5MgorED9x6wDXVKAtgSGdIyQ_oCkswYbkjEp9Vfv8l2hswYER9mJS9lPRyULRk_cWA2FXanYHkQ3Acatv0__8FngedgJvzxA2kUICxOgNsNAEoO2NeY2Z81uDNAJmDvjaObAZL3uGZsj7p_kUttg6XEUdlVfZ3cv1O9ewAlckguNValx8-A5dw&random=1406935250&rmt_tld=0&ipr=y",
-  "https://www.google.com/pagead/1p-user-list/1007107377/?random=1795703292087&cv=11&fst=1795701600000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be6bh1v9285297764za20ozb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120385422~120469145~120469153~121049589~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&rcb=1&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4QEAogo4dfoVit0pZeQezGPwgrrvV8IU2e4ssRuyYBqqJoHkiCwBjbe4nTKCcoCHS0_tTo9RvJmwItm2XhbQlHGBq_8ysJinZ3-6hnUy6lZ6xx-X97RIcVTolBtCWD-sm_icvmc4dySXWC5gxcFx8Nc_91fvAiFWiD40mn9qjN4t26mW6WhM5oBwPFsEQ-7vBE1agNiBmlHl04LD-CA7sYio4ScWBTt_YMrFh2PNSztJG2E-FFBkvPfvPpCwV0Lr0TMrXWUoEcWabnnlQx-vY_HLbv2aD58ewUsY4PG12BFT19c&random=2515219098&rmt_tld=0&ipr=y",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/location.svg",
-  "https://www.tel-aviv.gov.il/_layouts/15/TlvSP2013PublicSite/images/EventsBenefits/date.svg",
-  "https://analytics.tiktok.com/api/v2/pixel/act",
-  "https://analytics.tiktok.com/api/v2/monitor",
-  "https://trc-events.taboola.com/1238424/log/3/unip?en=pre_d_eng_tb&tos=4649&scd=0&ssd=1&est=1795703291554&ver=36&isls=true&src=i&invt=4500&msa=299&rv=1&tim=1795703296203&vi=1795703291547&ri=9a28a2fac5cfd6f8a04c6328a30fc98d&sd=v2_f0ce0215cd866885f045919767f633c1_23830a71-80b0-4fc1-94fd-b508f332b461-tuct1201c77b_1795703291_1795703291_CNawjgYQmMtLGJv9hsKhNCABKAEw4QE4kaQOQLDlD0iw89sDULAEWABgAGiHvf301IrPvy9wAYABAIgBAJABAJgBAA&ui=23830a71-80b0-4fc1-94fd-b508f332b461-tuct1201c77b&ref=null&cv=20261122-5-RELEASE&item-url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&it=JS_PIXEL",
-  "https://trc-events.taboola.com/1238424/log/3/unip?en=pre_d_eng_tb&tos=10151&scd=0&ssd=1&est=1795703291554&ver=36&isls=true&src=i&invt=5500&msa=299&rv=1&tim=1795703301705&vi=1795703291547&ri=9a28a2fac5cfd6f8a04c6328a30fc98d&sd=v2_f0ce0215cd866885f045919767f633c1_23830a71-80b0-4fc1-94fd-b508f332b461-tuct1201c77b_1795703291_1795703291_CNawjgYQmMtLGJv9hsKhNCABKAEw4QE4kaQOQLDlD0iw89sDULAEWABgAGiHvf301IrPvy9wAYABAIgBAJABAJgBAA&ui=23830a71-80b0-4fc1-94fd-b508f332b461-tuct1201c77b&ref=null&cv=20261122-5-RELEASE&item-url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&it=JS_PIXEL",
-  "https://www.google.com/measurement/conversion?random=1795703301902&cv=11&tid=G-6F0EMM7WGF&fst=1795703301902&fmt=8&en=scroll&gtm=45je6bh1v889007235za20gzb811112836zd811112836xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~120213116~120385423~120469145~120469153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fwww.tel-aviv.gov.il%2FResidents%2FDigitel%2FPages%2FBenefits.aspx&gacid=2061721782.1795703292&hn=www.googleadservices.com&ae=a&frm=0&tiba=%D7%94%D7%98%D7%91%D7%95%D7%AA%20%D7%93%D7%99%D7%92%D7%99%D7%AA%D7%9C%20%7C%20%D7%A2%D7%99%D7%A8%D7%99%D7%99%D7%AA%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91-%D7%99%D7%A4%D7%95&npa=0&pscdl=noapi&auid=803458165.1795703291&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&rcb=15"
- ],
- "sample": [
-  "https://www.tel-aviv.gov.il/Residents/Digitel/Pages/Benefits.aspx#\n    | פתיחת תפריט אתר | ",
-  "https://www.tel-aviv.gov.il/About/Pages/EmergenciesAndSafety.aspx\n    | מידע בחירום",
-  "https://mydigitel.tel-aviv.gov.il/?utm_source=Main_Button_Heb&utm_medium=TLV_site&utm_campaign=Official_launch&utm_id=Official_launch\n    | דיגיתל שלי | ",
-  "https://www.tel-aviv.gov.il/Residents/Transportation/Pages/BicycleTowing.aspx\n   פינוי אופניים מהמרחב הציבורי",
-  "https://www.tel-aviv.gov.il/Residents/Transportation/Pages/masstransporttrain.aspx\n   מערכת הסעת המונים - רכבת קלה",
-  "https://www.tel-aviv.gov.il/Residents/Assets/Pages/TransferringRights.aspx\n   תעודה לרשם המקרקעין (טאבו) להעברת זכויות בנכס",
-  "https://www.tel-aviv.gov.il/Residents/Education/Pages/Registration.aspx\n   רישום למסגרות החינוך העירוניות",
-  "https://www.tel-aviv.gov.il/Residents/Education/Pages/Integration.aspx\n   ועדת זכאות ואפיון לשירותי חינוך מיוחדים",
-  "https://www.tel-aviv.gov.il/Residents/Education/Pages/Netaim.aspx\n   שירות פסיכולוגי משלים - נטעים",
-  "https://www.tel-aviv.gov.il/Residents/HealthAndSocial/Pages/Families.aspx\n   ילדים, נוער, צעירים ומשפחות",
-  "https://www.tel-aviv.gov.il/Residents/HealthAndSocial/Pages/FamiliesWithNeeds.aspx\n   תותים - למשפחות ולילדים מיוחדים ",
-  "https://www.tel-aviv.gov.il/Residents/HealthAndSocial/Pages/IndependentLife.aspx\n   המרכז לחיים עצמאיים - לאנשים עם מוגבלות"
- ],
- "json": [
-  "https://report.c3001.gbqofs.io/yl87mo4g/reporting/b715472f-8510-6ce6-cf9f-8002049f3ffb/cls_report?clsjsv=7.3.280446&_cls_s=06d33808-229b-49c4-887e-33c8b462a6d0:0&_cls_v=0471c5c3-9852-4b0f-a733-81d22677e473&pid=12d87724-ddbc-4821-8a64-7aa4819cb747&rto=c0&sn=1&cfg&pv=2&aid=",
-  "https://report.c3001.gbqofs.io/yl87mo4g/reporting/b715472f-8510-6ce6-cf9f-8002049f3ffb/cls_report?clsjsv=7.3.280446&_cls_s=06d33808-229b-49c4-887e-33c8b462a6d0:0&_cls_v=0471c5c3-9852-4b0f-a733-81d22677e473&pid=12d87724-ddbc-4821-8a64-7aa4819cb747&rto=c0&sn=2&cfg&pv=2&aid=",
-  "https://report.c3001.gbqofs.io/yl87mo4g/reporting/b715472f-8510-6ce6-cf9f-8002049f3ffb/cls_report?clsjsv=7.3.280446&_cls_s=06d33808-229b-49c4-887e-33c8b462a6d0:0&_cls_v=0471c5c3-9852-4b0f-a733-81d22677e473&pid=12d87724-ddbc-4821-8a64-7aa4819cb747&rto=c0&sn=3&cfg=8108a738&pv=2&aid="
- ]
-}
---- TEXT
-דלג לתוכן
-תל-מה AI
-חפש
-תפריט ראשי
-שירותים עירוניים
-צרו קשר
-תושבים
-עסקים
-מה קורה בעיר
-לאתר עיריית תל-אביב
-העיר והעירייה 
-מידע בחירום 
-דיגיתל שלי 
-24°
- 
-פתיחת תפריט שפות
-HE
- 
-תנועה וחניה ארנונה חינוך שירותים חברתיים ובריאות קהילה וספורט רישוי ופיקוח בנייה תכנון ופיתוח סביבה דיור ונכסים דיגיתֵל שלי
-הטבות דיגיתל
-אירועים ומופעים הטבות דיגיתֵל
-למי מתי אזור בעיר מרכז עירוני תחומי עניין מסננים נוספים  
-ריכזנו עבורך
-חנוכה לילדי דיגיתלדיגיטףדיגיתל60+
-נמצאו 346 תוצאות
-האופרה הישראלית: "פיטר גריימס"
-החל ב-75 ₪
-האופרה הישראלית, שאול המלך[שדרות] 19
-היום 20:00 26.11.26  הטבה לדיגיתל
-פסטיבל סאונדטראק 2026 בסינמטק
-29 ₪ (במקום 45 ₪)
-סינמטק תל אביב , הארבעה 5
-17:00 26.11.26 - 20:30 28.11.26  הטבה לדיגיתל
-אימוני כוח ותרגולי יוגה בבניין העירייה
-10 ₪ לאימון
-לובי בניין העירייה, אבן גבירול 69
-18:30 29.11.26 - 18:30 27.12.26  הטבה לדיגיתל
-מפגשים בתערוכה "קופסה שחורה"
-40 ₪ (במקום 55 ₪)
-ביתן איל עופר, תרס"ט[שדרות] 6
-19:00 1.12.26 - 10:30 25.12.26  הטבה לדיגיתל
-פסטיבל אלמינא ה-11 להצגות ילדים
-החל ב-35 ₪
-אולם אלמינא, נמל יפו 2
-16:30 3.12.26 - 15:00 5.12.26  הטבה לדיגיתל
-הסיפורים שמאחורי הציורים - סיור
-10 ₪ לכרטיס
-מרכז קהילתי הגר"א
-10:00 4.12.26  הטבה לדיגיתל
-מפגש חד פעמי: שימברוסקה ואקו
-60 ₪ (במקום 80 ₪)
-מרכז קהילתי מגיד, נורדאו[שדרות] 63
-11:00 4.12.26  הטבה לדיגיתל
-פסטיבל המחול "עננים" לכל המשפחה
-30 ₪ (במקום 45 ₪)
-מרכז ביכורי העתים, דה וינצ'י לאונרדו 2
-17:00 9.12.26 - 11:30 12.12.26  הטבה לדיגיתל
-בכורה בתיאטרון הבימה: "החבורה"
-85 ₪ (במקום 240 ₪)
-תיאטרון הבימה, תרס"ט[שדרות] 2
-12:00 25.12.26 - 20:00 31.1.27  הטבה לדיגיתל
-תיאטרון הקאמרי: "סוגרות ת'בסטה"
-89 ₪ (במקום 240 ₪)
-תיאטרון הקאמרי, שאול המלך[שדרות] 19
-20:30 25.12.26 - 19:30 17.1.27  הטבה לדיגיתל
-תנועת ההאטה: הרצאה בבית רדיקל
-48 ₪ (במקום 60 ₪)
-בית רדיקל, התחיה 27
-היום 19:00 26.11.26  הטבה לדיגיתל
-פסטיבל תמונע
-החל ב-45 ₪
-תיאטרון תמונע, שונצינו 8
-20:00 26.11.26 - 20:00 28.11.26  הטבה לדיגיתל
-ארקדי דוכין UNPLUGGED
-143 ₪ במקום 179 ₪
-מועדון UPTOWN, דבורה הנביאה 119
-היום 21:30 26.11.26  הטבה לדיגיתל
-מוזיאון העיר: עיר על מים סוערים
-35 ₪ (במקום 50 ₪)
-מוזיאון העיר תל אביב-יפו, ביאליק 27
-12:00 27.11.26 - 12:30 19.12.26  הטבה לדיגיתל
-היהודים בהופעה בהאנגר 11
-171 ₪ במקום 229 ₪
-האנגר 11
-21:00 28.11.26  הטבה לדיגיתל
-היה לנו עולם
-85 ₪ (במקום 199 ₪)
-בית ציוני אמריקה , פריש דניאל 1
-20:30 2.12.26  הטבה לדיגיתל
-חנוכה בסינמטק - פסטיבל סרטי ילדים
-29 ₪ (במקום 45 ₪)
-סינמטק, הארבעה 5
-09:30 3.12.26 - 11:00 12.12.26  הטבה לדיגיתל
-ויהי אור! סיור לילדים במוז"א
-30 ₪ (במקום 45 ₪)
-מוזיאון ארץ-ישראל, לבנון חיים 2
-10:30 5.12.26  הטבה לדיגיתל
-הצג עוד 
-חזרה לתחילת העמוד
-יישומון דיגיתל שלי
-הורידו עכשיו >>
-זימון תורים
-העיר והעירייה
-חילופי מחזיקים בארנונה
-בקשה לביטול דוח
-תל-קריירה
-הקוד האתי ואמנת השירות
-תו חניה
-שקיפות ושיתוף ציבור
-תשלומים
-מידע לעסקים
-Open Data
-הסביבה שלי
-תנאי השימוש
-מדיניות הפרטיות
-מפות GIS
-מידע על נגישות
-כל הזכויות שמורות לעיריית תל-אביב-יפו, אבן גבירול 69, טלפון: 3013* מהנייד. האתר מספק מידע כללי בלבד.
-הנוסח המחייב הוא זה הקבוע בהוראות הדין הרלוונטיות כפי שתהיינה בתוקף מעת לעת
-Created by: Layer. Digital studio
-אנו משתמשים בקבצי cookies לשיפור חווית הגלישה, ניתוח תעבורה ועוד. המשך גלישה מהווה הסכמה   לתנאי שימוש ולמדיניות הפרטיות
-הבנתי
---- HTML
-<html id="SPHtmlTag" dir="rtl" lang="he" translate="no" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="GENERATOR" content="Microsoft SharePoint"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Expires" content="0"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"><meta name="facebook-domain-verification" content="xsu77ffv1kylmx4m530jdckskc8ugu"><link rel="shortcut icon" href="/_layouts/15/TlvSP2013PublicSite/Images/IriaFavIcon.ico" type="image/x-icon">
-
-    <!-- Engage Web Tracking Code -->
-    <!-- Please insert the following code between your HTML document head tags to maintain a common reference to a unique visitor across one or more external web tracked sites. -->
-    <meta name="com.silverpop.brandeddomains" content="www.pages03.net,cdn.tel-aviv.gov.il,mydigitel.tel-aviv.gov.il,pre13.tel-aviv.gov.il,tel-aviv.gov.il,www.tel-aviv.gov.il">
-
-    <!-- Optionally uncomment the following code between your HTML document head tags if you use Engage Conversion Tracking (COT). -->
-    <!--<meta name="com.silverpop.cothost" content="engage3.silverpop.com" />  
-    <script src="http://contentz.mkt932.com/lp/static/js/iMAWebCookie.js?3f636987-14ae9af3439-2d617ac8ac4460b9f143347708bf4d50&h=www.pages03.net" type="text/javascript"></script>
-    <!-- For external web sites running under SSL protocol (https://) please uncomment this block and comment out the non-secure (http://) implementation. -->
-
-    <!-- GlassBox -->
-    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/DqDoLJqJmjhqr0vRwNZ2MCHA/recaptcha__iw.js" crossorigin="anonymous" integrity="sha384-0FO/T35l3Zazi3pZ30nN6Ja5ral56bZLGjBazPoUBQ11XEjIPN9aAuBPUEGgRHUp"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_f7846436.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-1007107377&amp;cx=c&amp;gtm=4e6bh1"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTUyMzg1YjAxMA.js" data-id="CI8POCRC77U2H86MCK9G"></script><script async="" src="https://wave.outbrain.com/mtWavesBundler/handler/0069a7b290a9781207927f8e5402850568" type="text/javascript"></script><script async="" src="//cdn.taboola.com/libtrc/unip/1741411/tfa.js" id="tb_tfa_script"></script><script async="" src="//amplify.outbrain.com/cp/obtp.js" type="text/javascript"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CI8POCRC77U2H86MCK9G&amp;lib=ttq"></script><script src="https://connect.facebook.net/signals/config/364989255732945?v=2.9.441&amp;r=stable&amp;domain=www.tel-aviv.gov.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120
-
-===== https://www.tamuseum.org.il/he/events/
-{
- "url": "https://www.tamuseum.org.il/he/events/",
- "title": "דף לא נמצא / מוזיאון תל אביב לאמנות",
- "pat": [
-  [
-   "https://www.tamuseum.org.il/he",
-   76
-  ],
-  [
-   "https://tickets.tamuseum.org.il/show",
-   5
-  ],
-  [
-   "https://collection.tamuseum.org.il/",
-   4
-  ],
-  [
-   "https://www.tamuseum.org.il/en",
-   4
-  ],
-  [
-   "https://telavivmuseum.activetrail.biz/newsletter_he",
-   3
-  ],
-  [
-   "https://www.instagram.com/telavivmuseumofart",
-   2
-  ],
-  [
-   "https://www.facebook.com/tamuseum",
-   2
-  ],
-  [
-   "https://pluro.ai/he",
-   1
-  ],
-  [
-   "https://www.tamuseum.org.il/",
-   1
-  ],
-  [
-   "http://bnop.co/",
-   1
-  ]
- ],
- "xhr": [
-  "https://storage.googleapis.com/tama-static/static/webpack/main.6de0c8063f5ef69ec6c4.css",
-  "https://storage.googleapis.com/tama-static/static/webpack/bundle.6de0c8063f5ef69ec6c4.js",
-  "https://storage.googleapis.com/tama-static/static/webpack/bundle.4.6de0c8063f5ef69ec6c4.js",
-  "https://storage.googleapis.com/tama-static/static/webpack/0.6de0c8063f5ef69ec6c4.css",
-  "https://storage.googleapis.com/tama-static/static/webpack/bundle.0.6de0c8063f5ef69ec6c4.js",
-  "https://connect.facebook.net/en_US/fbevents.js",
-  "https://analytics.google.com/g/collect?v=2&tid=G-TYWQX3YSE6&gtm=45je6bh1v9125614218za20ozb831100513zd831100513xf1&_p=1795703307052&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAAAGA&cid=398290663.1795703307&frm=0&ir=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Linux&uapv=&uaw=0&ul=he-il&gaf=2&_s=1&tag_exp=115938466~115938469~120213116~120385423~120469145~120469153~121246026~121246034&sid=1795703307&sct=1&seg=0&dl=https%3A%2F%2Fwww.tamuseum.org.il%2Fhe%2Fevents%2F&dt=%D7%93%D7%A3%20%D7%9C%D7%90%20%D7%A0%D7%9E%D7%A6%D7%90%20%2F%20%D7%9E%D7%95%D7%96%D7%99%D7%90%D7%95%D7%9F%20%D7%AA%D7%9C%20%D7%90%D7%91%D7%99%D7%91%20%D7%9C%D7%90%D7%9E%D7%A0%D7%95%D7%AA&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=563",
-  "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
- ],
- "sample": [
-  "https://www.tamuseum.org.il/he/events/#\n   עבור לסרגל הכלים של הנגישות",
-  "https://www.tamuseum.org.il/he/events/#\n    | תמיכה בניווט מקלדת",
-  "https://www.tamuseum.org.il/he/events/#\n    | קורא הטקסטהכי טוב ב-Chrome",
-  "https://www.tamuseum.org.il/he/events/#\n    | שליטה קוליתהכי טוב ב-Chrome",
-  "https://www.tamuseum.org.il/he/exhibitions-and-events/\n    | כל התערוכות והאירועים ←",
-  "https://www.tamuseum.org.il/en/events/\n    | English ← | ",
-  "https://tickets.tamuseum.org.il/show/1366\n    | כרטיסים | <— <— | ",
-  "https://www.tamuseum.org.il/he/visit/\n    | מידע לביקור ← | ",
-  "https://www.tamuseum.org.il/he/exhibitions-and-events/\n    | תערוכות ואירועים ← | ",
-  "https://www.tamuseum.org.il/he/exhibitions-and-events/film/\n    | סינמה מוזיאון ← | ",
-  "https://www.tamuseum.org.il/he/learning/\n    | קורסים וסדנאות ← | ",
-  "https://www.tamuseum.org.il/he/about/\n    | אודות ← | "
- ],
- "json": []
-}
---- TEXT
-עבור לסרגל הכלים של הנגישות
-דלג לתפריט האתר
-דלג לתוכן הראשי
-דלג לתחתית האתר
-מוזיאון תל אביב לאמנות
- 
-כרטיסים
-<— <—
-מידע לביקור ←
-תערוכות ואירועים ←
-סינמה מוזיאון ←
-קורסים וסדנאות ←
-אודות ←
-האוסף ←
-ספרייה ומחקר ←
-חנות ←
-מנויים ותמיכה ←
-Language ↓
-Logo of the Tel Aviv Museum of Art
-404
-דף לא נמצא
-עברית
-English
-מוזיאון תל אביב לאמנות (חל״צ)
-שד׳ שאול המלך 27, תל אביב   |   טל׳ 03-6077020
-באתר
-מידע לביקור ←
-תערוכות ואירועים ←
-קורסים וסדנאות ←
-אודות ←
-האוסף ←
-ספרייה ומחקר ←
-חנות ←
-הצטרפו אלינו
-מנויים ←
-ידידים ←
-מתנדבים ←
-צרו קשר ←
- Instagram  Facebook
- כרטיסים ←
- הירשמו לניוזלטר ←
-
-עיצוב ופיתוח: ביקון אופנהיים, מיכל סהר
-
-© כל הזכויות שמורות למוזיאון תל אביב לאמנות . תנאי שימוש, פרטיות, הצהרת נגישות
-
-האתר בתמיכת
-משפחת צבי ועפרה מיתר
-
-האתר עושה שימוש בעוגיות כדי לשפר את חוויית הגלישה שלך, להציג תכנים מותאמים אישית ועוד. למידע נוסף אנא קראו את מדיניות הפרטיות שלנו.
-
-×
---- HTML
-<html class="no-js t-has-hover uni-toolbar-browser-chrome uni-toolbar-browser-chrome-159" lang="he" dir="rtl"><head>
-    <meta charset="utf-8">
-    <title>
-      
-  דף לא נמצא
-
-      
-        /
-        מוזיאון תל אביב לאמנות
-      
-    </title>
-
-    
-<script src="https://connect.facebook.net/signals/config/1441360776125796?v=2.9.441&amp;r=stable&amp;domain=www.tamuseum.org.il&amp;hme=abf59d235177e3601acac6035d7c2a28fadbda4b0c64009bc203ceed9fa8bb90&amp;ex_m=119%2C243%2C172%2C27%2C82%2C83%2C163%2C78%2C77%2C11%2C182%2C102%2C20%2C154%2C142%2C46%2C85%2C90%2C184%2C111%2C150%2C177%2C8%2C4%2C5%2C7%2C6%2C3%2C103%2C116%2C162%2C72%2C186%2C110%2C185%2C212%2C264%2C37%2C84%2C284%2C283%2C282%2C14%2C25%2C28%2C40%2C62%2C118%2C68%2C10%2C73%2C112%2C113%2C114%2C120%2C145%2C38%2C36%2C147%2C148%2C149%2C144%2C143%2C173%2C86%2C176%2C174%2C175%2C57%2C69%2C67%2C138%2C19%2C180%2C52%2C335%2C336%2C337%2C334%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C55%2C164%2C87%2C127%2C22%2C24%2C51%2C47%2C49%2C48%2C95%2C104%2C108%2C125%2C161%2C165%2C53%2C126%2C29%2C26%2C134%2C79%2C43%2C167%2C166%2C168%2C158%2C156%2C30%2C42%2C66%2C124%2C179%2C80%2C21%2C129%2C93%2C76%2C23%2C97%2C98%2C131%2C96%2C152%2C151%2C155%2C109%2C178%2C181%2C41%2C351%2C353%2C374%2C257%2C239%2C70%2C240%2C238%2C377%2C368%2C59%2C258%2C122%2C146%2C92%2C136%2C61%2C54%2C56%2C128%2C135%2C141%2C140%2C65%2C74%2C169%2C88%2C89%2C130%2C44%2C39%2C60%2C63%2C115%2C183%2C1%2C139%2C16%2C137%2C12%2C2%2C64%2C105%2C15%2C75%2C71%2C133%2C101%2C100%2C188%2C189%2C106%2C107%2C9%2C117%2C187%2C58%2C159%2C99%2C91%2C81%2C132%2C121%2C170%2C50%2C160%2C0%2C94%2C153%2C157%2C171%2C45%2C123%2C13%2C190" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-TYWQX3YSE6&amp;cx=c&amp;gtm=4e6bh1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TKJF9B9"></script><script>
-  var hostname = 'www.tamuseum.org.il';
-  if (location.hostname === hostname && location.protocol != 'https:') {
-    location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-  }
-</script>
-
-
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    
-
-  
-
-
-
-
-  
-
-
-
-
-
-  
-    
-  
-
-
-
-
-
-
-
-
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="&lt;WSGIRequest: GET '/he/events/'&gt;">
-  <meta property="og:title" content="מוזיאון תל אביב לאמנות">
-  <meta property="og:image" content="https://storage.googleapis.com/tama-static/og/TAMA_ident.jpg">
-  <meta property="og:description" content="-">
-
-  <meta name="description" content="-">
-  
-
-    
-    <link rel="alternate" hreflang="en" href="https://www.tamuseum.org.il/en/events/">
-    <link rel="alternate" hreflang="he" href="https://www.tamuseum.org.il/he/events/">
-    
-
-    
-    <meta name="theme-color" content="#ffffff">
-
-    
-    <link type="text/css" href="https://storage.googleapis.com/tama-static/static/webpack/main.6de0c8063f5ef69ec6c4.css" rel="stylesheet">
-
-    
-    
-
-    <script id="client-data" type="application/json">
-      {"ga_id": "UA-16132650-4", "lang": "he", "lang_content": "he"}
-    </script>
-
-    <script>
-  dataLayer = [];
-</script>
-
-<!-- Google Tag Manager -->
-
-<script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, "script", "dataLayer", "GTM-TKJF9B9");
-</script>
-
-<!-- End Google Tag Manager -->
-
-    <script type="text/javascript" src="/he/jsi18n/"></script>
-  <script charset="utf-8" src="https://storage.googleapis.com/tama-static/static/webpack/bundle.4.6de0c8063f5ef69ec6c4.js"></script><link rel="stylesheet" type="text/css" href="http
+## שאול המלך[שדרות] 19 (44)
+2026-11-26 | 20:00 | האופרה הישראלית: "פיטר גריימס" | 75 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-25 | 20:30 | תיאטרון הקאמרי: "סוגרות ת'בסטה" | 89 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 20:00 | תזמורת ירושלים מזרח ומערב x איציק קלה | 99 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-02 | 17:00 | מחזמר צלילי המוסיקה | 80 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-17 | 20:00 | Prima Ballerina- Natalia Osipova | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-14 | 20:00 | 'ערגה" מופע מחול מאת תמיר גינץ | 15 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## הארבעה 5 (6)
+2026-11-26 | 17:00 | פסטיבל סאונדטראק 2026 בסינמטק | 29 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-03 | 09:30 | חנוכה בסינמטק - פסטיבל סרטי ילדים | 29 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 16:45 | נובמבר-דצמבר לילדים בסינמטק | 28 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 18:00 | חודש האזרח הוותיק בסינמטק | 10 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 21:30 | לפרק ולהרכיב: פוסט מודרניזם בקולנוע | 29 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 21:00 | אפטר שישי בסינמטק | 28 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## אבן גבירול 69 (1)
+2026-11-29 | 18:30 | אימוני כוח ותרגולי יוגה בבניין העירייה | 10 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## תרס"ט[שדרות] 6 (1)
+2026-12-01 | 19:00 | מפגשים בתערוכה "קופסה שחורה" | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## נמל יפו 2 (4)
+2026-12-03 | 16:30 | פסטיבל אלמינא ה-11 להצגות ילדים | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 10:30 | שבתות בנמל יפו: יצירה, הצגות והפעלות | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-02 | 20:00 | נמל יפו מציג: ג'אז בעוגן | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-08 | 20:00 | קונצרט בנמל יפו: סדרת הסתיו | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## GoShow (1)
+2026-12-04 | 10:00 | הסיפורים שמאחורי הציורים - סיור | 10 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## נורדאו[שדרות] 63 (2)
+2026-12-04 | 11:00 | מפגש חד פעמי: שימברוסקה ואקו | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-01-13 | 19:00 | קונצרט כיס במרכז קהילתי מגיד | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## דה וינצ'י לאונרדו 2 (2)
+2026-12-09 | 17:00 | פסטיבל המחול "עננים" לכל המשפחה | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 10:00 | "שבשבת" מופעי מחול לילדים | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## תרס"ט[שדרות] 2 (30)
+2026-12-25 | 12:00 | בכורה בתיאטרון הבימה: "החבורה" | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-22 | 20:00 | תיאטרון הבימה: "יוסי וג'אגר" | 89 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:00 | חדש בהבימה: הדוד פרץ ממריא | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:00 | הבימה: "פריסילה מלכת המדבר" | 178 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:00 | תיאטרון הבימה: "מי את חושבת שאת" | 75 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 12:00 | "קיצור תהליכים" בתיאטרון הבימה 4 | 75 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## התחיה 27 (4)
+2026-11-26 | 19:00 | תנועת ההאטה: הרצאה בבית רדיקל | 48 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 21:00 | אתי רומנו במרתף | 10 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 19:00 | האודיסאה: סדרת הרצאות בבית רדיקל | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-04 | 12:00 | כשהדברים מתפרקים: ויפאסנה בבית רדיקל | 56 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שונצינו 8 (26)
+2026-11-26 | 20:00 | פסטיבל תמונע | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-20 | 19:30 | "המדריך לגידול המת" בתיאטרון תמונע | 70 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 11:00 | הצגת ילדים בתמונע: אותיות חיות | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 19:30 | מונודרמה בתמונע: "לא שקט" | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 19:30 | תאטרון תמונע: "הפינגווין" | 70 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 19:30 | מחול בתמונע: SATORI | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## דבורה הנביאה 119 (7)
+2026-11-26 | 21:30 | ארקדי דוכין UNPLUGGED | 143 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 22:00 | חיים משה גיטרה ובוזוקי | 143 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-25 | 14:00 | גידי גוב B SIDE | 143 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-31 | 21:30 | תמיר גרינברג - מופע סילבסטר | 151 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-16 | 21:30 | גליקריה בהופעה בUPTOWN | 159 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-17 | 21:30 | רותם כהן בUPTOWN | 139 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ביאליק 27 (6)
+2026-11-27 | 12:00 | מוזיאון העיר: עיר על מים סוערים | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-06 | 16:30 | הצגת ילדים השתתפותית בכיכר ביאליק | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 10:30 | סיור קלאסי: העיר כסיפור אמנותי | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 10:30 | גיבורי וגיבורות העל של תל אביב-יפו | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-08 | 10:30 | סדנת יצירה לילדים במוזיאון העיר | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-11 | 10:00 | דרך הים: אלנבי בין הגלים | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## עיריית תל-אביב-יפו (8)
+2026-11-28 | 21:00 | היהודים בהופעה בהאנגר 11 | 171 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:00 | שבוע העיצוב תל אביב | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-02-26 | 04:30 | מרתון בנק לאומי תל אביב 2027 | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 18:00 | דיגיתל60+ בתים מארחים וגלריות בעיר | 0 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:00 | כנסיית השכל The Mind Church | 189 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-30 | 10:00 | דיגיתל60+: חדש בתרבות |  | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## פריש דניאל 1 (6)
+2026-12-02 | 20:30 | היה לנו עולם | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-20 | 20:30 | היי גדי - קומדיה מוסיקלית | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-01 | 20:30 | 'פרידות בע"מ' - קומדיה צרפתית מפתיעה! | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-19 | 11:30 | הברווזון המכוער | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-26 | 11:00 | דירה להשכיר - תיאטרון סיפור | 42 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-21 | 20:30 | משתגעים מאהבה מחזמר - קומדיה מוזיקלית | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## לבנון חיים 2 (14)
+2026-12-05 | 10:30 | ויהי אור! סיור לילדים במוז"א | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-07 | 10:30 | חנוכת הבית במוז"א | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 11:00 | חומר ביד היוצר: מחקר, מלאכה, חדשנות | 39 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-08 | 16:30 | 1418 לנוער - פנטזיה במוז"א | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 11:00 | סיור מודרך בתערוכה "עדות מקומית" | 39 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-06 | 12:00 | מוז"א X דבק 1418 מציגים: חנוכון 2026 | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## מפרץ שלמה 10 (1)
+2026-12-06 | 11:00 | האוצר האבוד של יהודה המכבי | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ביאליק 22 (5)
+2026-12-10 | 11:00 | ימי ביאליק בחנוכה לכל המשפחה | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 17:00 | ימי ביאליק - ספרות, תרבות ואמנות | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 11:00 | ביאליק בתל אביב: מפגש מיוחד בארכיון | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-01 | 19:30 | רומן אמיתי: מדון קישוט עד זכרון דברים | 15 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 10:30 | חנוכה בבית ביאליק: ים קטן | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## אבן גבירול 25 (1)
+2026-11-26 | 18:00 | כוס יין במתנה ב'רוזנבאום' | 0 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ירושלים[שדרות] 9 (5)
+2026-11-28 | 10:00 | "האוצר מתחת לגשר" בתיאטרון גשר | 65 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-24 | 19:30 | תיאטרון גשר: אמא קוראז' וילדיה | 100 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-02 | 19:00 | תיאטרון גשר: ריצ'רד השלישי | 100 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-07 | 11:00 | ההצגה "מסעות אודיסאוס" בתיאטרון גשר | 65 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 19:30 | "סלומה" בתיאטרון גשר | 100 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שאול המלך[שדרות] 27 (14)
+2026-12-05 | 10:30 | חנוכה לילדים במוזיאון תל אביב לאמנות | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-01 | 20:00 | מכירה פומבית במוזיאון תל אביב לאמנות | 55 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 11:00 | מעשה בעולם- תיאטרון הקרון | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-26 | 11:00 | יונתן בלש ממש / הבובנאיות החופשיות | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 21:00 | רותם אבוהב במופע סטנדאפ חדש! | 90 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 11:30 | החתול במגפיים - להקת הפלמנקו הישראלית | 55 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## דיזנגוף 50 (4)
+2026-12-07 | 11:00 | סיור קיימות וטבע עירוני בדיזנגוף סנטר | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-08 | 17:00 | סיור עטלפים בדיזנגוף סנטר | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 19:00 | מרכז הקיימות: יש לך מה ללבוש! | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 16:30 | חנוכה במרכז הקיימות: סדנת נרות | 55 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## בית שמאי 9 (5)
+2026-12-13 | 19:00 | קומדי בר במונטי #7 | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-20 | 20:30 | טוטאל אימפרוב - ג'אם ומופע בהפתעה | 39 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 10:00 | הטבת כניסה לחלל העבודה במונטי | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-22 | 20:15 | המופע "לא מכניסה את זה הביתה" במונטי | 79 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-28 | 20:00 | קריוקי LIVE במונטי | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## טשרניחובסקי 22 (4)
+2026-11-26 | 20:00 | תיאטרון המשולש: "בנימין" | 74 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 20:00 | תיאטרון המשולש: "פאקינג מן" | 59 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-14 | 20:00 | תיאטרון המשולש: "הקשב הרס"פ" | 74 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-30 | 20:00 | תיאטרון המשולש: "גבע לא יכול להתאהב" | 74 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## אבן גבירול 30 (17)
+2026-11-27 | 22:00 | חודש האזרח הוותיק - הופעות חיות ב GRAY | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-23 | 21:30 | רוני דואני בגריי | 119 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 11:00 | צוותא לילדים ולילדות | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 20:30 | צוותא: "פימה ג'קסון ולהקתו" | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-30 | 19:00 | צוותא: "התחנה האחרונה" | 55 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-01 | 20:30 | המופע "מה שקרה לנו" בצוותא | 99 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## אידלסון 29 (9)
+2026-11-30 | 19:00 | סינמה מטרופוליס בבית ליבלינג | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-21 | 19:00 | בית ליבלינג מציג: סלון איך.ות | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 09:00 | סף הבית: סיור על טבע בחצרות בניינים | 55 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 10:00 | סטודיו לילדים בבית ליבלינג | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 10:00 | "סופרסטודיו" - אדריכלות ובנייה לילדים | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 12:00 | סיור הבית של העיר הלבנה בבית ליבלינג | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## נועם 5 (2)
+2026-11-30 | 20:00 | סוף תרנגול - קומדיה מוזיקלית קרבית | 56 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 17:00 | ניסן נתיב: עמי ותמי בבית הממתקים | 39 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ברחבי העיר (4)
+2026-12-03 | 11:00 | חשיפה בינלאומית 2026 | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 10:00 | הצגות חנוכה של אורנה פורת 2026 | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 18:00 | סינמטק VOD בשבילך עד הבית! | 15 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 10:30 | תערוכות חדשות במוזיאון תל אביב לאמנות |  | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## קלוזנר 12 (3)
+2026-12-10 | 12:00 | ספוטיפון - מסע מוזיקלי להורים ולילדים | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 09:00 | מוזיאון אנו: הכנסת חלה | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-07 | 19:30 | השקת גיליון "הו!" במוזיאון הטבע | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שאול המלך[שדרות] 25 (3)
+2026-12-12 | 10:30 | הייתי פעם ילד - שירי אריק איינשטיין | 65 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 17:00 | ערב מחווה בקאמרי: עלי מוהר | 134 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-11 | 10:30 | שעת סיפור בבית אריאלה עם ירדן ודידי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## קולנוע לב (1)
+2026-12-15 | 20:30 | הקרנה בהפתעה בקולנוע לב! | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## הוברמן 1 (5)
+2026-12-18 | 14:00 | 'מלחמה מתחת לחולצה' מופע מחול | 138 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-24 | 20:30 | ג'ירפות 20 שנה גג | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-02-01 | 18:00 | תערוכת היין Sommelier 2027 | 139 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-30 | 20:30 | VHS ד"ש מהעבר | 100 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-01-12 | 21:00 | קובי אפללו בהיכל התרבות | 139 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## מונש ג'ון סר 1 (4)
+2026-12-24 | 21:00 | אינדי אליהו – דניאל רובין בהופעה | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-01-21 | 21:00 | אינדי אליהו – בועז קראוזר בהופעה | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-02-18 | 21:00 | אינדי אליהו – עינב ג'קסון כהן בהופעה | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-03-18 | 21:00 | אינדי אליהו – רוני בר הדס בהופעה | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## לבנון חיים 64 (1)
+2026-11-26 | 11:00 | אירועים בגלריה האוניברסיטאית | 10 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שדה יצחק 32 (1)
+2026-12-03 | 17:00 | תיאטרון האימפרוב - שיעור נסיון | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שוקן זלמן 27 (1)
+2026-11-26 | 20:30 | CLOUD SPACE - מרחב נשימה אורבני | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## יחיאלי 6 (4)
+2026-12-04 | 13:00 | 'ארגז החלומות' - הצגת ילדים | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-01 | 20:30 | סוזן דלל: בְּרֵאשִׁית וְגַעְגּוּעַ | 65 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-07 | 11:00 | סוזן דלל לילדים: תחושת בטן | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-12 | 10:30 | מופעי ילדים במרכז סוזן דלל | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## העליה השניה[רציף] 4 (1)
+2026-12-02 | 18:00 | נא לגעת: פסטיבל אמנות פורצות גבולות | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## המלך ג'ורג' 48 (1)
+2026-12-08 | 17:00 | ספוטיפון - מסע מוזיקלי בחנות התקליטים | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## רוקח ישראל[שדרות] 101 (1)
+2026-12-12 | 21:00 | אנאפאזה ANAFAZA | 390 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## יחיאלי 5 (1)
+2026-12-15 | 20:30 | אומרים ש...על מסעו של היחיד בקיבוץ | 80 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## פרישמן 44 (15)
+2026-12-16 | 19:00 | תיאטרון בית ליסין: "ציפורים כולם" | 99 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-26 | 20:30 | בית ליסין: "אור לגויים" | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 16:00 | סיור מאחורי הקלעים של בית ליסין | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 17:00 | בית ליסין: "ללכת שבי אחריו" | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-29 | 20:30 | תיאטרון בית ליסין: "יום המזל שלי" | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-03 | 20:30 | תיאטרון בית ליסין: "אף מילה לאמא" | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## תרס"ט[שדרות] 1 (1)
+2026-12-16 | 20:30 | 'מקום לגור בו'- תיאטרון עוטף הנגב | 80 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## צייטלין 22 (1)
+2026-12-23 | 20:00 | סדרת מפגשים במרכז ברודט: מהתנ"ך לחיים | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ויצמן 60 (2)
+2026-12-28 | 20:30 | 'הזוג המוזר' קומדיה מאת ניל סיימון | 79 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-01-07 | 20:30 | לשחרר את נחמה – קומדיה ישראלית מקורית | 79 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## אבן גבירול 71 (7)
+2026-12-30 | 20:30 | מרכז ענב: דניאלה ספקטור בהופעה | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-03 | 20:30 | מרכז ענב: יחזקאל רז ורביעיית גלאס | 85 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-08 | 10:00 | שיר.סיפור. איור: מופע מוזיקלי בענב | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 10:00 | פודקאסט לייב עם יובל מלחי | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-17 | 20:00 | מסע מוסיקלי בעקבות לאה גולדברג | 70 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-19 | 10:30 | אופרה במרכז ענב: הברווזון המכוער | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## גני יהושע (11)
+2026-11-28 | 15:30 | צפרות בשקיעה למשפחות בגני יהושע | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-06 | 16:30 | סיור עששיות לכל המשפחה בגני יהושע | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 09:30 | ילדים חוקרים טבע בראש ציפור | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 10:00 | יוגה ערסלים בגני יהושע | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 11:30 | בין סתיו לחורף בגני הטבע | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 09:00 | שטים עם ציפורים באגם בראש ציפור | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## התקומה 1 (2)
+2026-11-27 | 14:00 | שישי מהסרטים במרכז תרבות מנדל | 15 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-05 | 20:00 | פרסי הפורום 2026: הקרנות ומפגשי יוצרים | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## נמל יפו (4)
+2026-12-01 | 20:00 | פסקולים LIVE בבית המכולות | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-27 | 14:00 | יריד YOU ARE PERFECT בנמל יפו | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 11:00 | חנוכה לילדים ביפו העתיקה | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-12 | 10:30 | דצמבר לילדים בנמל יפו | 20 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## תל גבורים 5 (9)
+2026-12-12 | 18:00 | "מי רצח את אלמה?" תיאטרון ניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 20:30 | "המבול" מבית תיאטרון ניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-10 | 20:30 | "הייתי והנני-אלכסנדר פן" בניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-11 | 21:00 | שלישייה במי במול תיאטרון ניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-15 | 20:30 | "חדשות אחרונות" - תיאטרון ניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-22 | 20:30 | "מכתב אבוד" - תיאטרון ניקו ניתאי | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## חופי תל אביב יפו (1)
+2026-11-26 | 10:00 | מתקני חוף בהטבה לדיגיתל | 2 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שדרות שאול המלך 19 (1)
+2026-11-26 | 20:00 | מופעי תזמורת המהפכה באופרה הישראלית | 99 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## קויפמן יחזקאל 2 (1)
+2026-11-26 | 17:00 | מאופניים ישנים לאופניים חדשים | 120 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## מרון חנה 2 (2)
+2026-11-26 | 20:30 | קאנטרי גורן גולדשטיין: "איפה לורה?" | 69 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-17 | 20:30 | "רק בשמחות" בקאנטרי גורן גולדשטיין | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## מזל תאומים[סמטת] 4 (1)
+2026-11-26 | 21:00 | תאטרון הסימטה: מעגל שני | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## רוקח ישראל[שדרות] 40 (1)
+2026-11-27 | 09:30 | סדנת רכיבה על אופניים למבוגרים | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## מוזיאון העיר תל-אביב-יפו (1)
+2026-11-27 | 10:30 | סיור בעקבות דמוקרטיה במרחב העירוני | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## רוקח שמעון 21 (7)
+2026-11-27 | 11:00 | סיור בשכונת נווה צדק | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-11-28 | 11:00 | סדנות שבת לכל המשפחה בגוטמן | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-07 | 17:00 | חנוכה לכל המשפחה בנחום גוטמן | 49 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-11 | 11:00 | מפגש ציור מודל במוזיאון נחום גוטמן | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-14 | 19:00 | חמישה מבטים: ערבי עיון על אמנות | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-18 | 11:00 | הרצאה עם פרופ' חמי גוטמן | 40 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## קדם 132 (2)
+2026-11-27 | 11:00 | הרצאתו של רונן ברגמן במרכז פרס | 95 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-18 | 11:00 | מרכז פרס: האהבות של אבי נשר | 75 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## קדומים[כיכר] 6 (1)
+2026-12-07 | 11:00 | האקדמיה של עתיקות יפו: חנוכה 2026 | 25 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## פראנצויז 12 (1)
+2026-12-07 | 11:00 | תיאטרון דוואי: פיזיקלי | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## רבנו תם 7 (2)
+2026-12-07 | 12:00 | תיאטרון המשולש: "המקלון" | 59 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-20 | 20:00 | תיאטרון המשולש: "פותחות" | 74 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## פארק המיחזור חירייה, המרכז לחינוך סביבתי (1)
+2026-12-08 | 09:30 | חנוכה במרכז לחינוך סביבתי חירייה | 45 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## ביאליק 26 (4)
+2026-12-10 | 20:00 | בית לאמנות הצליל: צלליות | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-11 | 12:30 | בית לאמנות הצליל: קונצרט "אור באפלה" | 70 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-31 | 20:00 | בית לאמנות הצליל: שירים מן העולם החדש | 60 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2026-12-09 | 19:00 | מועדון סאטורן: ג'אז בפליציה | 50 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## התקוה 76 (2)
+2026-12-11 | 09:30 | אנדרדוס: החבר הדמיוני שלי | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+2027-01-27 | 20:30 | קולבן דאנס: שמש כחולה | 109 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## בן גוריון[שדרות] 17 (1)
+2026-12-11 | 10:00 | סיור חנוכה לכל המשפחה בבית בן גוריון | 15 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## המרץ[שביל] 6 (1)
+2026-12-17 | 13:00 | חוגגים 200 שנות צילום בקריית המלאכה | 30 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## סעדיה גאון 7 (1)
+2026-12-21 | 20:30 | להקת המחול ליאור תבורי: VIVIAN | 129 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## סעדיה גאון 6 (1)
+2027-01-14 | 20:00 | להקת המחול קמע: מנמוזין | 125 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## שארית ישראל 10 (1)
+2027-01-29 | 11:00 | שישי ביפו: מוסיקה לכל החושים | 63 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## חריפאי זהרירה 7 (1)
+2026-12-01 | 16:30 | סדנת זהירות בדרכים | 35 | c | img | https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=3af57d92-807
+## בארבי (76)
+2026-11-26 | 21:00 | אהוד בנאי |  | m | img | https://barby.co.il/
+2026-11-27 | 13:00 | מרגול בבארבי- מופע צהרים |  | m | img | https://barby.co.il/
+2026-11-27 | 21:30 | מסיבת העשורים הגדולה - ריקודים, תצוגות, ומלא הפתעות |  | p | img | https://barby.co.il/
+2026-11-28 | 21:00 | מופע המחווה ל-Avenged Sevenfold |  | m | img | https://barby.co.il/
+2026-11-29 | 21:00 | לירן דנינו - לראשונה מגיע לבארבי |  | m | img | https://barby.co.il/
+2026-11-30 | 21:00 | ניר כנען חוזר לבארבי |  | m | img | https://barby.co.il/
+## תיאטרון הסימטה (23)
+2026-12-20 | 20:30 | שואת נמלי דותן |  | t | img | https://hasimta.com/shows/%d7%a9%d7%95%d7%90%d7%aa-%d7%a0%d7%9e%d7%9c%
+2026-12-14 | 20:30 | Горячий бейгл — Театр а-Симта |  | t | img | https://hasimta.com/shows/%d0%b3%d0%be%d1%80%d1%8f%d1%87%d0%b8%d0%b9-%
+2026-11-26 | 21:00 | מעגל שני – הצגת אנסמבל הסימטה |  | t | img | https://hasimta.com/shows/%d7%9e%d7%a2%d7%92%d7%9c-%d7%a9%d7%a0%d7%99-
+2026-11-28 | 19:00 | מעגל שני – הצגת אנסמבל הסימטה |  | t | img | https://hasimta.com/shows/%d7%9e%d7%a2%d7%92%d7%9c-%d7%a9%d7%a0%d7%99-
+2026-11-30 | 19:00 | מעגל שני – הצגת אנסמבל הסימטה |  | t | img | https://hasimta.com/shows/%d7%9e%d7%a2%d7%92%d7%9c-%d7%a9%d7%a0%d7%99-
+2026-12-01 | 21:00 | מעגל שני – הצגת אנסמבל הסימטה |  | t | img | https://hasimta.com/shows/%d7%9e%d7%a2%d7%92%d7%9c-%d7%a9%d7%a0%d7%99-
+## סוזן דלל (4)
+2026-11-29 | 20:30 | מופעים וכרטיסים |  | t | - | https://suzannedellal.org.il/shows/%d7%94%d7%a4%d7%a0%d7%99%d7%9d-%d7%
+2026-12-27 | 20:30 | מופעים וכרטיסים |  | t | - | https://suzannedellal.org.il/shows/%d7%94%d7%a4%d7%a0%d7%99%d7%9d-%d7%
+2027-01-17 | 20:30 | מופעים וכרטיסים |  | t | - | https://suzannedellal.org.il/shows/%d7%94%d7%a4%d7%a0%d7%99%d7%9d-%d7%
+2026-12-13 | 20:30 | מופעים וכרטיסים |  | t | - | https://suzannedellal.org.il/shows/%d7%9e%d7%91%d7%98-%d7%9e%d7%91%d7%
+## הקאמרי (173)
+2026-11-30 | 20:30 | אדיפוס |  | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+2026-12-01 | 20:30 | אדיפוס |  | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+2027-01-04 | 19:00 | אדיפוס |  | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+2027-02-08 | 20:00 | אדיפוס |  | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+2027-02-09 | 19:00 | אדיפוס |  | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+2026-11-27 | 20:30 | החבדניקים | 50 | t | img | https://www.cameri.co.il/%D7%94%D7%A6%D7%92%D7%95%D7%AA_%D7%94%D7%A7%D
+## קומדי בר (15)
+2026-11-26 | 20:30 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+2026-11-26 | 21:00 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+2026-11-26 | 21:30 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+2026-11-26 | 22:00 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+2026-11-26 | 23:30 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+2026-11-27 | 22:00 | לוח הופעות |  | s | img | https://www.comedybar.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A
+## לבונטין 7 (6)
+2026-11-27 | 20:00 | נא להירגע // Punx Night | 40 | m | - | https://levontin7.com/events/%d7%a0%d7%90-%d7%9c%d7%94%d7%99%d7%a8%d7%
+2026-11-28 | 20:00 | עידו רחמים// יותר מדי ולא מספיק// השקת אלבום | 45 | m | - | https://levontin7.com/events/%d7%a2%d7%99%d7%93%d7%95-%d7%a8%d7%97%d7%
+2026-11-28 | 22:00 | ניסן ומוות לניסן / גיוס הון לאלבומון |  | m | - | https://levontin7.com/events/%d7%a0%d7%99%d7%a1%d7%9f-%d7%95%d7%9e%d7%
+2026-11-26 | 20:00 | תומר צוק סולו – מארח את אפרים שמיר, גיאגיא ויערה שאוליאן |  | m | - | https://levontin7.com/events/%d7%aa%d7%95%d7%9e%d7%a8-%d7%a6%d7%95%d7%
+2026-11-29 | 20:00 | טל רמון // עשור לאלבום דמות |  | m | - | https://levontin7.com/events/%d7%98%d7%9c-%d7%a8%d7%9e%d7%95%d7%9f-%d7
+2026-11-29 | 22:00 | רתם פינקל // מופע להקה |  | m | - | https://levontin7.com/events/%d7%a8%d7%aa%d7%9d-%d7%a4%d7%99%d7%a0%d7%
