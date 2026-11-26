@@ -311,8 +311,9 @@ function extractDetail(opts) {
   const pad = (n) => String(n).padStart(2, "0");
   const meta = (p) => { const m = document.querySelector(`meta[property="${p}"],meta[name="${p}"]`); return m ? m.content : ""; };
   let ti = (opts.titleSel && document.querySelector(opts.titleSel) && document.querySelector(opts.titleSel).innerText) || (document.querySelector("h1") && document.querySelector("h1").innerText) || meta("og:title") || document.title;
-  ti = String(ti).replace(/\s+/g, " ").replace(/\s*[|\-–]\s*(תיאטרון|סינמטק|צוותא|לבונטין|הבימה|בית ליסין|תמונע|סוזן|הסימטה|בארבי|מוזיאון).*$/, "").trim().slice(0, 120);
-  const main = document.querySelector(opts.mainSel || "main, article, #content, .content, body");
+  ti = String(ti).replace(/\s+/g, " ").replace(/\s*[|\-–—]\s*(תיאטרון|סינמטק|צוותא|לבונטין|levontin|הבימה|בית ליסין|תמונע|סוזן|הסימטה|בארבי|מוזיאון|קומדי|comedy|הקאמרי).*$/i, "").replace(/\s*צוותא – הבית לתרבות ישראלית$/, "").trim().slice(0, 120);
+  const cands = [...document.querySelectorAll(opts.mainSel || "main, article, #content, .content")].filter((x) => (x.innerText || "").length > 200);
+  const main = cands.sort((a, b) => b.innerText.length - a.innerText.length)[0] || document.body;
   const txt = (main ? main.innerText : document.body.innerText).replace(/[ \t]+/g, " ");
   const MON = { "ינואר": 1, "פברואר": 2, "מרץ": 3, "מרס": 3, "אפריל": 4, "מאי": 5, "יוני": 6, "יולי": 7, "אוגוסט": 8, "ספטמבר": 9, "אוקטובר": 10, "נובמבר": 11, "דצמבר": 12 };
   const now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate()), lim = new Date(today.getTime() + 100 * 864e5);
@@ -337,6 +338,73 @@ function extractDetail(opts) {
   const img = meta("og:image") || null;
   const ds = (meta("og:description") || meta("description") || "").replace(/\s+/g, " ").trim().slice(0, 220) || null;
   return { ti, dates, pr, img: img && !/logo/i.test(img) ? new URL(img, location.href).href : null, ds };
+}
+
+// הטבות דיגיתל (Benefits.aspx): מחפשים בתוך Angular את הרשימה הגדולה של האירועים; אם לא – קוראים את הכרטיסים מהדף
+async function extractDigitel() {
+  const pad = (n) => String(n).padStart(2, "0");
+  const BASE = "https://www.tel-aviv.gov.il/Pages/MainItemPage.aspx?WebID=";
+  const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Jerusalem" });
+  const val = (x, k) => String((x && x[k] && (x[k].Value ?? x[k])) || "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/\s+/g, " ").trim();
+  const parsePrice = (s) => { if (/חינם|ללא תשלום|כניסה חופשית/.test(s)) return { pr: 0, or: null }; const n = (s.match(/\d+/g) || []).map(Number).filter((x) => x < 2000); const m = s.match(/במקום\s*(\d+)/); return { pr: n.length ? n[0] : null, or: m ? +m[1] : null }; };
+  let items = null;
+  for (let i = 0; i < 30 && !items; i++) {
+    try {
+      const seen = new Set();
+      const scan = (s, depth) => { if (!s || seen.has(s) || depth > 6) return; seen.add(s);
+        for (const k in s) { if (k[0] === "$") continue; const v = s[k];
+          if (Array.isArray(v) && v.length > 20 && v[0] && v[0].Title) { if (!items || v.length > items.length) items = v; }
+          else if (v && typeof v === "object" && !Array.isArray(v)) for (const k2 in v) { const v2 = v[k2]; if (Array.isArray(v2) && v2.length > 20 && v2[0] && v2[0].Title && (!items || v2.length > items.length)) items = v2; } }
+        let c = s.$$childHead; while (c) { scan(c, depth + 1); c = c.$$nextSibling; } };
+      document.querySelectorAll("[ng-controller],[ng-app]").forEach((el) => scan(window.angular.element(el).scope(), 0));
+    } catch (e) {}
+    if (!items) await new Promise((r) => setTimeout(r, 500));
+  }
+  const out = [];
+  if (items) {
+    for (const x of items) {
+      const st = val(x, "TlvStartDate").match(/(\d\d)\.(\d\d)\.(\d\d), (\d\d:\d\d)/), en = val(x, "TlvEndDate").match(/(\d\d)\.(\d\d)\.(\d\d)/);
+      if (!st) continue;
+      let d = `20${st[3]}-${st[2]}-${st[1]}`; const e = en ? `20${en[3]}-${en[2]}-${en[1]}` : d;
+      if (e < today) continue; if (d < today) d = today;
+      const ptxt = [val(x, "TlvSearchContentForLobbyBenefitStickerDescription"), val(x, "TlvBenefitStickerDescription"), val(x, "TlvPaymentCost"), val(x, "TlvBenefitDescription")].find((s) => /\d|חינם/.test(s)) || "";
+      const { pr, or } = parsePrice(ptxt);
+      const raw = val(x, "TlvMainPicture"); const im = raw.match(/src=["']([^"']+)/i) || raw.match(/(\/[^,\s"']+\.(?:jpe?g|png|webp))/i);
+      out.push({ d, t: st[4] === "00:00" ? "10:00" : st[4], ti: val(x, "Title"), ve: val(x, "TlvAddress1") || val(x, "TlvInstitution"), pr, or, c: "c", dg: true,
+        u: BASE + val(x, "WebID") + "&ListID=" + val(x, "ListID") + "&ItemID=" + val(x, "ListItemID"), age: null, mem: null, ds: val(x, "TlvSummary").slice(0, 220) || null,
+        img: im ? new URL(im[1], "https://www.tel-aviv.gov.il").href : null, end: e !== d ? e : null, org: "עיריית תל אביב־יפו (הטבת דיגיתל)" });
+    }
+    return out;
+  }
+  // גיבוי: כרטיסים בדף
+  for (const a of document.querySelectorAll('a[href*="MainItemPage"]')) {
+    let el = a; for (let i = 0; i < 4 && el.parentElement && !/הטבה לדיגיתל/.test(el.innerText); i++) el = el.parentElement;
+    const L = (el.innerText || "").split("\n").map((s) => s.trim()).filter(Boolean);
+    const dm = (el.innerText || "").match(/(?:(\d{1,2}:\d{2})\s+)?(\d{1,2})\.(\d{1,2})\.(\d{2})/);
+    if (!dm || L.length < 3) continue;
+    let d = `20${dm[4]}-${pad(dm[3])}-${pad(dm[2])}`; if (d < today) d = today;
+    const pl = L.find((l) => /₪|חינם/.test(l)) || ""; const { pr, or } = parsePrice(pl);
+    out.push({ d, t: dm[1] || "10:00", ti: L[0], ve: L.find((l) => l !== L[0] && l !== pl && !/\d\.\d/.test(l)) || "", pr, or, c: "c", dg: true, u: a.href, age: null, mem: null, ds: null, img: null });
+  }
+  return out;
+}
+
+// בארבי: רשימת ההופעות בעמוד הבית – "שם / דלתות: HH:MM / DD/MM יום"
+function extractBarby() {
+  const pad = (n) => String(n).padStart(2, "0"); const now = new Date(); const out = []; const seen = new Set();
+  for (const el of document.querySelectorAll("a, div, li")) {
+    const tx = el.innerText || ""; if (tx.length > 300 || !/דלתות:/.test(tx)) continue;
+    const dm = tx.match(/(\d{1,2})\/(\d{1,2})/), tm = tx.match(/דלתות:\s*(\d{1,2}:\d{2})/); if (!dm || !tm) continue;
+    const L = tx.split("\n").map((s) => s.trim()).filter((l) => l && !/דלתות|כרטיס|^\d{1,2}\/\d{1,2}/.test(l));
+    const ti = L[0]; if (!ti) continue;
+    let y = now.getFullYear(); if (+dm[2] < now.getMonth() + 1 - 2) y++;
+    const d = `${y}-${pad(+dm[2])}-${pad(+dm[1])}`; const k = d + ti; if (seen.has(k)) continue; seen.add(k);
+    const a = el.tagName === "A" ? el : el.querySelector("a[href]") || el.closest("a");
+    const im = el.querySelector("img");
+    let c = "m"; if (/מסיבה|מסיבת/.test(ti)) c = "p";
+    out.push({ d, t: tm[1].padStart(5, "0"), ti, ve: "בארבי", pr: null, or: null, c, dg: false, u: a ? a.href : location.href, age: null, mem: null, ds: /אזלו/.test(tx) ? "כרטיסים אזלו" : null, img: im ? im.currentSrc || im.src : null });
+  }
+  return out;
 }
 
 // השלמת מחיר מעמוד האירוע עצמו (לאירועים שהגיעו בלי מחיר)
@@ -364,4 +432,4 @@ function findPrice() {
   return { pr: null, next, img: ogImg };
 }
 
-module.exports = { extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };
+module.exports = { extractDigitel, extractBarby, extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };

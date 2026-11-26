@@ -7,7 +7,7 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
-const { extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice } = require("./extract.cjs");
+const { extractDigitel, extractBarby, extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice } = require("./extract.cjs");
 const VENUES = (() => { try { return JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "venues.json"), "utf8")); } catch (e) { return []; } })();
 const COING = JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "coing-groups.json"), "utf8"));
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -83,7 +83,10 @@ async function main() {
       await page.goto(s.url, { waitUntil: "domcontentloaded", timeout: 45000 });
       await page.waitForLoadState("networkidle", { timeout: 15000 }).catch(() => {});
       let evs = [];
-      if (s.kind !== "tlv" && s.kind !== "coing") await loadAll(page);
+      if (!["tlv", "coing", "digitel"].includes(s.kind)) await loadAll(page);
+      if (s.kind === "digitel") evs = await page.evaluate(`(${extractDigitel.toString()})()`);
+      else if (s.kind === "barby") evs = await page.evaluate(`(${extractBarby.toString()})()`);
+      else
       if (s.kind === "coing") { await page.waitForTimeout(2500); evs = (await page.evaluate(`(${extractCoing.toString()})()`)).events; }
       else if (s.kind === "tlv") evs = await page.evaluate(`(${extractTLV.toString()})()`);
       else if (s.kind === "auto" || s.kind === "ld") {
