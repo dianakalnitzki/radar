@@ -267,6 +267,78 @@ function extractCoing() {
   return { events: out, groups };
 }
 
+// אתרי מקומות: הרבה אתרים שומרים את האירועים כנתונים מובנים (JSON-LD מסוג Event) – הכי אמין
+function extractLD(opts) {
+  opts = opts || {};
+  const out = [];
+  const tz = (s) => { const m = String(s || "").match(/(\d{4}-\d{2}-\d{2})(?:T(\d{2}:\d{2}))?/); return m ? [m[1], m[2] || "20:00"] : null; };
+  const walk = (o) => {
+    if (!o || typeof o !== "object") return;
+    if (Array.isArray(o)) return o.forEach(walk);
+    const ty = [].concat(o["@type"] || []).join(",");
+    if (/Event/.test(ty) && o.name && o.startDate) {
+      const dt = tz(o.startDate);
+      if (dt) {
+        const off = [].concat(o.offers || []);
+        const prices = off.map((x) => +(x.lowPrice ?? x.price)).filter((n) => !isNaN(n));
+        const loc = [].concat(o.location || [])[0] || {};
+        const img = [].concat(o.image || [])[0];
+        const name = String(o.name).replace(/&amp;/g, "&").replace(/&#039;|&#39;/g, "'").replace(/&quot;/g, '"').trim();
+        let c = opts.defaultCat || "c";
+        const blob = name + " " + (o.description || "");
+        if (/הקרנ|סרט|קולנוע|film|screening/i.test(blob)) c = "f";
+        else if (/סטנדאפ|stand.?up/i.test(blob)) c = "s";
+        else if (/מסיבה|party|DJ|רייב/i.test(blob)) c = "p";
+        else if (/סדנ|workshop/i.test(name)) c = "w";
+        else if (/הופעה|קונצרט|concert|live|להקה/i.test(blob) && c === "c") c = "m";
+        if (/ילדים|לכל המשפחה|kids|family/i.test(blob)) c = "k";
+        out.push({ d: dt[0], t: dt[1], ti: name, ve: opts.forceVenue || loc.name || "", pr: prices.length ? Math.min(...prices) : (/free|חינם|חופשית/i.test(JSON.stringify(off)) ? 0 : null),
+          or: null, c, dg: false, u: o.url ? new URL(o.url, location.href).href : location.href, age: null, mem: null,
+          ds: o.description ? String(o.description).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 220) : null,
+          img: typeof img === "string" ? img : img && img.url ? img.url : null });
+      }
+    }
+    Object.values(o).forEach(walk);
+  };
+  for (const s of document.querySelectorAll('script[type="application/ld+json"]')) { try { walk(JSON.parse(s.textContent)); } catch (e) {} }
+  const seen = new Set();
+  return out.filter((e) => { const k = e.d + e.t + e.ti; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+
+// עמוד של אירוע/הצגה בודדת: כותרת, כל התאריכים+שעות שמופיעים, מחיר, תמונה ותיאור
+function extractDetail(opts) {
+  opts = opts || {};
+  const pad = (n) => String(n).padStart(2, "0");
+  const meta = (p) => { const m = document.querySelector(`meta[property="${p}"],meta[name="${p}"]`); return m ? m.content : ""; };
+  let ti = (opts.titleSel && document.querySelector(opts.titleSel) && document.querySelector(opts.titleSel).innerText) || (document.querySelector("h1") && document.querySelector("h1").innerText) || meta("og:title") || document.title;
+  ti = String(ti).replace(/\s+/g, " ").replace(/\s*[|\-–]\s*(תיאטרון|סינמטק|צוותא|לבונטין|הבימה|בית ליסין|תמונע|סוזן|הסימטה|בארבי|מוזיאון).*$/, "").trim().slice(0, 120);
+  const main = document.querySelector(opts.mainSel || "main, article, #content, .content, body");
+  const txt = (main ? main.innerText : document.body.innerText).replace(/[ \t]+/g, " ");
+  const MON = { "ינואר": 1, "פברואר": 2, "מרץ": 3, "מרס": 3, "אפריל": 4, "מאי": 5, "יוני": 6, "יולי": 7, "אוגוסט": 8, "ספטמבר": 9, "אוקטובר": 10, "נובמבר": 11, "דצמבר": 12 };
+  const now = new Date(), today = new Date(now.getFullYear(), now.getMonth(), now.getDate()), lim = new Date(today.getTime() + 100 * 864e5);
+  const found = [];
+  const add = (dd, mm, yy, idx, len) => {
+    let y = yy ? (+yy < 100 ? 2000 + +yy : +yy) : now.getFullYear();
+    let dt = new Date(y, mm - 1, dd);
+    if (!yy && dt < new Date(today.getTime() - 60 * 864e5)) dt = new Date(++y, mm - 1, dd);
+    if (isNaN(dt) || dt < today || dt > lim || dd > 31 || mm > 12) return;
+    const near = txt.slice(Math.max(0, idx - 40), idx + len + 60);
+    const tm = near.slice(near.indexOf(txt.substr(idx, len)) + len).match(/([01]?\d|2[0-3]):([0-5]\d)/) || near.match(/([01]?\d|2[0-3]):([0-5]\d)/);
+    found.push({ d: `${dt.getFullYear()}-${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}`, t: tm ? `${pad(+tm[1])}:${tm[2]}` : null });
+  };
+  for (const m of txt.matchAll(/(?<![\d/.])(\d{1,2})[./](\d{1,2})(?:[./](\d{2,4}))?(?![\d/.])/g)) add(+m[1], +m[2], m[3], m.index, m[0].length);
+  for (const m of txt.matchAll(/(\d{1,2})\s+(?:ב|ל)?(ינואר|פברואר|מרץ|מרס|אפריל|מאי|יוני|יולי|אוגוסט|ספטמבר|אוקטובר|נובמבר|דצמבר)(?:\s+(\d{4}))?/g)) add(+m[1], MON[m[2]], m[3], m.index, m[0].length);
+  const seen = new Set();
+  const dates = found.filter((x) => x.t).filter((x) => { const k = x.d + x.t; if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, opts.maxDates || 12);
+  // מחיר
+  let pr = null;
+  if (/כניסה חופשית|הכניסה חופשית|ללא תשלום|ללא עלות|כניסה חינם|free entry/i.test(txt)) pr = 0;
+  else { const n = [...txt.matchAll(/(?:₪\s?(\d{2,4})|(\d{2,4})(?:\.00)?\s?(?:₪|ש"ח|ש״ח|שח\b|NIS))/g)].map((m) => +(m[1] || m[2])).filter((x) => x >= 15 && x <= 600); if (n.length) pr = Math.min(...n); }
+  const img = meta("og:image") || null;
+  const ds = (meta("og:description") || meta("description") || "").replace(/\s+/g, " ").trim().slice(0, 220) || null;
+  return { ti, dates, pr, img: img && !/logo/i.test(img) ? new URL(img, location.href).href : null, ds };
+}
+
 // השלמת מחיר מעמוד האירוע עצמו (לאירועים שהגיעו בלי מחיר)
 function findPrice() {
   const ogImg = (() => { const m = document.querySelector('meta[property="og:image"],meta[name="twitter:image"]'); const s = m && m.content; return s && !/logo|icon/i.test(s) ? new URL(s, location.href).href : null; })();
@@ -292,4 +364,4 @@ function findPrice() {
   return { pr: null, next, img: ogImg };
 }
 
-module.exports = { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };
+module.exports = { extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice };

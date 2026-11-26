@@ -1,0 +1,18 @@
+[
+ {"name":"לבונטין 7","url":"https://levontin7.com/","kind":"crawl","cat":"m","opts":{"link":"levontin7\\.com/events/[^/]+/?$"}},
+ {"name":"צוותא","url":"https://www.tzavta.co.il/shows","kind":"crawl","cat":"t","opts":{"link":"tzavta\\.co\\.il/event/\\d+"}},
+ {"name":"סינמטק תל אביב","url":"https://www.cinema.co.il/","kind":"crawl","cat":"f","opts":{"link":"cinema\\.co\\.il/event/","max":40}},
+ {"name":"הבימה","url":"https://www.habima.co.il/","kind":"crawl","cat":"t","opts":{"link":"habima\\.co\\.il/shows/[^/]+/?$"}},
+ {"name":"בית ליסין","url":"https://www.lessin.co.il/","kind":"crawl","cat":"t","opts":{"link":"lessin\\.pres\\.global/eWeb/event/\\d+"}},
+ {"name":"תיאטרון הסימטה","url":"https://hasimta.com/","kind":"crawl","cat":"t","opts":{"link":"hasimta\\.com/shows/[^/]+/?$"}},
+ {"name":"סוזן דלל","url":"https://suzannedellal.org.il/shows","kind":"crawl","cat":"t","opts":{"link":"suzannedellal\\.org\\.il/shows/.+"}},
+ {"name":"בארבי","url":"https://barby.co.il/","kind":"crawl","cat":"m","opts":{"link":"barby\\.co\\.il/show/\\d+"}},
+ {"name":"הקאמרי","url":"https://www.cameri.co.il/%D7%9C%D7%95%D7%97-%D7%94%D7%95%D7%A4%D7%A2%D7%95%D7%AA/?filter=show","kind":"auto","cat":"t"},
+ {"name":"תמונע","url":"https://www.tmu-na.org.il/?pg=show","kind":"auto","cat":"t"},
+ {"name":"אוזן בר","url":"https://www.ozentelaviv.com/","kind":"auto","cat":"m"},
+ {"name":"התיבה","url":"https://www.hateiva.com/","kind":"auto","cat":"m"},
+ {"name":"מוזיאון תל אביב","url":"https://www.tamuseum.org.il/he/events/","kind":"auto","cat":"c"},
+ {"name":"קומדי בר","url":"https://www.comedybar.co.il/","kind":"auto","cat":"s"},
+ {"name":"זאפה תל אביב","url":"https://www.zappa-club.co.il/","kind":"auto","cat":"m"},
+ {"name":"תיאטרון גשר","url":"https://www.gesher-theatre.co.il/he/","kind":"auto","cat":"t"}
+]

@@ -7,7 +7,8 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
 const require = createRequire(import.meta.url);
-const { extractGeneric, extractRadical, extractTLV, extractCoing, findPrice } = require("./extract.cjs");
+const { extractDetail, extractLD, extractGeneric, extractRadical, extractTLV, extractCoing, findPrice } = require("./extract.cjs");
+const VENUES = (() => { try { return JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "venues.json"), "utf8")); } catch (e) { return []; } })();
 const COING = JSON.parse(fs.readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), "coing-groups.json"), "utf8"));
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = path.join(ROOT, "data", "events.json");
@@ -23,17 +24,16 @@ const monthPages = [0, 1, 2].map((i) => `https://radartlv.co.il/${MONTHS_EN[(cur
 
 // סדר העדיפויות: קודם המקורות עצמם (עירייה, רדיקל, קולנוע יפו, סיקרט ת"א), ורק אחר כך הרדאר – כגיבוי
 // לאירועים מהמקומות שאין לנו להם שליפה ישירה (בארבי, צוותא, הקאמרי וכו').
-const SOURCES = process.env.SOURCES_JSON ? JSON.parse(process.env.SOURCES_JSON) : [
+const TEST = process.env.TEST_SOURCES ? JSON.parse(fs.readFileSync(process.env.TEST_SOURCES, "utf8")).map((v) => ({ url: v.url, kind: v.kind || "auto", direct: true, opts: { forceVenue: v.name, defaultCat: v.cat, ...(v.opts || {}) }, name: v.name })) : null;
+const SOURCES = TEST || (process.env.SOURCES_JSON ? JSON.parse(process.env.SOURCES_JSON) : [
   { url: "https://www.tel-aviv.gov.il/Visitors/Events/Pages/Events.aspx", kind: "tlv", direct: true },
   ...COING.map((url) => ({ url, kind: "coing", direct: true })),   // המרכזים הקהילתיים של העירייה
   { url: "https://radical.org.il/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/hamartef/", kind: "radical", direct: true },
   { url: "https://radical.org.il/calendar/movies/", kind: "radical", direct: true },
   { url: "https://www.jaffacinema.com/", kind: "generic", direct: true, opts: { forceVenue: "קולנוע יפו", defaultCat: "f" } },
-  { url: "https://secrettelaviv.app/", kind: "generic", direct: true, opts: {} },
-  ...["today","tomorrow","weekend","this-week","kids","free","digitel","concerts","theater","standup","culture","parties","festivals","jaffa"].map((p) => ({ url: `https://radartlv.co.il/${p}/`, kind: "radar" })),
-  ...monthPages.map((url) => ({ url, kind: "radar" })),
-];
+  ...VENUES.map((v) => ({ url: v.url, kind: v.kind || "auto", direct: true, opts: { forceVenue: v.name, defaultCat: v.cat, ...(v.opts || {}) }, name: v.name })),
+]);
 const PRICE_LOOKUPS = 160; // כמה עמודי אירוע לבדוק בכל ריצה כדי להשלים מחירים חסרים
 
 async function loadAll(page) {
@@ -86,6 +86,33 @@ async function main() {
       if (s.kind !== "tlv" && s.kind !== "coing") await loadAll(page);
       if (s.kind === "coing") { await page.waitForTimeout(2500); evs = (await page.evaluate(`(${extractCoing.toString()})()`)).events; }
       else if (s.kind === "tlv") evs = await page.evaluate(`(${extractTLV.toString()})()`);
+      else if (s.kind === "auto" || s.kind === "ld") {
+        evs = await page.evaluate(`(${extractLD.toString()})(${JSON.stringify(s.opts || {})})`);
+        if (!evs.length && s.kind === "auto") evs = await page.evaluate(`(${extractGeneric.toString()})(${JSON.stringify(s.opts || {})})`);
+      }
+      else if (s.kind === "crawl") {
+        // דף רשימה → נכנסים לכל עמוד אירוע ומוציאים ממנו תאריכים, מחיר ותמונה
+        const re = new RegExp(s.opts.link);
+        const links = [...new Set((await page.evaluate(() => [...document.querySelectorAll("a[href]")].map((a) => a.href.split("#")[0]))).filter((h) => re.test(h)))].slice(0, s.opts.max || 30);
+        const queue = [...links];
+        await Promise.all([0, 1, 2].map(async () => {
+          while (queue.length) {
+            const u = queue.shift(); const dp = await ctx.newPage();
+            try {
+              await dp.route(/\.(png|jpe?g|webp|gif|woff2?|mp4)(\?|$)/i, (r) => r.abort());
+              await dp.goto(u, { waitUntil: "domcontentloaded", timeout: 30000 });
+              await dp.waitForLoadState("networkidle", { timeout: 8000 }).catch(() => {});
+              const r = await dp.evaluate(`(${extractDetail.toString()})(${JSON.stringify(s.opts)})`);
+              const blob = r.ti + " " + (r.ds || "");
+              let c = s.opts.defaultCat || "c";
+              if (/הקרנ|סרט|קולנוע|film/i.test(blob) && c !== "t") c = "f";
+              if (/סדנ|workshop/i.test(r.ti)) c = "w";
+              if (/ילדים|לכל המשפחה|הצגת ילדים|kids/i.test(blob)) c = "k";
+              for (const x of r.dates) evs.push({ d: x.d, t: x.t, ti: r.ti, ve: s.opts.forceVenue || "", pr: r.pr, or: null, c, dg: false, u, age: null, mem: null, ds: r.ds, img: r.img });
+            } catch (e) {} finally { await dp.close(); }
+          }
+        }));
+      }
       else if (s.kind === "radical") evs = await page.evaluate(`(${extractRadical.toString()})()`);
       else evs = await page.evaluate(`(${extractGeneric.toString()})(${JSON.stringify(s.opts || {})})`);
       report[s.url] = evs.length;
@@ -95,6 +122,12 @@ async function main() {
     } finally { await page.close(); }
   }
   console.log(JSON.stringify(report, null, 1));
+  if (TEST) {
+    const by = {}; found.forEach((e) => { (by[e.ve] = by[e.ve] || []).push(e); });
+    let o = JSON.stringify(report, null, 1) + "\n";
+    for (const [v, arr] of Object.entries(by)) o += `\n## ${v} (${arr.length})\n` + arr.slice(0, 6).map((e) => [e.d, e.t, e.ti, e.pr, e.c, e.img ? "img" : "-", e.u.slice(0, 70)].join(" | ")).join("\n");
+    fs.mkdirSync("debug", { recursive: true }); fs.writeFileSync("debug/probe.txt", o); await browser.close(); return;
+  }
 
   const radarCount = found.filter((e) => e._src === "radar").length;
   // ניקוי
@@ -104,7 +137,8 @@ async function main() {
 
   // מיזוג עם הקיים (לא מוחקים מידע – רק מוסיפים ומעדכנים), ומוחקים ימים שעברו
   const days = {};
-  for (const [d, arr] of Object.entries(old.days || {})) if (d >= todayStr) days[d] = [...arr];
+  // שומרים מהנתונים הקודמים רק אירועים ממקורות ישירים (לא מהרדאר / סיקרט ת"א)
+  for (const [d, arr] of Object.entries(old.days || {})) if (d >= todayStr) days[d] = arr.filter((x) => x.src === "direct" && !/radartlv|secrettelaviv/.test(x.u || ""));
   for (const e of clean) {
     const { d, ...o } = e;
     const arr = (days[d] = days[d] || []);
@@ -156,7 +190,7 @@ async function main() {
   await browser.close();
 
   const total = Object.values(days).reduce((n, a) => n + a.length, 0);
-  if (found.length < 30) console.warn(`אזהרה: נאספו רק ${radarCount} אירועים מ-radartlv – ייתכן שמבנה האתר השתנה. הנתונים הקיימים נשמרו.`);
+  if (found.length < 30) console.warn(`אזהרה: נאספו רק ${found.length} אירועים – ייתכן שמבנה האתר השתנה. הנתונים הקיימים נשמרו.`);
   const updated = new Date().toLocaleString("he-IL", { timeZone: tz, day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" }).replace(",", "").replace(/\.(?=\d{2}:)/, " ");
   const outObj = { updated: found.length >= 30 ? updated : (old.updated || updated), count: total, report, days: Object.fromEntries(Object.keys(days).sort().map((d) => [d, days[d]])) };
   fs.writeFileSync(DATA, JSON.stringify(outObj));
